@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://cet6kd7hknbv2"]
+
+[ext_resource type="Script" path="res://addons/🛠Malette personnel C#/0.🧰Outils et Editeur🧑‍💻/5.🌳Tech Tree pour éditeur/TTItemEditor.cs" id="1_wpoxg"]
+
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8papy"]
+bg_color = Color(0.31023896, 0.35961056, 0.35967848, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hamyk"]
+bg_color = Color(0.3882353, 0.5372549, 0.6, 1)
+
+[node name="Item" type="Panel" unique_id=1585473999 node_paths=PackedStringArray("_titleLabel", "_InputButton", "_OutputButton", "_ResizeButton")]
+custom_minimum_size = Vector2(40, 40)
+offset_right = 314.0
+offset_bottom = 225.0
+script = ExtResource("1_wpoxg")
+_titleLabel = NodePath("BoxContainer/TitlePanelContainer/Title")
+_InputButton = NodePath("BoxContainer/PanelContainer2/HBoxContainer/InputConnectorContainer/InputConnectorExample")
+_OutputButton = NodePath("BoxContainer/PanelContainer2/HBoxContainer/OutputConnectorContainer/OutputConnectorExample")
+_ResizeButton = NodePath("ResizeButton")
+
+[node name="BoxContainer" type="BoxContainer" parent="." unique_id=1917144764]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+vertical = true
+
+[node name="TitlePanelContainer" type="PanelContainer" parent="BoxContainer" unique_id=1156619954]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_8papy")
+
+[node name="Title" type="Label" parent="BoxContainer/TitlePanelContainer" unique_id=2021666340]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Titre"
+horizontal_alignment = 1
+
+[node name="PanelContainer2" type="PanelContainer" parent="BoxContainer" unique_id=831105726]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_hamyk")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="BoxContainer/PanelContainer2" unique_id=1418558343]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="InputConnectorContainer" type="VBoxContainer" parent="BoxContainer/PanelContainer2/HBoxContainer" unique_id=235082498]
+layout_mode = 2
+alignment = 1
+
+[node name="InputConnectorExample" type="Button" parent="BoxContainer/PanelContainer2/HBoxContainer/InputConnectorContainer" unique_id=492304305]
+layout_mode = 2
+text = "⭕"
+
+[node name="ControlContainer" type="VBoxContainer" parent="BoxContainer/PanelContainer2/HBoxContainer" unique_id=723938229]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="OutputConnectorContainer" type="VBoxContainer" parent="BoxContainer/PanelContainer2/HBoxContainer" unique_id=434901395]
+layout_mode = 2
+alignment = 1
+
+[node name="OutputConnectorExample" type="Button" parent="BoxContainer/PanelContainer2/HBoxContainer/OutputConnectorContainer" unique_id=1935574537]
+layout_mode = 2
+text = "⭕"
+
+[node name="ResizeButton" type="Button" parent="." unique_id=1879195428]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -30.0
+offset_top = -31.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "↘️"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GamePoint" format=3 uid="uid://ce7fujskl5a2w"]
+
+[ext_resource type="Script" uid="uid://bknbwxunhj5ii" path="res://addons/🛠Malette personnel C#/5.💾Données & Sécurité🔐/1.⭐Point de jeu/Core/GamePoint.cs" id="1_wccdc"]
+
+
+
+
+[resource]
+script = ExtResource("1_wccdc")
+d = NodePath("")
+metadata/_custom_type_script = "uid://bknbwxunhj5ii"

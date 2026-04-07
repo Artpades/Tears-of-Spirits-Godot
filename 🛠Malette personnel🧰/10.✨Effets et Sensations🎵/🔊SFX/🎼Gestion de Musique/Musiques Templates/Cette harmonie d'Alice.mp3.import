@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://k33yol86ucta"
+path="res://.godot/imported/Cette harmonie d'Alice.mp3-53175bb0cc2ab52320d128bd35861d1e.mp3str"
+
+[deps]
+
+source_file="res://🛠Malette personnel🧰/10.✨Effets et Sensations🎵/🔊SFX/🎼Gestion de Musique/Musiques Templates/Cette harmonie d'Alice.mp3"
+dest_files=["res://.godot/imported/Cette harmonie d'Alice.mp3-53175bb0cc2ab52320d128bd35861d1e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

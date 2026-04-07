@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://shxrm0upjrm2"
+path="res://.godot/imported/Harmonie Gouttelette Sédcentaire.mp3-7879cd6d2f5d75a5cd8de83ef877a9b3.mp3str"
+
+[deps]
+
+source_file="res://🛠Malette personnel🧰/10.✨Effets et Sensations🎵/🔊SFX/🎼Gestion de Musique/Musiques Templates/Harmonie Gouttelette Sédcentaire.mp3"
+dest_files=["res://.godot/imported/Harmonie Gouttelette Sédcentaire.mp3-7879cd6d2f5d75a5cd8de83ef877a9b3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,230 @@
+[gd_scene format=3 uid="uid://vxqhvuuneprr"]
+
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/8.🧭UI & UX/7.💬Dialogue/DialogueSystem.cs" id="1_jm2y4"]
+[ext_resource type="Texture2D" uid="uid://dqxshgybr1tbe" path="res://🖼️Editor Icons/3.🧍🧠/Character Icon.png" id="1_os7qf"]
+[ext_resource type="Resource" uid="uid://bvis52tpphora" path="res://addons/🛠Malette personnel C#/8.🧭UI & UX/4.💬Dialogue/Dialogues/Dialogue Test.tres" id="2_vjnb4"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_blur.gd" id="4_kky1l"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_bounce.gd" id="5_pd72l"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_breathe.gd" id="6_rhfvy"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_chromatic.gd" id="7_wesbi"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_comet.gd" id="8_sp8u4"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_drip.gd" id="9_dpo4x"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_elastic.gd" id="10_mlhbe"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_fade.gd" id="11_la7tw"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_flicker.gd" id="12_7nm1i"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_ghost.gd" id="13_iql5i"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_glitch.gd" id="14_84e6d"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_gradshift.gd" id="15_f57ig"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_jitter.gd" id="16_klwm1"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_matrix.gd" id="17_ovmnn"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_neon.gd" id="18_kqg8p"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_pixel.gd" id="19_cpe0c"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_reveal.gd" id="20_jy3p0"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_ripple.gd" id="21_06uf3"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_rotate.gd" id="22_s10n8"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_scramble.gd" id="23_a3u3l"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_shake3d.gd" id="24_xyxw7"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_shockwave.gd" id="25_32n0x"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_slide.gd" id="26_rdbxu"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_spiral.gd" id="27_ecn5d"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_static.gd" id="28_s4h46"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_swing.gd" id="29_vf5v4"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_telegraph.gd" id="30_0a4dt"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_typewriter.gd" id="31_y36ea"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_wiggle.gd" id="32_p7srg"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/10. ✨🌈Effet Visuels et Audios🎵🔊/✨GUI Sophistiqué/1.Fancy Text/rich_text_zoom.gd" id="33_urcun"]
+
+
+
+
+
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2mtc1"]
+bg_color = Color(0.27450982, 0.85882354, 0.74509805, 0.6627451)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_v282r"]
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_ayekv"]
+script = ExtResource("4_kky1l")
+metadata/_custom_type_script = "uid://c7bmsf3brt5co"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_yq0r5"]
+script = ExtResource("5_pd72l")
+metadata/_custom_type_script = "uid://4lxgw0vnr7s3"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_o1nd4"]
+script = ExtResource("6_rhfvy")
+metadata/_custom_type_script = "uid://ciq2n2etoiwqu"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_yfelh"]
+script = ExtResource("7_wesbi")
+metadata/_custom_type_script = "uid://26rx7j6a0rba"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_0mobq"]
+script = ExtResource("8_sp8u4")
+metadata/_custom_type_script = "uid://ouxkng6nuhjh"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_s81h8"]
+script = ExtResource("9_dpo4x")
+metadata/_custom_type_script = "uid://bj6bbaacc3gl"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_i48if"]
+script = ExtResource("10_mlhbe")
+metadata/_custom_type_script = "uid://n0n31wwfpasn"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_sxjso"]
+script = ExtResource("11_la7tw")
+metadata/_custom_type_script = "uid://b6vmbigpwlnhm"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_xennw"]
+script = ExtResource("12_7nm1i")
+metadata/_custom_type_script = "uid://djdgijovarwu6"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_qpwyp"]
+script = ExtResource("13_iql5i")
+metadata/_custom_type_script = "uid://vfr1i6ran2dc"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_uhlfg"]
+script = ExtResource("14_84e6d")
+metadata/_custom_type_script = "uid://bpq4ydpih6heh"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_un245"]
+script = ExtResource("15_f57ig")
+metadata/_custom_type_script = "uid://ckl44ad0pdjv8"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_28eu6"]
+script = ExtResource("16_klwm1")
+metadata/_custom_type_script = "uid://cxj1ckl11go4l"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_do727"]
+script = ExtResource("17_ovmnn")
+metadata/_custom_type_script = "uid://b5ut4g50igxf1"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_fjf0c"]
+script = ExtResource("18_kqg8p")
+metadata/_custom_type_script = "uid://clw7ovh2ljiag"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_tq0n3"]
+script = ExtResource("19_cpe0c")
+metadata/_custom_type_script = "uid://bcmeohngdo7df"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_r6sv4"]
+script = ExtResource("20_jy3p0")
+metadata/_custom_type_script = "uid://coa78funkor4q"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_ltpxm"]
+script = ExtResource("21_06uf3")
+metadata/_custom_type_script = "uid://2pjb3h7x1uns"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_r4gdh"]
+script = ExtResource("22_s10n8")
+metadata/_custom_type_script = "uid://di5qkrksvjo2v"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_vcdxi"]
+script = ExtResource("23_a3u3l")
+metadata/_custom_type_script = "uid://bdh8wms2gvm73"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_icsig"]
+script = ExtResource("24_xyxw7")
+metadata/_custom_type_script = "uid://bf6asq8m1ds1s"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_spynm"]
+script = ExtResource("25_32n0x")
+metadata/_custom_type_script = "uid://b87gv1bth48en"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_0jgqa"]
+script = ExtResource("26_rdbxu")
+metadata/_custom_type_script = "uid://cvdqg2fd1ao2a"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_vtqt6"]
+script = ExtResource("27_ecn5d")
+metadata/_custom_type_script = "uid://clmq4a46iwu31"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_okhg4"]
+script = ExtResource("28_s4h46")
+metadata/_custom_type_script = "uid://cn6d4c5dtjvc5"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_wsexk"]
+script = ExtResource("29_vf5v4")
+metadata/_custom_type_script = "uid://chrkb77bq3lxx"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_6b8ps"]
+script = ExtResource("30_0a4dt")
+metadata/_custom_type_script = "uid://cig688g1fo1gd"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_o7p4i"]
+script = ExtResource("31_y36ea")
+metadata/_custom_type_script = "uid://d5p2rreeb71g"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_e2s1t"]
+script = ExtResource("32_p7srg")
+metadata/_custom_type_script = "uid://cr4k33kqugpb2"
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_m73w2"]
+script = ExtResource("33_urcun")
+metadata/_custom_type_script = "uid://dww05rklo2xby"
+
+[node name="TestDialogue" type="Control" unique_id=1953510349 node_paths=PackedStringArray("DialogueLabel")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_jm2y4")
+CurrentDialogue = ExtResource("2_vjnb4")
+DialogueLabel = NodePath("Panel2/RichTextLabel")
+
+[node name="Panel" type="Panel" parent="." unique_id=843724714]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -271.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_2mtc1")
+
+[node name="Panel2" type="Panel" parent="." unique_id=562417690]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -271.0
+offset_bottom = -29.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_2mtc1")
+
+[node name="TextureRect" type="TextureRect" parent="Panel2" unique_id=1098271147]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 42.0
+offset_top = 20.0
+offset_right = 236.0
+offset_bottom = 214.0
+texture = ExtResource("1_os7qf")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel2" unique_id=1478445401]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0710001
+offset_left = 261.0
+offset_bottom = -17.182037
+grow_horizontal = 2
+theme_override_font_sizes/normal_font_size = 32
+theme_override_font_sizes/bold_font_size = 32
+theme_override_font_sizes/bold_italics_font_size = 32
+theme_override_font_sizes/italics_font_size = 32
+theme_override_font_sizes/mono_font_size = 32
+bbcode_enabled = true
+text = "[typewriter]Test Dialogue[/typewriter]"
+vertical_alignment = 1
+custom_effects = [SubResource("RichTextEffect_v282r"), SubResource("RichTextEffect_ayekv"), SubResource("RichTextEffect_yq0r5"), SubResource("RichTextEffect_o1nd4"), SubResource("RichTextEffect_yfelh"), SubResource("RichTextEffect_0mobq"), SubResource("RichTextEffect_s81h8"), SubResource("RichTextEffect_i48if"), SubResource("RichTextEffect_sxjso"), SubResource("RichTextEffect_xennw"), SubResource("RichTextEffect_qpwyp"), SubResource("RichTextEffect_uhlfg"), SubResource("RichTextEffect_un245"), SubResource("RichTextEffect_28eu6"), SubResource("RichTextEffect_do727"), SubResource("RichTextEffect_fjf0c"), SubResource("RichTextEffect_tq0n3"), SubResource("RichTextEffect_r6sv4"), SubResource("RichTextEffect_ltpxm"), SubResource("RichTextEffect_r4gdh"), SubResource("RichTextEffect_vcdxi"), SubResource("RichTextEffect_icsig"), SubResource("RichTextEffect_spynm"), SubResource("RichTextEffect_0jgqa"), SubResource("RichTextEffect_vtqt6"), SubResource("RichTextEffect_okhg4"), SubResource("RichTextEffect_wsexk"), SubResource("RichTextEffect_6b8ps"), SubResource("RichTextEffect_o7p4i"), SubResource("RichTextEffect_e2s1t"), SubResource("RichTextEffect_m73w2")]

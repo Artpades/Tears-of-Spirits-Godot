@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Gauge" format=3 uid="uid://b0500tnpnaj5r"]
+
+[ext_resource type="Script" uid="uid://cpfu88jfpa8bs" path="res://addons/🛠Malette personnel C#/5.💾Données & Sécurité🔐/2.📉Jauge/Core/Gauge.cs" id="1_r624i"]
+[ext_resource type="Script" path="res://addons/🛠️GameplayToolkit🕹️/5.💾Données & Publication💰/2.📉Jauge/Core/GaugeThreshold.cs" id="1_vjluw"]
+
+
+
+
+[sub_resource type="Resource" id="Resource_1xgfb"]
+script = ExtResource("1_vjluw")
+ThresholdPercent = 50.7
+metadata/_custom_type_script = "uid://kk8e7aedcnpb"
+
+[resource]
+resource_name = "Test Resource"
+script = ExtResource("1_r624i")
+CurrentValue = 89.05
+Thresholds = [SubResource("Resource_1xgfb")]

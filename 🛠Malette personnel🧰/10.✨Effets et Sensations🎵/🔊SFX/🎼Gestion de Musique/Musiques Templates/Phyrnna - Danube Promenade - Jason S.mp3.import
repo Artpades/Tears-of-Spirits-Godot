@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cnnpj1206s4q2"
+path="res://.godot/imported/Phyrnna - Danube Promenade - Jason S.mp3-3b108c15f9802095d6345b4a0ec43e5f.mp3str"
+
+[deps]
+
+source_file="res://🛠Malette personnel🧰/10.✨Effets et Sensations🎵/🔊SFX/🎼Gestion de Musique/Musiques Templates/Phyrnna - Danube Promenade - Jason S.mp3"
+dest_files=["res://.godot/imported/Phyrnna - Danube Promenade - Jason S.mp3-3b108c15f9802095d6345b4a0ec43e5f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

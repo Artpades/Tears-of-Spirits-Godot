@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://wcphicnvus6b"]
+
+[ext_resource type="Script" uid="uid://vu4yejhffxgr" path="res://addons/🛠Malette personnel C#/8.🧭UI & UX/1.🖥️HUD/HUD.cs" id="1_y58sy"]
+[ext_resource type="Texture2D" uid="uid://bxg0h100kjy0a" path="res://🖼️Editor Icons/8.🧭/HUD Icon.png" id="2_e4vxy"]
+
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_e4vxy"]
+viewport_path = NodePath("SubViewport")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uani1"]
+size = Vector3(8.482422, 7.88501, 1)
+
+[node name="Hud" type="Sprite3D" unique_id=1353683113 node_paths=PackedStringArray("nodeViewport", "nodeArea")]
+texture = SubResource("ViewportTexture_e4vxy")
+script = ExtResource("1_y58sy")
+nodeViewport = NodePath("SubViewport")
+nodeArea = NodePath("Area3D")
+InteractWithMouse = true
+metadata/_custom_type_script = "uid://vu4yejhffxgr"
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1096196521]
+input_capture_on_drag = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=461714548]
+shape = SubResource("BoxShape3D_uani1")
+
+[node name="SubViewport" type="SubViewport" parent="." unique_id=2143924867]
+transparent_bg = true
+
+[node name="Control" type="Control" parent="SubViewport" unique_id=1559134746]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="SubViewport/Control" unique_id=1121082099]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 50.0
+offset_right = 121.62001
+offset_bottom = 105.04008
+text = "Test"
+icon = ExtResource("2_e4vxy")

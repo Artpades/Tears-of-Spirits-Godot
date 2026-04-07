@@ -1,0 +1,101 @@
+[gd_scene format=3 uid="uid://cgtrb8pxujtti"]
+
+[ext_resource type="Texture2D" uid="uid://daph8mkj3i5vv" path="res://🖼️Editor Icons/1.🎮/InputManager Icon.png" id="1_4mt7f"]
+[ext_resource type="Script" uid="uid://cauy763m56plb" path="res://addons/🛠Malette personnel C#/1.🎮Entrées et Périphériques🔌/1.🕹️Gestion d'entrées de périphériques🎛️/Manager/PlayerInput.cs" id="1_mop6v"]
+[ext_resource type="Script" uid="uid://c7fgkciydapxd" path="res://addons/🛠Malette personnel C#/1.🎮Entrées et Périphériques🔌/1.🕹️Gestion d'entrées de périphériques🎛️/Actions/Button/InputButtonAction.cs" id="2_okv5x"]
+[ext_resource type="Script" uid="uid://b8r4ghnunwb4q" path="res://addons/🛠Malette personnel C#/1.🎮Entrées et Périphériques🔌/1.🕹️Gestion d'entrées de périphériques🎛️/Actions/Analogics/InputAxisAction.cs" id="3_4mt7f"]
+[ext_resource type="Script" uid="uid://cx7otsc7b7vib" path="res://addons/🛠Malette personnel C#/1.🎮Entrées et Périphériques🔌/1.🕹️Gestion d'entrées de périphériques🎛️/Actions/Analogics/InputCircleAction.cs" id="4_rkjmm"]
+
+
+
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rkjmm"]
+texture = ExtResource("1_4mt7f")
+
+[sub_resource type="InputEventKey" id="InputEventKey_4mt7f"]
+device = -1
+keycode = 81
+unicode = 113
+
+[sub_resource type="InputEventKey" id="InputEventKey_rkjmm"]
+device = -1
+keycode = 68
+unicode = 100
+
+[sub_resource type="InputEventKey" id="InputEventKey_upxdl"]
+device = -1
+keycode = 81
+unicode = 113
+
+[sub_resource type="InputEventKey" id="InputEventKey_sqgji"]
+device = -1
+keycode = 68
+unicode = 100
+
+[sub_resource type="InputEventKey" id="InputEventKey_8lfh8"]
+device = -1
+keycode = 90
+unicode = 122
+
+[sub_resource type="InputEventKey" id="InputEventKey_vg0pn"]
+device = -1
+keycode = 83
+unicode = 115
+
+[sub_resource type="InputEventJoypadMotion" id="InputEventJoypadMotion_3jda4"]
+
+[sub_resource type="InputEventJoypadMotion" id="InputEventJoypadMotion_w61f8"]
+axis = 1
+
+[node name="TestInputControls" type="Node" unique_id=322328774]
+
+[node name="Control" type="Control" parent="." unique_id=72233926]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="Control" unique_id=1153058559]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 545.0
+offset_top = 287.0
+offset_right = -337.0
+offset_bottom = -164.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_rkjmm")
+
+[node name="PlayerInput" type="Node" parent="Control/Panel" unique_id=981496060]
+script = ExtResource("1_mop6v")
+metadata/_custom_type_script = "uid://cauy763m56plb"
+
+[node name="Jump" type="Node" parent="Control/Panel/PlayerInput" unique_id=1006941198]
+script = ExtResource("2_okv5x")
+metadata/_custom_type_script = "uid://c7fgkciydapxd"
+
+[node name="InputAxisAction" type="Node" parent="Control/Panel/PlayerInput" unique_id=1717228981]
+script = ExtResource("3_4mt7f")
+NegativeKey = SubResource("InputEventKey_4mt7f")
+PositiveKey = SubResource("InputEventKey_rkjmm")
+metadata/_custom_type_script = "uid://b8r4ghnunwb4q"
+
+[node name="InputCircleAction" type="Node" parent="Control/Panel/PlayerInput" unique_id=466004344]
+script = ExtResource("4_rkjmm")
+KeyAxisPrefabType = 1
+LeftKey = SubResource("InputEventKey_upxdl")
+RightKey = SubResource("InputEventKey_sqgji")
+UpKey = SubResource("InputEventKey_8lfh8")
+DownKey = SubResource("InputEventKey_vg0pn")
+JoyStickPrefabType = 0
+JoyAxisX = SubResource("InputEventJoypadMotion_3jda4")
+JoyAxisY = SubResource("InputEventJoypadMotion_w61f8")
+metadata/_custom_type_script = "uid://cx7otsc7b7vib"
+
+[connection signal="ButtonPressed" from="Control/Panel/PlayerInput/Jump" to="Control/Panel" method="hide"]
+[connection signal="ButtonReleased" from="Control/Panel/PlayerInput/Jump" to="Control/Panel" method="show"]
+[connection signal="CircleEmitted" from="Control/Panel/PlayerInput/InputCircleAction" to="Control/Panel" method="set_scale"]

@@ -1,0 +1,126 @@
+[gd_scene format=3 uid="uid://bqhwwchrtm8fb"]
+
+[ext_resource type="Script" uid="uid://b3m3dlwymkiec" path="res://🛠Malette personnel🧰/2.🎥Caméras/1.🎞️Gestion de caméra🎛️/VirtualCamera3D.cs" id="1_7kxgm"]
+[ext_resource type="Material" uid="uid://clldg0dm5cexr" path="res://👻Tears of Spirits/AquaMarine Texture.tres" id="1_cfgvc"]
+[ext_resource type="Script" uid="uid://cmh1qradklcnq" path="res://🛠Malette personnel🧰/3.🧍Personnage & Algorithme🧠/1.🧑Personnage/Player.cs" id="2_00u3o"]
+[ext_resource type="Script" uid="uid://cauy763m56plb" path="res://🛠Malette personnel🧰/1.🎮Entrées et Périphériques🔌/1.🕹️Gestion d'entrées de périphériques🎛️/Manager/PlayerInput.cs" id="3_poo68"]
+[ext_resource type="Script" uid="uid://ddx3fhmkoru83" path="res://🛠Malette personnel🧰/4.🌀Mouvement & Physique🫗/2.🦶Déplacement au sol d'objet/CharacterGroundMovement3D.cs" id="4_cfgvc"]
+[ext_resource type="Script" uid="uid://cx7otsc7b7vib" path="res://🛠Malette personnel🧰/1.🎮Entrées et Périphériques🔌/1.🕹️Gestion d'entrées de périphériques🎛️/Actions/Analogics/InputCircleAction.cs" id="4_poo68"]
+[ext_resource type="Script" uid="uid://c7fgkciydapxd" path="res://🛠Malette personnel🧰/1.🎮Entrées et Périphériques🔌/1.🕹️Gestion d'entrées de périphériques🎛️/Actions/Button/InputButtonAction.cs" id="5_cfgvc"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_m22rw"]
+sky_top_color = Color(0.17541438, 0.36214256, 1, 1)
+sky_horizon_color = Color(1.0588765e-06, 0.7401772, 0.8048776, 1)
+ground_bottom_color = Color(0.06652971, 0, 0.5479275, 1)
+ground_horizon_color = Color(0, 0.7445075, 0.773873, 1)
+
+[sub_resource type="Sky" id="Sky_c4hnx"]
+sky_material = SubResource("ProceduralSkyMaterial_m22rw")
+
+[sub_resource type="Environment" id="Environment_stja8"]
+background_mode = 2
+sky = SubResource("Sky_c4hnx")
+reflected_light_source = 2
+glow_enabled = true
+glow_bloom = 1.0
+volumetric_fog_albedo = Color(0.11373886, 0.30639842, 1, 1)
+volumetric_fog_emission = Color(0.04380209, 0.56938756, 0.7684869, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_o7v34"]
+material = ExtResource("1_cfgvc")
+size = Vector3(100, 1, 100)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bf0q8"]
+size = Vector3(30, 1, 30)
+
+[sub_resource type="Curve" id="Curve_7gaad"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_tirh7"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_5s5th"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bf0q8"]
+albedo_color = Color(0, 1, 1, 1)
+emission_enabled = true
+emission = Color(0, 0.56191474, 0.8699329, 1)
+refraction_enabled = true
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_7gaad"]
+material = SubResource("StandardMaterial3D_bf0q8")
+
+[node name="HubSanctuaire" type="Node3D" unique_id=1952225349]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1327850024]
+environment = SubResource("Environment_stja8")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1672052387]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=638108397]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0072717667, 0, 0.0251894)
+material_override = ExtResource("1_cfgvc")
+mesh = SubResource("BoxMesh_o7v34")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=2106573145]
+shape = SubResource("BoxShape3D_bf0q8")
+
+[node name="VirtualCamera3D" type="Camera3D" parent="." unique_id=605077835 node_paths=PackedStringArray("FollowTarget", "TargetNodes3D")]
+transform = Transform3D(0.38315034, 0.5324908, -0.75475127, -1.1920929e-07, 0.81710804, 0.5764846, 0.923686, -0.22088017, 0.31307527, -3.3464608, 4.5560513, 1.3881322)
+script = ExtResource("1_7kxgm")
+FollowTarget = NodePath("../Node/CharacterBody3D")
+FollowOffset = Vector3(-4.255, 3.25, 1.765)
+TargetNodes3D = [NodePath("../Node/CharacterBody3D")]
+SpeedCurve = SubResource("Curve_7gaad")
+metadata/_custom_type_script = "uid://b3m3dlwymkiec"
+
+[node name="Node" type="Node" parent="." unique_id=2037984669]
+script = ExtResource("2_00u3o")
+
+[node name="PlayerInput" type="Node" parent="Node" unique_id=1097847204]
+script = ExtResource("3_poo68")
+metadata/_custom_type_script = "uid://cauy763m56plb"
+
+[node name="Move" type="Node" parent="Node/PlayerInput" unique_id=1786968226]
+script = ExtResource("4_poo68")
+KeyAxisPrefabType = 1
+LeftKey = 81
+RightKey = 68
+UpKey = 90
+DownKey = 83
+metadata/_custom_type_script = "uid://cx7otsc7b7vib"
+
+[node name="Jump" type="Node" parent="Node/PlayerInput" unique_id=886265326]
+script = ExtResource("5_cfgvc")
+Key = 32
+JoyButton = 0
+metadata/_custom_type_script = "uid://c7fgkciydapxd"
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="Node" unique_id=470097580]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Node/CharacterBody3D" unique_id=359976250]
+mesh = SubResource("CapsuleMesh_tirh7")
+
+[node name="CharacterGroundMovement3D" type="Node" parent="Node/CharacterBody3D" unique_id=704194274]
+script = ExtResource("4_cfgvc")
+JumpVelocity = 17.61
+GravityRatio = 12.085
+maxSpeed = 10.025
+FactorSpeed = 9.715
+metadata/_custom_type_script = "uid://ddx3fhmkoru83"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Node/CharacterBody3D" unique_id=1438985145]
+shape = SubResource("CapsuleShape3D_5s5th")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1330769032]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.3587575, 2.8251355, -0.009613991)
+omni_range = 2.879
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1875080045]
+transform = Transform3D(1, 0, 0, 0, 0.49999997, -0.86602545, 0, 0.86602545, 0.49999997, 0, 5, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=517366770]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7, 0)
+mesh = SubResource("CylinderMesh_7gaad")
+
+[connection signal="CircleEmitted" from="Node/PlayerInput/Move" to="Node/CharacterBody3D/CharacterGroundMovement3D" method="MoveCharacter"]
+[connection signal="ButtonPressed" from="Node/PlayerInput/Jump" to="Node/CharacterBody3D/CharacterGroundMovement3D" method="Jump"]

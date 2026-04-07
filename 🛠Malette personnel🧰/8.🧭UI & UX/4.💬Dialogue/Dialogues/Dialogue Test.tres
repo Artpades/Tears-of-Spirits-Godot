@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://bvis52tpphora"]
+
+[ext_resource type="Script" uid="uid://bssgorv75yrf3" path="res://addons/🛠️GameplayToolkit🕹️/8.🧭UI & UX/7.💬Dialogue/DialogueLine.cs" id="1_hgese"]
+[ext_resource type="Script" uid="uid://b34f6s3dmeh08" path="res://addons/🛠️GameplayToolkit🕹️/8.🧭UI & UX/7.💬Dialogue/Dialogue.cs" id="1_v5niw"]
+
+[sub_resource type="Resource" id="Resource_kn6uk"]
+script = ExtResource("1_hgese")
+TextLine = "[reveal]Hé, salut toi![/reveal]"
+metadata/_custom_type_script = "uid://bssgorv75yrf3"
+
+[sub_resource type="Resource" id="Resource_c53lw"]
+script = ExtResource("1_hgese")
+TextLine = "[typewriter]J'ai entendu dire que tu était sous OQTF.[/typewriter]"
+metadata/_custom_type_script = "uid://bssgorv75yrf3"
+
+[sub_resource type="Resource" id="Resource_6nx5x"]
+script = ExtResource("1_hgese")
+TextLine = "[typewriter]Mais je sens que tu n'as rien avoir dans l'histoire de DanDaDan dans la parodie de ReTake.[/typewriter]"
+metadata/_custom_type_script = "uid://bssgorv75yrf3"
+
+[sub_resource type="Resource" id="Resource_yf5nk"]
+script = ExtResource("1_hgese")
+TextLine = "[typewriter]Je me souviens que dedans t'avais 10 minutes pour sortir du tunnel de mémé.[/typewriter]"
+metadata/_custom_type_script = "uid://bssgorv75yrf3"
+
+[sub_resource type="Resource" id="Resource_w0lek"]
+script = ExtResource("1_hgese")
+TextLine = "[typewriter]Enfin, peu importe, est-ce que tu as des papiers de comment faire du chiffrement voire de l'encryptage de données par couplement d'or et de platine ?[/typewriter]"
+metadata/_custom_type_script = "uid://bssgorv75yrf3"
+
+[resource]
+script = ExtResource("1_v5niw")
+DialogueTexts = [SubResource("Resource_kn6uk"), SubResource("Resource_c53lw"), SubResource("Resource_6nx5x"), SubResource("Resource_yf5nk"), SubResource("Resource_w0lek")]
+metadata/_custom_type_script = "uid://b34f6s3dmeh08"
