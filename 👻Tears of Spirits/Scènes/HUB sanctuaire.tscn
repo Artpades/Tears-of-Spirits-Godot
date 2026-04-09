@@ -45,7 +45,7 @@ colors = PackedColorArray(0.3254902, 0.2901961, 0.5568628, 1, 0.6156863, 0.93725
 noise_type = 3
 seed = 1064
 frequency = 0.015
-offset = Vector3(-2381.6233, -2381.6233, 0)
+offset = Vector3(5038.4736, 5038.4736, 0)
 domain_warp_enabled = true
 metadata/_preview_in_3d_space_ = true
 
@@ -216,7 +216,19 @@ lower_fade = 0.7917047
 distance_fade_enabled = true
 script = ExtResource("2_4qj2a")
 fastNoise = SubResource("FastNoiseLite_xtg75")
-offsetValue = -2381.6233
+offsetValue = 5038.4736
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="💡Lumière" unique_id=1974640190]
+transform = Transform3D(0.95881975, 0.28401536, 0, -0.28401536, 0.95881975, 0, 0, 0, 1, -0.69883513, 2.2571564, -2.7246099)
+mesh = SubResource("CylinderMesh_5s5th")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="💡Lumière" unique_id=2099321558]
+transform = Transform3D(0.95881975, 0.28401536, 0, -0.28401536, 0.95881975, 0, 0, 0, 1, -4.373483, 2.2571583, -2.2119813)
+mesh = SubResource("CylinderMesh_5s5th")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="💡Lumière" unique_id=1129078638]
+transform = Transform3D(0.95881975, 0.28401536, 0, -0.28401536, 0.95881975, 0, 0, 0, 1, -0.3585081, 2.2571564, -5.0163846)
+mesh = SubResource("CylinderMesh_5s5th")
 
 [node name="👩‍🦱Personnage" type="Node" parent="." unique_id=1559999449]
 
@@ -285,8 +297,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.616691, 0)
 curve = SubResource("Curve3D_cfgvc")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D" unique_id=1250404288]
-transform = Transform3D(-0.19184197, 0.422598, 0.885612, 0.8451452, -0.38738394, 0.36792624, 0.49863237, 0.819176, -0.28288078, 3.507093, -9.10847, -5.555629)
-progress = 93.89409
+transform = Transform3D(0.38443476, 0.9044345, -0.18416673, 0.032320987, 0.18619017, 0.9818291, 0.9224272, -0.38346002, 0.04235175, -2.7689795, -10.932306, 3.6612284)
+progress = 119.24622
 script = ExtResource("9_4qj2a")
 
 [node name="Whales" parent="👩‍🦱Personnage/Path3D/PathFollow3D" unique_id=2000594633 node_paths=PackedStringArray("playerAnimation") instance=ExtResource("10_qjf4t")]
@@ -428,8 +440,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.613922, 0.76776695, -1.0029
 curve = SubResource("Curve3D_lcx5q")
 
 [node name="PathFollower" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D2" unique_id=443230082]
-transform = Transform3D(0.9610324, -0.11503474, -0.25080302, 0.11051155, 0.9931948, -0.032102123, 0.25283113, 0.0031349391, 0.9673553, -2.4831965, -4.785023, -2.3281987)
-progress = 25.875391
+transform = Transform3D(-0.78319705, 0.5259703, 0.33115152, 0.61634475, 0.7259824, 0.3045693, -0.080229044, 0.4426968, -0.89290863, 6.2725, -5.777558, 1.4207194)
+progress = 10.000111
 script = ExtResource("9_4qj2a")
 MoveSpeed = 0.1
 metadata/_custom_type_script = "uid://brh4rr312sqdt"
@@ -440,8 +452,8 @@ metadata/_custom_type_script = "uid://brh4rr312sqdt"
 curve = SubResource("Curve3D_fcyvs")
 
 [node name="PathFollower" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D3" unique_id=1364896475]
-transform = Transform3D(-0.10410322, -0.13116969, -0.9857278, 0.1777841, 0.9726746, -0.14821318, 0.9783913, -0.19070207, -0.07795193, 1.6788436, 2.3816352, -5.776441)
-progress = 12.699724
+transform = Transform3D(-0.52400446, 0.6715593, 0.523565, 0.85088414, 0.3888091, 0.35287693, 0.033416193, 0.63048995, -0.7752807, 5.488573, 0.8072244, -2.6842155)
+progress = 21.155325
 script = ExtResource("9_4qj2a")
 metadata/_custom_type_script = "uid://brh4rr312sqdt"
 
@@ -451,8 +463,8 @@ metadata/_custom_type_script = "uid://brh4rr312sqdt"
 curve = SubResource("Curve3D_v2atj")
 
 [node name="PathFollower" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D4" unique_id=1123346794]
-transform = Transform3D(-0.78932124, -0.27637273, 0.5480115, -0.38782442, 0.91652143, -0.09636581, -0.47570255, -0.28863108, -0.8307379, 1.7126508, 1.5984517, 8.814857)
-progress = 4.7718296
+transform = Transform3D(-0.58127123, -0.24952897, -0.77432066, -0.16853046, 0.9679367, -0.18541981, 0.7958897, 0.022720259, -0.6047813, 2.8321278, 1.9435387, 10.331924)
+progress = 6.8740935
 script = ExtResource("9_4qj2a")
 metadata/_custom_type_script = "uid://brh4rr312sqdt"
 
@@ -463,8 +475,8 @@ transform = Transform3D(1.0000142, 0, 0, 0, 1.0000062, 0, 0, 0, 1.0000118, 0, 0,
 curve = SubResource("Curve3D_f44ck")
 
 [node name="PathFollower" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D5" unique_id=296307091]
-transform = Transform3D(0.78870034, 0.07806852, -0.6097187, -0.18294792, 0.97672284, -0.11159143, 0.5868444, 0.19957037, 0.7846542, 9.077892, -0.048109703, -1.0448017)
-progress = 4.943678
+transform = Transform3D(0.97784585, 0.086259775, 0.18993215, -0.058887932, 0.98746216, -0.14530519, -0.20011805, 0.13091846, 0.97083235, 9.332289, 0.21958433, -2.8418407)
+progress = 6.827823
 script = ExtResource("9_4qj2a")
 metadata/_custom_type_script = "uid://brh4rr312sqdt"
 
