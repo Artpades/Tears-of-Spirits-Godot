@@ -24,6 +24,8 @@ namespace GameplayToolkit.InputAndControls
         }
         public override void _Process(double delta)
         {
+            if(Engine.IsEditorHint()) return;
+
             bool isPressed = IsPressed = IsButtonPressed();
             if (isPressed && !_wasButtonPressed)
             {

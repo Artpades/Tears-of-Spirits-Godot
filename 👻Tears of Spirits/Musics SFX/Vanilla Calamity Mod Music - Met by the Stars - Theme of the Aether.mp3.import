@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dotb7t34j31h7"
+path="res://.godot/imported/Vanilla Calamity Mod Music - Met by the Stars - Theme of the Aether.mp3-2f5db1ba7b3d860637042d861f2868db.mp3str"
+
+[deps]
+
+source_file="res://👻Tears of Spirits/Musics SFX/Vanilla Calamity Mod Music - Met by the Stars - Theme of the Aether.mp3"
+dest_files=["res://.godot/imported/Vanilla Calamity Mod Music - Met by the Stars - Theme of the Aether.mp3-2f5db1ba7b3d860637042d861f2868db.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

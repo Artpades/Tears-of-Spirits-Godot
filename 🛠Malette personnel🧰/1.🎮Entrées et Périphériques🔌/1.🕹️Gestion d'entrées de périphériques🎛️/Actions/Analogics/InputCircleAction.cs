@@ -120,6 +120,7 @@ namespace GameplayToolkit.InputAndControls
 
         public override void _Process(double delta)
         {
+            if(Engine.IsEditorHint()) return;
             Vector2 current = GetVector2Axis();
             if (current.DistanceSquaredTo(_lastEmittedValue) < DirtyThreshold * DirtyThreshold) return;
             _lastEmittedValue = current;

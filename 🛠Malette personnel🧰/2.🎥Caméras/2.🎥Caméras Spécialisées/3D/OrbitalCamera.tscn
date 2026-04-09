@@ -1,16 +1,15 @@
 [gd_scene format=3 uid="uid://b7djrogh8qik7"]
 
-[ext_resource type="Script" uid="uid://bj0ahwjv2xq1l" path="res://addons/🛠️GameplayToolkit🕹️/2.🎥Caméras/2.🎥Caméras Spécialisées/3D/OrbitalCamera.cs" id="1_db81x"]
+[ext_resource type="Script" uid="uid://dbtk28eu7rh0c" path="res://🛠Malette personnel🧰/2.🎥Caméras/2.🎥Caméras Spécialisées/3D/OrbitalCamera.cs" id="1_n1meh"]
 
-[sub_resource type="Curve" id="Curve_p6c5t"]
+[sub_resource type="Curve" id="Curve_yfvjf"]
 
 [node name="OrbitalCamera" type="Node3D" unique_id=377523639]
 
 [node name="SpringArm3D" type="SpringArm3D" parent="." unique_id=22048952]
 
 [node name="OrbitalCamera" type="Camera3D" parent="SpringArm3D" unique_id=1672697971 node_paths=PackedStringArray("NodeParentOfCam", "Arm3D")]
-script = ExtResource("1_db81x")
+script = ExtResource("1_n1meh")
 NodeParentOfCam = NodePath("../..")
 Arm3D = NodePath("..")
-SpeedCurve = SubResource("Curve_p6c5t")
-metadata/_custom_type_script = "uid://bj0ahwjv2xq1l"
+SpeedCurve = SubResource("Curve_yfvjf")

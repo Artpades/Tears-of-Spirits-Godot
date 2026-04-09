@@ -18,6 +18,10 @@ config/icon="res://icon.svg"
 
 project/assembly_name="Tears of Spirits"
 
+[editor]
+
+movie_writer/disable_vsync=true
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/windoweditorplus/plugin.cfg")

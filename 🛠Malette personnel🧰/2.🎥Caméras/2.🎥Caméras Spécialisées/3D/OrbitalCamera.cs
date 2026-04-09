@@ -23,19 +23,26 @@ public partial class OrbitalCamera : VirtualCamera3D
         base._Ready();
         //CallDeferred(nameof(InitializeCam));
     }
+    private Vector3 _inputRot;
 
     public override void _Process(double delta)
     {
         base._Process(delta);
 
-        if (TargetNode != null)
-            NodeParentOfCam.GlobalPosition = TargetNode.GlobalPosition;
+        Arm3D.Rotation += _inputRot * Sensitivity;
+
+        // Clamp du pitch après application
+        Arm3D.Rotation = new Vector3(
+            Mathf.Clamp(Arm3D.Rotation.X, -Mathf.Pi / 2f, Mathf.Pi / 2f),
+            Arm3D.Rotation.Y,
+            Arm3D.Rotation.Z
+        );
+
+        if (TargetNode != null) NodeParentOfCam.GlobalPosition = TargetNode.GlobalPosition;
     }
 
     public void LookAround(Vector2 newDirection)
     {
-        Vector3 newPos = new(-newDirection.Y, -newDirection.X, 0f);
-        Arm3D.Rotation += newPos * Sensitivity;
+        _inputRot = new(-newDirection.Y, -newDirection.X, 0f);
     }
-
 }
