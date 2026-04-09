@@ -18,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://c8bfwwxac6joo" path="res://👻Tears of Spirits/Environnement Nature/Animaux/Feux Follet/Feu-follet2.tscn" id="13_pa2oy"]
 [ext_resource type="PackedScene" uid="uid://do6ryf8yi4wun" path="res://👻Tears of Spirits/Environnement Nature/Sols/Sol planté 2.tscn" id="14_pa2oy"]
 [ext_resource type="PackedScene" uid="uid://bu2rg5oime42t" path="res://👻Tears of Spirits/Environnement Nature/Sols/Sol planté 3.tscn" id="16_lcx5q"]
+[ext_resource type="PackedScene" uid="uid://dng62rmk52h6t" path="res://👻Tears of Spirits/Environnement Nature/Plants/Aliens/Alien Plant_001_gameasset.fbx" id="18_fcyvs"]
 
 [sub_resource type="Gradient" id="Gradient_5s5th"]
 offsets = PackedFloat32Array(0, 0.30494505)
@@ -45,7 +46,7 @@ colors = PackedColorArray(0.3254902, 0.2901961, 0.5568628, 1, 0.6156863, 0.93725
 noise_type = 3
 seed = 1064
 frequency = 0.015
-offset = Vector3(7260.1025, 7260.1025, 0)
+offset = Vector3(9429.782, 9429.782, 0)
 domain_warp_enabled = true
 metadata/_preview_in_3d_space_ = true
 
@@ -96,6 +97,14 @@ _data = {
 "tilts": PackedFloat32Array(0, 0)
 }
 point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_n6do2"]
+closed = true
+_data = {
+"points": PackedVector3Array(0.8612032, -0.22689414, -0.7638426, -0.8612032, 0.22689414, 0.7638426, -5.612062, -0.4893322, -9.177679, -0.5691209, 0.19450268, -0.11522436, 0.5691209, -0.19450268, 0.11522436, -6.665232, -0.37989786, -5.6747656, -0.9857836, 0.13259542, 0.9685545, 0.9857836, -0.13259542, -0.9685545, -2.9927278, -0.41915262, -4.9961467, 0.6079502, -0.8771982, -0.007745743, -0.6079502, 0.8771982, 0.007745743, -3.1454291, -0.47372675, -8.496872),
+"tilts": PackedFloat32Array(0, 0, 0, 0)
+}
+point_count = 4
 
 [sub_resource type="Gradient" id="Gradient_qjf4t"]
 colors = PackedColorArray(0, 0, 0.5568628, 1, 0, 1, 1, 1)
@@ -171,7 +180,7 @@ volumetric_fog_emission = Color(0.04380209, 0.56938756, 0.7684869, 1)
 [node name="🎥Caméras" type="Node" parent="." unique_id=2082424723]
 
 [node name="OrbitalCamera" parent="🎥Caméras" unique_id=377523639 instance=ExtResource("2_7gaad")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5810905, 2.445115, 3.5991797)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03709364, 2.4447134, 2.3639426)
 
 [node name="SpringArm3D" parent="🎥Caméras/OrbitalCamera" index="0" unique_id=22048952]
 transform = Transform3D(-0.67862415, -0.32955617, -0.6564006, 0, 0.8936876, -0.44868967, 0.73448557, -0.30449173, -0.606478, 0, 0, 0)
@@ -216,7 +225,7 @@ lower_fade = 0.7917047
 distance_fade_enabled = true
 script = ExtResource("2_4qj2a")
 fastNoise = SubResource("FastNoiseLite_xtg75")
-offsetValue = 7260.1025
+offsetValue = 9429.782
 
 [node name="MeshInstance3D6" type="MeshInstance3D" parent="💡Lumière" unique_id=1974640190]
 transform = Transform3D(0.95881975, 0.28401536, 0, -0.28401536, 0.95881975, 0, 0, 0, 1, -0.39159846, 2.2571564, -0.9722562)
@@ -279,7 +288,7 @@ JoyButton = 9
 metadata/_custom_type_script = "uid://c7fgkciydapxd"
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="👩‍🦱Personnage/Joueur" unique_id=470097580]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.5810905, 2.445115, 3.5991797)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03709364, 2.4447134, 2.3639426)
 metadata/_edit_group_ = true
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="👩‍🦱Personnage/Joueur/CharacterBody3D" unique_id=359976250]
@@ -297,8 +306,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.616691, 0)
 curve = SubResource("Curve3D_cfgvc")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D" unique_id=1250404288]
-transform = Transform3D(-0.53526384, -0.07644884, -0.84103787, -0.42962718, -0.83261645, 0.34910893, -0.7270588, 0.5482843, 0.41288337, -4.851612, -16.308842, -8.831402)
-progress = 26.249582
+transform = Transform3D(0.80175024, 0.52408826, 0.28676677, 0.54107296, -0.43354613, -0.72040397, -0.25326642, 0.7328561, -0.6312555, -4.958808, -9.837664, -2.9713273)
+progress = 103.27254
 script = ExtResource("9_4qj2a")
 
 [node name="Whales" parent="👩‍🦱Personnage/Path3D/PathFollow3D" unique_id=2000594633 node_paths=PackedStringArray("playerAnimation") instance=ExtResource("10_qjf4t")]
@@ -433,15 +442,12 @@ bones/62/rotation = Quaternion(0.093431994, 0.01253056, 0.17816763, 0.97947425)
 [node name="Feu-follet" parent="👩‍🦱Personnage" unique_id=259893968 instance=ExtResource("3_nlbxw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.248283, 0.9869, -2.0284607)
 
-[node name="FeuFollet2" parent="👩‍🦱Personnage" unique_id=2110125612 instance=ExtResource("13_pa2oy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.613922, 0.76776695, -1.0029771)
-
 [node name="Path3D2" type="Path3D" parent="👩‍🦱Personnage" unique_id=346254303]
 curve = SubResource("Curve3D_lcx5q")
 
 [node name="PathFollower" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D2" unique_id=443230082]
-transform = Transform3D(0.94234806, -0.09778204, 0.31960714, 0.08552287, 0.9948065, 0.052210107, -0.32310718, -0.021868922, 0.94595945, -2.1501067, -4.7069054, 0.19095361)
-progress = 23.301601
+transform = Transform3D(-0.5578436, -0.06645991, -0.82711065, -0.094249874, 0.9952525, -0.016407613, 0.82441455, 0.06881028, -0.56154376, 1.0857068, -4.3474836, -2.3286104)
+progress = 3.0894115
 script = ExtResource("9_4qj2a")
 MoveSpeed = 0.1
 metadata/_custom_type_script = "uid://brh4rr312sqdt"
@@ -452,8 +458,8 @@ metadata/_custom_type_script = "uid://brh4rr312sqdt"
 curve = SubResource("Curve3D_fcyvs")
 
 [node name="PathFollower" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D3" unique_id=1364896475]
-transform = Transform3D(0.16472112, 0.44878262, 0.87815475, 0.38576356, 0.79004407, -0.4761271, -0.90760416, 0.41724595, -0.04299433, 0.08900977, 1.9197222, 5.0803432)
-progress = 31.247223
+transform = Transform3D(-0.26020318, -0.07540198, -0.9624506, 0.086387575, 0.99096525, -0.10099327, 0.9615296, -0.109437004, -0.25137877, 4.7304068, 2.8096426, -5.280139)
+progress = 15.830118
 script = ExtResource("9_4qj2a")
 metadata/_custom_type_script = "uid://brh4rr312sqdt"
 
@@ -463,8 +469,8 @@ metadata/_custom_type_script = "uid://brh4rr312sqdt"
 curve = SubResource("Curve3D_v2atj")
 
 [node name="PathFollower" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D4" unique_id=1123346794]
-transform = Transform3D(0.84725827, 0.060138036, -0.5275042, 0.004663177, 0.9925233, 0.120646715, 0.5309027, -0.10469105, 0.84077495, 4.7387013, 2.1387234, 9.997641)
-progress = 9.382303
+transform = Transform3D(-0.70591265, -0.25610924, -0.66015786, -0.19311652, 0.9664506, -0.168443, 0.68125427, 0.008582486, -0.7318015, 1.8199072, 1.7213497, 9.513245)
+progress = 5.5485578
 script = ExtResource("9_4qj2a")
 metadata/_custom_type_script = "uid://brh4rr312sqdt"
 
@@ -475,13 +481,26 @@ transform = Transform3D(1.0000142, 0, 0, 0, 1.0000062, 0, 0, 0, 1.0000118, 0, 0,
 curve = SubResource("Curve3D_f44ck")
 
 [node name="PathFollower" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D5" unique_id=296307091]
-transform = Transform3D(0.8760561, 0.07187713, 0.4765014, -0.013808844, 0.9919854, -0.12425206, -0.48169234, 0.10228567, 0.87017727, 9.027392, 0.34853587, -3.7177753)
-progress = 7.7670717
+transform = Transform3D(0.21686822, 0.021062003, -0.97581714, -0.23431294, 0.9714941, -0.03110444, 0.9475085, 0.23542368, 0.21565562, 8.579307, -0.0938774, -0.7082)
+progress = 4.3290124
 script = ExtResource("9_4qj2a")
 metadata/_custom_type_script = "uid://brh4rr312sqdt"
 
 [node name="FeuFollet4" parent="👩‍🦱Personnage/Path3D5/PathFollower" unique_id=2034122229 instance=ExtResource("13_pa2oy")]
 transform = Transform3D(0.7791723, 0.007706662, -0.6270012, 0.05967416, 0.99464583, 0.08638237, 0.62420404, -0.104704745, 0.7744091, 0, 0, 0)
+
+[node name="Path3D6" type="Path3D" parent="👩‍🦱Personnage" unique_id=1689487957]
+curve = SubResource("Curve3D_n6do2")
+
+[node name="PathFollower" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D6" unique_id=1764508432]
+transform = Transform3D(0.68312997, 0.14798439, -0.7149313, -0.11517412, 0.98866105, 0.09459907, 0.7209474, 0.017720591, 0.692542, -2.9982708, -0.41839105, -4.990781)
+progress = 7.8579545
+script = ExtResource("9_4qj2a")
+MoveSpeed = 0.1
+metadata/_custom_type_script = "uid://brh4rr312sqdt"
+
+[node name="FeuFollet2" parent="👩‍🦱Personnage/Path3D6/PathFollower" unique_id=2110125612 instance=ExtResource("13_pa2oy")]
+transform = Transform3D(1.0000036, 0, 0, 0, 1.0000072, 0, 0, 0, 1.0000032, 0, 0, 0)
 
 [node name="🌍Environnement" type="Node" parent="." unique_id=1486920149]
 
@@ -529,8 +548,29 @@ transform = Transform3D(0.083333336, 0, 0, 0, 0.083333336, 0, 0, 0, 0.083333336,
 [node name="SolPlanté8" parent="🌍Environnement/Dôme" unique_id=1073243782 instance=ExtResource("14_pa2oy")]
 transform = Transform3D(0.083333336, 0, 0, 0, 0.083333336, 0, 0, 0, 0.083333336, 0.042981785, -0.6338301, -0.051922224)
 
+[node name="SolPlanté9" parent="🌍Environnement/Dôme" unique_id=27911794 instance=ExtResource("16_lcx5q")]
+transform = Transform3D(0.083333336, 0, 0, 0, 0.083333336, 0, 0, 0, 0.083333336, -0.22849308, -0.19227372, 0.7101497)
+
 [node name="WorldEnvironment" type="WorldEnvironment" parent="🌍Environnement" unique_id=1327850024]
 environment = SubResource("Environment_stja8")
+
+[node name="SolPlanté1" parent="🌍Environnement" unique_id=1365714820 instance=ExtResource("14_pa2oy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5378194, 3.298219, -5.739752)
+
+[node name="SolPlanté2" parent="🌍Environnement" unique_id=1076234635 instance=ExtResource("12_xtg75")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.989336, 0.98638004, 1.5861434)
+
+[node name="Alien Plant_001_gameasset" parent="🌍Environnement/SolPlanté2" unique_id=1554782441 instance=ExtResource("18_fcyvs")]
+transform = Transform3D(-0.09584573, 0, -0.9953962, 0, 1, 0, 0.9953962, 0, -0.09584573, 2.1547327, 1.1645856, 1.0269645)
+
+[node name="Alien Plant_001_gameasset2" parent="🌍Environnement/SolPlanté2" unique_id=1319723626 instance=ExtResource("18_fcyvs")]
+transform = Transform3D(-0.8526402, 0, -0.5224985, 0, 1, 0, 0.5224985, 0, -0.8526402, -0.024979591, 1.1645856, -0.7809701)
+
+[node name="Alien Plant_001_gameasset3" parent="🌍Environnement/SolPlanté2" unique_id=1306838234 instance=ExtResource("18_fcyvs")]
+transform = Transform3D(-0.80901694, 0, -0.58778536, 0, 1, 0, 0.58778536, 0, -0.80901694, 1.6663179, 1.1645854, 2.3781033)
+
+[node name="Alien Plant_001_gameasset4" parent="🌍Environnement/SolPlanté2" unique_id=864654873 instance=ExtResource("18_fcyvs")]
+transform = Transform3D(-0.10452851, 0, 0.9945219, 0, 1, 0, -0.9945219, 0, -0.10452851, -0.48287106, 1.1645854, 1.1135694)
 
 [node name="🔊Musique et SFX" type="Node" parent="." unique_id=924726693]
 
