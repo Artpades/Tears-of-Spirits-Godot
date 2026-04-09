@@ -7,6 +7,7 @@ using System;
 public partial class PathFollower : PathFollow3D
 {
 	[Export] public float MoveSpeed = 0.05f;
+	RandomNumberGenerator rng = new();
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{

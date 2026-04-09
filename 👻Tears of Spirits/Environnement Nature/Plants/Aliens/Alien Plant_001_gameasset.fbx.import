@@ -40,9 +40,9 @@ materials/extract_path=""
 _subresources={
 "materials": {
 "Alien Plant_001_gameasset_Mat_1": {
-"use_external/enabled": false,
-"use_external/fallback_path": "res://👻Tears of Spirits/Environnement Nature/Plants/Aliens/Alien Plant Texture.tres",
-"use_external/path": "uid://dyka7xbiycnqk"
+"use_external/enabled": true,
+"use_external/fallback_path": "res://👻Tears of Spirits/Environnement Nature/Plants/Aliens/Alien Plant 001 GameAsset/Alien Plant 001 Game Asset.tres",
+"use_external/path": "uid://6epgamsifk42"
 }
 }
 }

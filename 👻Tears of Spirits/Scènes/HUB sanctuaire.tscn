@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://cmh1qradklcnq" path="res://🛠Malette personnel🧰/3.🧍Personnage & Algorithme🧠/1.🧑Personnage/Player.cs" id="2_00u3o"]
 [ext_resource type="Script" uid="uid://dav8d8m5ww1nb" path="res://👻Tears of Spirits/Gameplay/Animation/DecalMarinEffect.cs" id="2_4qj2a"]
 [ext_resource type="PackedScene" uid="uid://b7djrogh8qik7" path="res://🛠Malette personnel🧰/2.🎥Caméras/2.🎥Caméras Spécialisées/3D/OrbitalCamera.tscn" id="2_7gaad"]
+[ext_resource type="PackedScene" uid="uid://bqds5rumcfn31" path="res://👻Tears of Spirits/Environnement Nature/Animaux/Feux Follet/Feu-follet.fbx" id="3_nlbxw"]
 [ext_resource type="Script" uid="uid://cauy763m56plb" path="res://🛠Malette personnel🧰/1.🎮Entrées et Périphériques🔌/1.🕹️Gestion d'entrées de périphériques🎛️/Manager/PlayerInput.cs" id="3_poo68"]
 [ext_resource type="Script" uid="uid://bvf8hs5uchnk4" path="res://🛠Malette personnel🧰/1.🎮Entrées et Périphériques🔌/1.🕹️Gestion d'entrées de périphériques🎛️/Actions/Mouse/InputMouseAction.cs" id="4_5s5th"]
 [ext_resource type="Script" uid="uid://cx7otsc7b7vib" path="res://🛠Malette personnel🧰/1.🎮Entrées et Périphériques🔌/1.🕹️Gestion d'entrées de périphériques🎛️/Actions/Analogics/InputCircleAction.cs" id="4_poo68"]
@@ -14,6 +15,7 @@
 [ext_resource type="Script" uid="uid://bts6smi7hrymy" path="res://👻Tears of Spirits/Gameplay/Animation/Animatior.cs" id="11_4qj2a"]
 [ext_resource type="PackedScene" uid="uid://onnfs8qfh6li" path="res://👻Tears of Spirits/Environnement Nature/Sols/Sol planté 1.tscn" id="12_xtg75"]
 [ext_resource type="PackedScene" uid="uid://dfv4fxak27noa" path="res://👻Tears of Spirits/Environnement Nature/Plants/DNB_Yellow-StylizedBush/terrainBush.fbx" id="13_nlbxw"]
+[ext_resource type="PackedScene" uid="uid://c8bfwwxac6joo" path="res://👻Tears of Spirits/Environnement Nature/Animaux/Feux Follet/Feu-follet2.tscn" id="13_pa2oy"]
 [ext_resource type="PackedScene" uid="uid://do6ryf8yi4wun" path="res://👻Tears of Spirits/Environnement Nature/Sols/Sol planté 2.tscn" id="14_pa2oy"]
 
 [sub_resource type="Gradient" id="Gradient_5s5th"]
@@ -42,7 +44,7 @@ colors = PackedColorArray(0.3254902, 0.2901961, 0.5568628, 1, 0.6156863, 0.93725
 noise_type = 3
 seed = 1064
 frequency = 0.015
-offset = Vector3(-9985.649, -9985.649, 0)
+offset = Vector3(-5250.2993, -5250.2993, 0)
 domain_warp_enabled = true
 metadata/_preview_in_3d_space_ = true
 
@@ -61,6 +63,22 @@ _data = {
 "tilts": PackedFloat32Array(0, 0, 0, 0, 0, 0)
 }
 point_count = 6
+
+[sub_resource type="Curve3D" id="Curve3D_lcx5q"]
+closed = true
+_data = {
+"points": PackedVector3Array(-2.5219617, -0.4947753, 0.80301476, 2.5219617, 0.4947753, -0.80301476, -1.771883, -4.6586614, -3.119197, -2.0981913, 1.1394639, -0.16469288, 2.0981913, -1.1394639, 0.16469288, 5.8873024, -5.3058853, 0.89523554, 0.82496357, -0.91127586, 0.3135004, -0.82496357, 0.91127586, -0.3135004, 0.9034338, -4.937409, 5.4954224),
+"tilts": PackedFloat32Array(0, 0, 0)
+}
+point_count = 3
+
+[sub_resource type="Curve3D" id="Curve3D_fcyvs"]
+closed = true
+_data = {
+"points": PackedVector3Array(0.9502659, 0.7711272, 2.9283543, -0.9502659, -0.7711272, -2.9283543, -6.8164206, 3.1934652, -0.9309554, -4.761237, 0.12566853, 1.6599355, 4.761237, -0.12566853, -1.6599355, -3.978518, 1.8535085, -5.225309, 1.953249, 2.3960848, -0.9461467, -1.953249, -2.3960848, 0.9461467, 6.577873, 1.8387803, -3.7939107, 2.2663157, -1.4262819, -0.67010593, -2.2663157, 1.4262819, 0.67010593, 0.55819106, 1.6461418, 5.0031238),
+"tilts": PackedFloat32Array(0, 0, 0, 0)
+}
+point_count = 4
 
 [sub_resource type="Gradient" id="Gradient_qjf4t"]
 colors = PackedColorArray(0, 0, 0.5568628, 1, 0, 1, 1, 1)
@@ -181,7 +199,7 @@ lower_fade = 0.7917047
 distance_fade_enabled = true
 script = ExtResource("2_4qj2a")
 fastNoise = SubResource("FastNoiseLite_xtg75")
-offsetValue = -9985.649
+offsetValue = -5250.2993
 
 [node name="👩‍🦱Personnage" type="Node" parent="." unique_id=1559999449]
 
@@ -216,7 +234,7 @@ metadata/_custom_type_script = "uid://cx7otsc7b7vib"
 [node name="Look-Mouse" type="Node" parent="👩‍🦱Personnage/Joueur/PlayerInput" unique_id=33548718]
 script = ExtResource("4_5s5th")
 MotionSensitivity = 0.1
-MotionThreshold = 0.3
+MotionThreshold = 0.2
 metadata/_custom_type_script = "uid://bvf8hs5uchnk4"
 
 [node name="DiveUp" type="Node" parent="👩‍🦱Personnage/Joueur/PlayerInput" unique_id=1137913289]
@@ -250,8 +268,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.616691, 0)
 curve = SubResource("Curve3D_cfgvc")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D" unique_id=1250404288]
-transform = Transform3D(0.5889359, -0.60132337, -0.5396916, 0.77093744, 0.61813176, 0.15255322, 0.24190398, -0.5059859, 0.82774484, -3.998479, -3.7559252, -6.3687005)
-progress = 78.07595
+transform = Transform3D(-0.5411242, 0.26175663, 0.7989798, -0.78849715, -0.48779204, -0.37421343, 0.29182777, -0.8326135, 0.4704182, -3.2450535, -19.201336, 1.2785659)
+progress = 6.684801
 script = ExtResource("9_4qj2a")
 
 [node name="Whales" parent="👩‍🦱Personnage/Path3D/PathFollow3D" unique_id=2000594633 node_paths=PackedStringArray("playerAnimation") instance=ExtResource("10_qjf4t")]
@@ -383,6 +401,41 @@ bones/61/scale = Vector3(1, 1.0000001, 1.0000001)
 bones/62/position = Vector3(1.2681874e-09, 0.007849863, 1.1383255e-10)
 bones/62/rotation = Quaternion(0.093431994, 0.01253056, 0.17816763, 0.97947425)
 
+[node name="Feu-follet" parent="👩‍🦱Personnage" unique_id=259893968 instance=ExtResource("3_nlbxw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.248283, 0.9869, -2.0284607)
+
+[node name="FeuFollet2" parent="👩‍🦱Personnage" unique_id=2110125612 instance=ExtResource("13_pa2oy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.613922, 0.76776695, -1.0029771)
+
+[node name="FeuFollet3" parent="👩‍🦱Personnage" unique_id=1038870566 instance=ExtResource("13_pa2oy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.163939, 2.5928645, 10.017268)
+
+[node name="Path3D2" type="Path3D" parent="👩‍🦱Personnage" unique_id=346254303]
+curve = SubResource("Curve3D_lcx5q")
+
+[node name="PathFollower" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D2" unique_id=443230082]
+transform = Transform3D(-0.30082485, 0.488784, 0.81871915, 0.700431, 0.6957879, -0.15804744, -0.64701307, 0.5259754, -0.55175453, 2.942466, -5.6748486, 4.537049)
+progress = 14.626397
+script = ExtResource("9_4qj2a")
+MoveSpeed = 0.1
+metadata/_custom_type_script = "uid://brh4rr312sqdt"
+
+[node name="FeuFollet4" parent="👩‍🦱Personnage/Path3D2/PathFollower" unique_id=26867850 instance=ExtResource("13_pa2oy")]
+
+[node name="FeuFollet4" parent="👩‍🦱Personnage" unique_id=2034122229 instance=ExtResource("13_pa2oy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.009783745, -0.33306313, -9.426502)
+
+[node name="Path3D3" type="Path3D" parent="👩‍🦱Personnage" unique_id=510640385]
+curve = SubResource("Curve3D_fcyvs")
+
+[node name="PathFollower" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D3" unique_id=1364896475]
+transform = Transform3D(-0.45757973, 0.77346, 0.43825498, 0.85774034, 0.5136685, -0.01101532, -0.23367524, 0.37091878, -0.89861846, 3.8317926, 0.30173606, 0.40843168)
+progress = 24.721958
+script = ExtResource("9_4qj2a")
+metadata/_custom_type_script = "uid://brh4rr312sqdt"
+
+[node name="FeuFollet2" parent="👩‍🦱Personnage/Path3D3/PathFollower" unique_id=492084030 instance=ExtResource("13_pa2oy")]
+
 [node name="🌍Environnement" type="Node" parent="." unique_id=1486920149]
 
 [node name="Dôme" type="StaticBody3D" parent="🌍Environnement" unique_id=1369064506]
@@ -424,12 +477,13 @@ environment = SubResource("Environment_stja8")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.412771, -2.430444, -7.1161666)
 
 [node name="SolPlanté2" parent="🌍Environnement" unique_id=1073243782 instance=ExtResource("14_pa2oy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.49043, -7.605961, 3.0649734)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5157814, -7.6059604, -0.62306666)
 
 [node name="🔊Musique et SFX" type="Node" parent="." unique_id=924726693]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="🔊Musique et SFX" unique_id=1796030281]
 stream = ExtResource("1_7gaad")
+pitch_scale = 0.93
 autoplay = true
 parameters/looping = true
 
@@ -443,4 +497,5 @@ parameters/looping = true
 
 [editable path="🎥Caméras/OrbitalCamera"]
 [editable path="👩‍🦱Personnage/Path3D/PathFollow3D/Whales"]
+[editable path="👩‍🦱Personnage/Feu-follet"]
 [editable path="🌍Environnement/Dôme/SolPlanté4/terrainBush"]

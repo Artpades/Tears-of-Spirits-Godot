@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://6epgamsifk42"]
+
+[ext_resource type="Texture2D" uid="uid://jupqs585vvkh" path="res://👻Tears of Spirits/Environnement Nature/Plants/Aliens/Alien Plant 001 GameAsset/Alien_Plant_001_gameasset_BaseColor.png" id="1_lu3xi"]
+[ext_resource type="Texture2D" uid="uid://crnuwqvm0qs6o" path="res://👻Tears of Spirits/Environnement Nature/Plants/Aliens/Alien Plant 001 GameAsset/Alien_Plant_001_gameasset_Metallic.png" id="2_nog0s"]
+[ext_resource type="Texture2D" uid="uid://cdio6ke5dqbpq" path="res://👻Tears of Spirits/Environnement Nature/Plants/Aliens/Alien Plant 001 GameAsset/Alien_Plant_001_gameasset_Normal.png" id="3_koe4b"]
+[ext_resource type="Texture2D" uid="uid://bmw7cr4tevblr" path="res://👻Tears of Spirits/Environnement Nature/Plants/Aliens/Alien Plant 001 GameAsset/Alien_Plant_001_gameasset_Roughness.png" id="4_x5tui"]
+
+[resource]
+albedo_texture = ExtResource("1_lu3xi")
+metallic = 1.0
+metallic_texture = ExtResource("2_nog0s")
+roughness_texture = ExtResource("4_x5tui")
+normal_enabled = true
+normal_texture = ExtResource("3_koe4b")

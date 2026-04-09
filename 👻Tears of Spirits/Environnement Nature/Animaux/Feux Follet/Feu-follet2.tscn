@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://c8bfwwxac6joo"]
+
+[ext_resource type="Material" uid="uid://dtevryjmejju6" path="res://👻Tears of Spirits/Environnement Nature/Animaux/Feux Follet/feu-follet intérieur.tres" id="1_rk1yt"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_dy0xy"]
+material = ExtResource("1_rk1yt")
+
+[sub_resource type="Gradient" id="Gradient_xdivj"]
+interpolation_mode = 2
+offsets = PackedFloat32Array(0, 0.61263734, 1)
+colors = PackedColorArray(0, 1, 1, 1, 0.40784314, 1, 1, 0.11764706, 0, 0.5058824, 1, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_h8qq8"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_f6yd4"]
+noise = SubResource("FastNoiseLite_h8qq8")
+color_ramp = SubResource("Gradient_xdivj")
+
+[sub_resource type="Gradient" id="Gradient_7id3t"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_6ms81"]
+gradient = SubResource("Gradient_7id3t")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n8tko"]
+transparency = 1
+albedo_texture = SubResource("NoiseTexture2D_f6yd4")
+roughness_texture = SubResource("GradientTexture1D_6ms81")
+emission_enabled = true
+emission = Color(0.10284742, 0.22380862, 1, 1)
+emission_energy_multiplier = 4.37
+
+[sub_resource type="SphereMesh" id="SphereMesh_yu2ie"]
+material = SubResource("StandardMaterial3D_n8tko")
+radius = 1.0
+height = 2.0
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_7eq4h"]
+emission_shape = 1
+emission_sphere_radius = 1.0
+direction = Vector3(0, 1, 0)
+spread = 180.0
+initial_velocity_max = 2.0
+gravity = Vector3(0, 0, 0)
+linear_accel_min = -2.2351742e-06
+linear_accel_max = -2.2351742e-06
+scale_min = 0.01
+scale_max = 0.5
+
+[sub_resource type="Gradient" id="Gradient_o6tiq"]
+colors = PackedColorArray(0.3155056, 0.8074798, 1, 1, 0.9931678, 0.56194264, 0.9327902, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_82ojx"]
+gradient = SubResource("Gradient_o6tiq")
+fill = 1
+fill_from = Vector2(1, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wgr5i"]
+shading_mode = 0
+albedo_texture = SubResource("GradientTexture2D_82ojx")
+
+[sub_resource type="SphereMesh" id="SphereMesh_mt43w"]
+material = SubResource("StandardMaterial3D_wgr5i")
+radius = 0.25
+height = 0.5
+
+[node name="FeuFollet2" type="Node3D" unique_id=2110125612]
+
+[node name="Intérieur" type="MeshInstance3D" parent="." unique_id=1714452417]
+mesh = SubResource("SphereMesh_dy0xy")
+
+[node name="Extérieur" type="MeshInstance3D" parent="." unique_id=149167156]
+mesh = SubResource("SphereMesh_yu2ie")
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="." unique_id=1356819268]
+amount = 25
+randomness = 1.0
+process_material = SubResource("ParticleProcessMaterial_7eq4h")
+draw_pass_1 = SubResource("SphereMesh_mt43w")
