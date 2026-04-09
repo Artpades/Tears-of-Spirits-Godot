@@ -47,15 +47,13 @@ colors = PackedColorArray(0.3254902, 0.2901961, 0.5568628, 1, 0.6156863, 0.93725
 noise_type = 3
 seed = 1064
 frequency = 0.015
-offset = Vector3(18768.637, 18768.637, 0)
+offset = Vector3(21104.064, 21104.064, 0)
 domain_warp_enabled = true
 metadata/_preview_in_3d_space_ = true
 
 [sub_resource type="NoiseTexture2D" id="NoiseTexture2D_nlbxw"]
 noise = SubResource("FastNoiseLite_xtg75")
 color_ramp = SubResource("Gradient_emccd")
-
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_tirh7"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_5s5th"]
 
@@ -229,7 +227,7 @@ lower_fade = 0.7917047
 distance_fade_enabled = true
 script = ExtResource("2_4qj2a")
 fastNoise = SubResource("FastNoiseLite_xtg75")
-offsetValue = 18768.637
+offsetValue = 21104.064
 
 [node name="MeshInstance3D6" type="MeshInstance3D" parent="💡Lumière" unique_id=1974640190]
 transform = Transform3D(0.95881975, 0.28401536, 0, -0.28401536, 0.95881975, 0, 0, 0, 1, -0.39076734, 2.2633972, -0.974133)
@@ -294,9 +292,6 @@ metadata/_custom_type_script = "uid://c7fgkciydapxd"
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03709364, 2.4447134, 2.3639426)
 metadata/_edit_group_ = true
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="👩‍🦱Personnage/Joueur/CharacterBody3D" unique_id=359976250]
-mesh = SubResource("CapsuleMesh_tirh7")
-
 [node name="CollisionShape3D" type="CollisionShape3D" parent="👩‍🦱Personnage/Joueur/CharacterBody3D" unique_id=1438985145]
 shape = SubResource("CapsuleShape3D_5s5th")
 
@@ -304,13 +299,16 @@ shape = SubResource("CapsuleShape3D_5s5th")
 script = ExtResource("9_5s5th")
 metadata/_custom_type_script = "uid://d23gkatbyhr6v"
 
+[node name="Feu-follet" parent="👩‍🦱Personnage/Joueur/CharacterBody3D" unique_id=259893968 instance=ExtResource("3_nlbxw")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
 [node name="Path3D" type="Path3D" parent="👩‍🦱Personnage" unique_id=800705376]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.616691, 0)
 curve = SubResource("Curve3D_cfgvc")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D" unique_id=1250404288]
-transform = Transform3D(-0.63315535, -0.46457207, 0.6207235, -0.07959757, -0.7565132, -0.65083736, 0.76988083, -0.46028277, 0.44319764, -7.795572, -15.442431, -1.4597837)
-progress = 13.217047
+transform = Transform3D(-0.6632081, -0.27797455, 0.69741946, -0.62548155, 0.7156851, -0.31184742, -0.410933, -0.6407198, -0.6509075, 4.4453716, -15.446386, 3.0449743)
+progress = 52.290485
 script = ExtResource("9_4qj2a")
 
 [node name="Whales" parent="👩‍🦱Personnage/Path3D/PathFollow3D" unique_id=2000594633 node_paths=PackedStringArray("playerAnimation") instance=ExtResource("10_qjf4t")]
@@ -442,15 +440,12 @@ bones/61/scale = Vector3(1, 1.0000001, 1.0000001)
 bones/62/position = Vector3(1.2681874e-09, 0.007849863, 1.1383255e-10)
 bones/62/rotation = Quaternion(0.093431994, 0.01253056, 0.17816763, 0.97947425)
 
-[node name="Feu-follet" parent="👩‍🦱Personnage" unique_id=259893968 instance=ExtResource("3_nlbxw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.248283, 0.9869, -2.0284607)
-
 [node name="Path3D2" type="Path3D" parent="👩‍🦱Personnage" unique_id=346254303]
 curve = SubResource("Curve3D_lcx5q")
 
 [node name="PathFollower" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D2" unique_id=443230082]
-transform = Transform3D(0.7711649, 0.0869183, 0.63045967, 0.05797841, 0.9767601, -0.20558427, -0.6337784, 0.19511448, 0.74831986, 0.49169305, -4.697592, 5.1206336)
-progress = 17.67623
+transform = Transform3D(-0.5186032, 0.19054112, -0.833342, -0.09587549, 0.9555678, 0.27816272, 0.8494532, 0.22418039, -0.47737166, 4.803163, -4.8400517, 0.50610346)
+progress = 7.809233
 script = ExtResource("9_4qj2a")
 MoveSpeed = 0.1
 metadata/_custom_type_script = "uid://brh4rr312sqdt"
@@ -461,8 +456,8 @@ metadata/_custom_type_script = "uid://brh4rr312sqdt"
 curve = SubResource("Curve3D_fcyvs")
 
 [node name="PathFollower" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D3" unique_id=1364896475]
-transform = Transform3D(-0.43219653, 0.76835763, 0.47171864, 0.8200751, 0.5523932, -0.14841697, -0.37467024, 0.3227437, -0.86899936, 2.8524897, 0.47618625, 2.3444993)
-progress = 26.902325
+transform = Transform3D(0.8806927, -0.048695046, 0.47087026, -0.006129731, 0.9932752, 0.114187725, -0.47334313, -0.103463806, 0.874613, -6.356901, 3.3982184, 0.12391423)
+progress = 39.93225
 script = ExtResource("9_4qj2a")
 metadata/_custom_type_script = "uid://brh4rr312sqdt"
 
@@ -472,8 +467,8 @@ metadata/_custom_type_script = "uid://brh4rr312sqdt"
 curve = SubResource("Curve3D_v2atj")
 
 [node name="PathFollower" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D4" unique_id=1123346794]
-transform = Transform3D(0.48116162, -0.06063933, -0.8743714, 0.018123953, 0.9979219, -0.059236594, 0.8762862, 0.01265686, 0.48133543, 4.0573626, 2.2100983, 10.825337)
-progress = 8.300883
+transform = Transform3D(0.4454972, 0.0006872188, 0.8951211, -0.33353615, 0.9279612, 0.16528761, -0.8306575, -0.3722382, 0.41370183, 4.934539, 1.768225, 8.207363)
+progress = 1.3218305
 script = ExtResource("9_4qj2a")
 metadata/_custom_type_script = "uid://brh4rr312sqdt"
 
@@ -484,8 +479,8 @@ transform = Transform3D(1.0000142, 0, 0, 0, 1.0000062, 0, 0, 0, 1.0000118, 0, 0,
 curve = SubResource("Curve3D_f44ck")
 
 [node name="PathFollower" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D5" unique_id=296307091]
-transform = Transform3D(0.9794799, 0.08654532, 0.18116693, -0.060304616, 0.9873267, -0.14563532, -0.19150719, 0.13173944, 0.9724535, 9.338301, 0.21487173, -2.8103695)
-progress = 6.795476
+transform = Transform3D(-0.87301505, -0.12500694, 0.47107744, -0.06433145, 0.98748434, 0.14283037, -0.48311764, 0.09440073, -0.87027705, 7.5711884, 0.31916434, -3.8278317)
+progress = 0.53735995
 script = ExtResource("9_4qj2a")
 metadata/_custom_type_script = "uid://brh4rr312sqdt"
 
@@ -496,8 +491,8 @@ transform = Transform3D(0.7791723, 0.007706662, -0.6270012, 0.05967416, 0.994645
 curve = SubResource("Curve3D_n6do2")
 
 [node name="PathFollower" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D6" unique_id=1764508432]
-transform = Transform3D(-0.88078916, 0.10174346, 0.4621171, 0.06666761, 0.9933871, -0.09165169, -0.46846446, -0.049924362, -0.8818981, -6.20651, -0.3518186, -8.350176)
-progress = 1.0337917
+transform = Transform3D(0.95781165, 0.22037268, 0.18362686, -0.24032487, 0.96591777, 0.094287485, -0.15661849, -0.13445762, 0.97830296, -2.5143847, -0.8596576, -7.3994904)
+progress = 10.444548
 script = ExtResource("9_4qj2a")
 MoveSpeed = 0.1
 metadata/_custom_type_script = "uid://brh4rr312sqdt"
@@ -601,7 +596,7 @@ parameters/looping = true
 [connection signal="ButtonReleased" from="👩‍🦱Personnage/Joueur/PlayerInput/DiveDown" to="👩‍🦱Personnage/Joueur/CharacterBody3D/CharacterBodySwimming3D" method="StopVertical"]
 
 [editable path="🎥Caméras/OrbitalCamera"]
+[editable path="👩‍🦱Personnage/Joueur/CharacterBody3D/Feu-follet"]
 [editable path="👩‍🦱Personnage/Path3D/PathFollow3D/Whales"]
-[editable path="👩‍🦱Personnage/Feu-follet"]
 [editable path="🌍Environnement/Dôme/SolPlanté4/terrainBush"]
 [editable path="🌍Environnement/Dôme/StaticBody3D/BookScene"]
