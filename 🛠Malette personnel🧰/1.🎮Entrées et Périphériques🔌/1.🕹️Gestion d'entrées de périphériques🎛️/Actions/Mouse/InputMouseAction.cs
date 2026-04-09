@@ -15,7 +15,7 @@ namespace GameplayToolkit.InputAndControls
         [Export(PropertyHint.Range, "0.1,5.0,0.1")]
         public float MotionSensitivity { get; set; } = 1.0f;
 
-        [Export(PropertyHint.Range, "0,10,0.1")]
+        [Export(PropertyHint.Range, "0,10,0.15")]
         public float MotionThreshold { get; set; } = 0.5f;
 
         [Export]
@@ -48,13 +48,14 @@ namespace GameplayToolkit.InputAndControls
                 _currentPressure = 0f;
             }
         }
-
+        
         public override void _Process(double delta)
         {
             if (Engine.IsEditorHint()) return;
             if (!_hasViewport) return;
-            if (!_mouseInsideViewport)
+            if (!_mouseInsideViewport) // ← AJOUT : skip si souris hors viewport
             {
+                // Émettre les signaux de "repos" une dernière fois si nécessaire
                 if (!_previousPosition.IsEqualApprox(Vector2.Zero))
                 {
                     EmitSignal(SignalName.MotionEmitted, Vector2.Zero);
@@ -83,7 +84,7 @@ namespace GameplayToolkit.InputAndControls
             {
                 EmitSignal(SignalName.MotionEmitted, currentMotion);
             }
-            else if (!_accumulatedMotion.IsZeroApprox()) // ← CHANGEMENT ICI
+            else if (_accumulatedMotion != Vector2.Zero)
             {
                 EmitSignal(SignalName.MotionEmitted, Vector2.Zero);
             }
