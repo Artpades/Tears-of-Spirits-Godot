@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bidn4updprywk"
-path="res://.godot/imported/M_Whale_Mixed_AO.png-fda164d2260aec9939dfa175cbba53e8.ctex"
+path="res://.godot/imported/M_Whale_Mixed_AO.png-8c588487052315f1c2c7183fedab3d0f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://👻Tears of Spirits/Environnement Nature/Plants/Animaux/Baleines/textures/M_Whale_Mixed_AO.png"
-dest_files=["res://.godot/imported/M_Whale_Mixed_AO.png-fda164d2260aec9939dfa175cbba53e8.ctex"]
+source_file="res://👻Tears of Spirits/Environnement Nature/Animaux/Baleines/textures/M_Whale_Mixed_AO.png"
+dest_files=["res://.godot/imported/M_Whale_Mixed_AO.png-8c588487052315f1c2c7183fedab3d0f.ctex"]
 
 [params]
 

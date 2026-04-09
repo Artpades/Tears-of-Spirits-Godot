@@ -15,7 +15,7 @@ namespace GameplayToolkit.InputAndControls
         [Export(PropertyHint.Range, "0.1,5.0,0.1")]
         public float MotionSensitivity { get; set; } = 1.0f;
 
-        [Export(PropertyHint.Range, "0,10,0.15")]
+        [Export(PropertyHint.Range, "0,10,0.1")]
         public float MotionThreshold { get; set; } = 0.5f;
 
         [Export]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cauiegylpo6ct"
-path="res://.godot/imported/M_Whale_Metallic.png-49e7ccdbdb48a6294f81720f933fc6a3.ctex"
+uid="uid://bn75bx6u6qyqh"
+path="res://.godot/imported/GroundSand005_GLOSS_2K.jpg-2934fd4ba4392592cc7b5da2448dd5c6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://👻Tears of Spirits/Environnement Nature/Plants/Animaux/Baleines/textures/M_Whale_Metallic.png"
-dest_files=["res://.godot/imported/M_Whale_Metallic.png-49e7ccdbdb48a6294f81720f933fc6a3.ctex"]
+source_file="res://👻Tears of Spirits/Environnement Nature/Sols/Sable Texture/GroundSand005_GLOSS_2K.jpg"
+dest_files=["res://.godot/imported/GroundSand005_GLOSS_2K.jpg-2934fd4ba4392592cc7b5da2448dd5c6.ctex"]
 
 [params]
 

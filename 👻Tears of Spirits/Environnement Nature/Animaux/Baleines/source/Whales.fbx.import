@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://d21yq0v1bn3p1"
-path="res://.godot/imported/Whales.fbx-cd6ab40b919a765743dfbcb7e60bc664.scn"
+path="res://.godot/imported/Whales.fbx-abf6cbc7b972dc372b4a50299b0469b7.scn"
 
 [deps]
 
-source_file="res://👻Tears of Spirits/Environnement Nature/Plants/Animaux/Baleines/source/Whales.fbx"
-dest_files=["res://.godot/imported/Whales.fbx-cd6ab40b919a765743dfbcb7e60bc664.scn"]
+source_file="res://👻Tears of Spirits/Environnement Nature/Animaux/Baleines/source/Whales.fbx"
+dest_files=["res://.godot/imported/Whales.fbx-abf6cbc7b972dc372b4a50299b0469b7.scn"]
 
 [params]
 

@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://ddrjbmf4oodih"]
+
+[ext_resource type="Texture2D" uid="uid://bfci5d0jgword" path="res://👻Tears of Spirits/Environnement Nature/Plants/DNB_Yellow-StylizedBush/DNB_stylizedBush-diffuse.png" id="1_qm64n"]
+
+[resource]
+transparency = 1
+cull_mode = 2
+albedo_texture = ExtResource("1_qm64n")
+emission_enabled = true
+emission = Color(0.9908207, 0.09010691, 0.68365985, 1)
+emission_texture = ExtResource("1_qm64n")

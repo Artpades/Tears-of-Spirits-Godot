@@ -1,0 +1,13 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://bty802u6gr587"]
+
+[ext_resource type="Texture2D" uid="uid://ct1iguq261nms" path="res://👻Tears of Spirits/Environnement Nature/Sols/Sable Texture/GroundSand005_COL_2K.jpg" id="1_q3d27"]
+[ext_resource type="Texture2D" uid="uid://bwateamts67rx" path="res://👻Tears of Spirits/Environnement Nature/Sols/Sable Texture/GroundSand005_AO_2K.jpg" id="2_el5k3"]
+[ext_resource type="Texture2D" uid="uid://bhergkgpxmlnk" path="res://👻Tears of Spirits/Environnement Nature/Sols/Sable Texture/GroundSand005_NRM_2K.jpg" id="3_8rc1l"]
+
+[resource]
+albedo_texture = ExtResource("1_q3d27")
+normal_enabled = true
+normal_scale = 1.92
+normal_texture = ExtResource("3_8rc1l")
+ao_enabled = true
+ao_texture = ExtResource("2_el5k3")

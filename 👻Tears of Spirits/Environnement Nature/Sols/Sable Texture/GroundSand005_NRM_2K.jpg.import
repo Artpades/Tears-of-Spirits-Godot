@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgdbu10yoj0xf"
-path.s3tc="res://.godot/imported/M_Whale_Normal_OpenGL.png-62b3e910fe1ce311912b7793bdd393ee.s3tc.ctex"
+uid="uid://bhergkgpxmlnk"
+path.s3tc="res://.godot/imported/GroundSand005_NRM_2K.jpg-87b5afd428f4f5d36a330fbb36b56d94.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://👻Tears of Spirits/Environnement Nature/Plants/Animaux/Baleines/textures/M_Whale_Normal_OpenGL.png"
-dest_files=["res://.godot/imported/M_Whale_Normal_OpenGL.png-62b3e910fe1ce311912b7793bdd393ee.s3tc.ctex"]
+source_file="res://👻Tears of Spirits/Environnement Nature/Sols/Sable Texture/GroundSand005_NRM_2K.jpg"
+dest_files=["res://.godot/imported/GroundSand005_NRM_2K.jpg-87b5afd428f4f5d36a330fbb36b56d94.s3tc.ctex"]
 
 [params]
 
@@ -27,7 +27,7 @@ compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=1
-roughness/src_normal="res://👻Tears of Spirits/Environnement Nature/Plants/Animaux/Baleines/textures/M_Whale_Normal_OpenGL.png"
+roughness/src_normal="res://👻Tears of Spirits/Environnement Nature/Sols/Sable Texture/GroundSand005_NRM_2K.jpg"
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2
