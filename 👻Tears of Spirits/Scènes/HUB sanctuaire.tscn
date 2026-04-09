@@ -45,7 +45,7 @@ colors = PackedColorArray(0.3254902, 0.2901961, 0.5568628, 1, 0.6156863, 0.93725
 noise_type = 3
 seed = 1064
 frequency = 0.015
-offset = Vector3(5038.4736, 5038.4736, 0)
+offset = Vector3(7260.1025, 7260.1025, 0)
 domain_warp_enabled = true
 metadata/_preview_in_3d_space_ = true
 
@@ -199,7 +199,7 @@ transform = Transform3D(0.95881975, 0.28401536, 0, -0.28401536, 0.95881975, 0, 0
 mesh = SubResource("CylinderMesh_5s5th")
 
 [node name="MeshInstance3D4" type="MeshInstance3D" parent="💡Lumière" unique_id=2009021076]
-transform = Transform3D(0.95881975, 0.28401536, 0, -0.28401536, 0.95881975, 0, 0, 0, 1, 5.4638, 2.2571583, -4.325962)
+transform = Transform3D(0.95881975, 0.28401536, 0, -0.28401536, 0.95881975, 0, 0, 0, 1, 3.95509, 2.2571583, -1.9892688)
 mesh = SubResource("CylinderMesh_5s5th")
 
 [node name="MeshInstance3D5" type="MeshInstance3D" parent="💡Lumière" unique_id=881875434]
@@ -216,18 +216,18 @@ lower_fade = 0.7917047
 distance_fade_enabled = true
 script = ExtResource("2_4qj2a")
 fastNoise = SubResource("FastNoiseLite_xtg75")
-offsetValue = 5038.4736
+offsetValue = 7260.1025
 
 [node name="MeshInstance3D6" type="MeshInstance3D" parent="💡Lumière" unique_id=1974640190]
-transform = Transform3D(0.95881975, 0.28401536, 0, -0.28401536, 0.95881975, 0, 0, 0, 1, -0.69883513, 2.2571564, -2.7246099)
+transform = Transform3D(0.95881975, 0.28401536, 0, -0.28401536, 0.95881975, 0, 0, 0, 1, -0.39159846, 2.2571564, -0.9722562)
 mesh = SubResource("CylinderMesh_5s5th")
 
 [node name="MeshInstance3D7" type="MeshInstance3D" parent="💡Lumière" unique_id=2099321558]
-transform = Transform3D(0.95881975, 0.28401536, 0, -0.28401536, 0.95881975, 0, 0, 0, 1, -4.373483, 2.2571583, -2.2119813)
+transform = Transform3D(0.95881975, 0.28401536, 0, -0.28401536, 0.95881975, 0, 0, 0, 1, -4.0662465, 2.2571583, -0.45962763)
 mesh = SubResource("CylinderMesh_5s5th")
 
 [node name="MeshInstance3D8" type="MeshInstance3D" parent="💡Lumière" unique_id=1129078638]
-transform = Transform3D(0.95881975, 0.28401536, 0, -0.28401536, 0.95881975, 0, 0, 0, 1, -0.3585081, 2.2571564, -5.0163846)
+transform = Transform3D(0.95881975, 0.28401536, 0, -0.28401536, 0.95881975, 0, 0, 0, 1, -0.05127144, 2.2571564, -3.264031)
 mesh = SubResource("CylinderMesh_5s5th")
 
 [node name="👩‍🦱Personnage" type="Node" parent="." unique_id=1559999449]
@@ -297,8 +297,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.616691, 0)
 curve = SubResource("Curve3D_cfgvc")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D" unique_id=1250404288]
-transform = Transform3D(0.38443476, 0.9044345, -0.18416673, 0.032320987, 0.18619017, 0.9818291, 0.9224272, -0.38346002, 0.04235175, -2.7689795, -10.932306, 3.6612284)
-progress = 119.24622
+transform = Transform3D(-0.53526384, -0.07644884, -0.84103787, -0.42962718, -0.83261645, 0.34910893, -0.7270588, 0.5482843, 0.41288337, -4.851612, -16.308842, -8.831402)
+progress = 26.249582
 script = ExtResource("9_4qj2a")
 
 [node name="Whales" parent="👩‍🦱Personnage/Path3D/PathFollow3D" unique_id=2000594633 node_paths=PackedStringArray("playerAnimation") instance=ExtResource("10_qjf4t")]
@@ -440,8 +440,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.613922, 0.76776695, -1.0029
 curve = SubResource("Curve3D_lcx5q")
 
 [node name="PathFollower" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D2" unique_id=443230082]
-transform = Transform3D(-0.78319705, 0.5259703, 0.33115152, 0.61634475, 0.7259824, 0.3045693, -0.080229044, 0.4426968, -0.89290863, 6.2725, -5.777558, 1.4207194)
-progress = 10.000111
+transform = Transform3D(0.94234806, -0.09778204, 0.31960714, 0.08552287, 0.9948065, 0.052210107, -0.32310718, -0.021868922, 0.94595945, -2.1501067, -4.7069054, 0.19095361)
+progress = 23.301601
 script = ExtResource("9_4qj2a")
 MoveSpeed = 0.1
 metadata/_custom_type_script = "uid://brh4rr312sqdt"
@@ -452,8 +452,8 @@ metadata/_custom_type_script = "uid://brh4rr312sqdt"
 curve = SubResource("Curve3D_fcyvs")
 
 [node name="PathFollower" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D3" unique_id=1364896475]
-transform = Transform3D(-0.52400446, 0.6715593, 0.523565, 0.85088414, 0.3888091, 0.35287693, 0.033416193, 0.63048995, -0.7752807, 5.488573, 0.8072244, -2.6842155)
-progress = 21.155325
+transform = Transform3D(0.16472112, 0.44878262, 0.87815475, 0.38576356, 0.79004407, -0.4761271, -0.90760416, 0.41724595, -0.04299433, 0.08900977, 1.9197222, 5.0803432)
+progress = 31.247223
 script = ExtResource("9_4qj2a")
 metadata/_custom_type_script = "uid://brh4rr312sqdt"
 
@@ -463,8 +463,8 @@ metadata/_custom_type_script = "uid://brh4rr312sqdt"
 curve = SubResource("Curve3D_v2atj")
 
 [node name="PathFollower" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D4" unique_id=1123346794]
-transform = Transform3D(-0.58127123, -0.24952897, -0.77432066, -0.16853046, 0.9679367, -0.18541981, 0.7958897, 0.022720259, -0.6047813, 2.8321278, 1.9435387, 10.331924)
-progress = 6.8740935
+transform = Transform3D(0.84725827, 0.060138036, -0.5275042, 0.004663177, 0.9925233, 0.120646715, 0.5309027, -0.10469105, 0.84077495, 4.7387013, 2.1387234, 9.997641)
+progress = 9.382303
 script = ExtResource("9_4qj2a")
 metadata/_custom_type_script = "uid://brh4rr312sqdt"
 
@@ -475,13 +475,13 @@ transform = Transform3D(1.0000142, 0, 0, 0, 1.0000062, 0, 0, 0, 1.0000118, 0, 0,
 curve = SubResource("Curve3D_f44ck")
 
 [node name="PathFollower" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D5" unique_id=296307091]
-transform = Transform3D(0.97784585, 0.086259775, 0.18993215, -0.058887932, 0.98746216, -0.14530519, -0.20011805, 0.13091846, 0.97083235, 9.332289, 0.21958433, -2.8418407)
-progress = 6.827823
+transform = Transform3D(0.8760561, 0.07187713, 0.4765014, -0.013808844, 0.9919854, -0.12425206, -0.48169234, 0.10228567, 0.87017727, 9.027392, 0.34853587, -3.7177753)
+progress = 7.7670717
 script = ExtResource("9_4qj2a")
 metadata/_custom_type_script = "uid://brh4rr312sqdt"
 
 [node name="FeuFollet4" parent="👩‍🦱Personnage/Path3D5/PathFollower" unique_id=2034122229 instance=ExtResource("13_pa2oy")]
-transform = Transform3D(-0.9759393, -0.15017582, 0.15809058, -0.12654623, 0.9805212, 0.15022503, -0.17757262, 0.12660564, -0.9759403, 0, 0, 0)
+transform = Transform3D(0.7791723, 0.007706662, -0.6270012, 0.05967416, 0.99464583, 0.08638237, 0.62420404, -0.104704745, 0.7744091, 0, 0, 0)
 
 [node name="🌍Environnement" type="Node" parent="." unique_id=1486920149]
 
