@@ -6,7 +6,7 @@ using System;
 public partial class DecalMarinEffect : Decal
 {
 	[Export] public FastNoiseLite fastNoise;
-	private float offsetValue = 0;
+	[Export] private float offsetValue = -10000;
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -18,7 +18,7 @@ public partial class DecalMarinEffect : Decal
 	{
 		if (fastNoise != null)
 		{
-			offsetValue += (float)delta;
+			offsetValue += (float)delta * 5;
 			fastNoise.Offset = new(offsetValue, offsetValue, 0f);
 
 		}
