@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://cbh5nll7yihkp"]
+
+[ext_resource type="PackedScene" uid="uid://dhnviydrbe033" path="res://👻Tears of Spirits/Environnement Nature/Sols/Grand Dôme.fbx" id="1_qnela"]
+
+[node name="D" type="Node3D" unique_id=432122114]
+
+[node name="Grand Dôme" parent="." unique_id=873238883 instance=ExtResource("1_qnela")]
+
+[editable path="Grand Dôme"]
