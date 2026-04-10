@@ -5,7 +5,7 @@
 
 [sub_resource type="Resource" id="Resource_ffs2b"]
 script = ExtResource("1_xm7vh")
-TextLine = "Dialogue du PNJ : Je te donne une quête, le tout en ne cachant pas son mépris."
+TextLine = " (Le personnage a constaté vos actions et votre volonté de rédemption, mais il ne peut vous pardonner car cela ne peut l'être, il est tout de même plus apaisé que aux débuts (peux vous donner des quêtes)"
 metadata/_custom_type_script = "uid://cg5oo1salixsg"
 
 [resource]
