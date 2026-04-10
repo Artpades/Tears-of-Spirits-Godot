@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Dialogue" format=3 uid="uid://d2k480su3w4qg"]
+
+[ext_resource type="Script" uid="uid://cg5oo1salixsg" path="res://🛠Malette personnel🧰/8.🧭UI & UX/4.💬Dialogue/DialogueLine.cs" id="1_xm7vh"]
+[ext_resource type="Script" uid="uid://bosqcsshnfmol" path="res://🛠Malette personnel🧰/8.🧭UI & UX/4.💬Dialogue/Dialogue.cs" id="1_yxw3r"]
+
+[sub_resource type="Resource" id="Resource_ffs2b"]
+script = ExtResource("1_xm7vh")
+TextLine = "Dialogue du PNJ : Je te donne une quête, le tout en ne cachant pas son mépris."
+metadata/_custom_type_script = "uid://cg5oo1salixsg"
+
+[resource]
+script = ExtResource("1_yxw3r")
+DialogueTexts = Array[Object]([SubResource("Resource_ffs2b")])
+metadata/_custom_type_script = "uid://bosqcsshnfmol"

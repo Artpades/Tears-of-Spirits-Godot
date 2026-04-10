@@ -17,7 +17,7 @@ namespace GameplayToolkit.MovementAndPhysics
 		[Export] public float VerticalSpeed = 4f;
 		[Export] public Camera3D Camera;             // optionnelle, fallback sur la caméra active
 
-		protected float _verticalInput;
+		public float _verticalInput;
 
 		// ─── Entrées verticales ─────────────────────────────────────────
 		public void Dive(float verticalInput) => _verticalInput = verticalInput;

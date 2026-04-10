@@ -1,0 +1,113 @@
+[gd_scene format=3 uid="uid://cwxfitl8n7csb"]
+
+[ext_resource type="Script" uid="uid://cmh1qradklcnq" path="res://🛠Malette personnel🧰/3.🧍Personnage & Algorithme🧠/1.🧑Personnage/Player.cs" id="1_xifcs"]
+[ext_resource type="Script" uid="uid://cauy763m56plb" path="res://🛠Malette personnel🧰/1.🎮Entrées et Périphériques🔌/1.🕹️Gestion d'entrées de périphériques🎛️/Manager/PlayerInput.cs" id="2_yrfjb"]
+[ext_resource type="Script" uid="uid://cirlcejnukij5" path="res://🛠Malette personnel🧰/1.🎮Entrées et Périphériques🔌/1.🕹️Gestion d'entrées de périphériques🎛️/Manager/InputContext.cs" id="3_f51u4"]
+[ext_resource type="Script" uid="uid://cx7otsc7b7vib" path="res://🛠Malette personnel🧰/1.🎮Entrées et Périphériques🔌/1.🕹️Gestion d'entrées de périphériques🎛️/Actions/Analogics/InputCircleAction.cs" id="4_iqurc"]
+[ext_resource type="Script" uid="uid://bvf8hs5uchnk4" path="res://🛠Malette personnel🧰/1.🎮Entrées et Périphériques🔌/1.🕹️Gestion d'entrées de périphériques🎛️/Actions/Mouse/InputMouseAction.cs" id="5_3mtqr"]
+[ext_resource type="Script" uid="uid://c7fgkciydapxd" path="res://🛠Malette personnel🧰/1.🎮Entrées et Périphériques🔌/1.🕹️Gestion d'entrées de périphériques🎛️/Actions/Button/InputButtonAction.cs" id="6_mgdyh"]
+[ext_resource type="Script" uid="uid://d23gkatbyhr6v" path="res://👻Tears of Spirits/Gameplay/Mouvement/CharacterBodySwimming3D.cs" id="7_13n7o"]
+[ext_resource type="PackedScene" uid="uid://bqds5rumcfn31" path="res://👻Tears of Spirits/Environnement Nature/Animaux/Feux Follet/Feu-follet.fbx" id="8_c447o"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_5s5th"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_dtfy1"]
+size = Vector3(1.335, 1.298, 1.431)
+
+[node name="Joueur" type="Node" unique_id=850079263 node_paths=PackedStringArray("PlayerInput", "swimming3D")]
+script = ExtResource("1_xifcs")
+PlayerInput = NodePath("PlayerInput")
+swimming3D = NodePath("CharacterBody3D/CharacterBodySwimming3D")
+
+[node name="PlayerInput" type="Node" parent="." unique_id=2132489220]
+script = ExtResource("2_yrfjb")
+ChangeDetectorOnDeviceInput = true
+metadata/_custom_type_script = "uid://cauy763m56plb"
+
+[node name="ContextDéplacement" type="Node" parent="PlayerInput" unique_id=537844045]
+script = ExtResource("3_f51u4")
+metadata/_custom_type_script = "uid://cirlcejnukij5"
+
+[node name="Move" type="Node" parent="PlayerInput/ContextDéplacement" unique_id=92345855]
+script = ExtResource("4_iqurc")
+KeyAxisPrefabType = 1
+LeftKey = 81
+RightKey = 68
+UpKey = 90
+DownKey = 83
+JoyStickPrefabType = 0
+JoyAxisX = 0
+JoyAxisY = 1
+metadata/_custom_type_script = "uid://cx7otsc7b7vib"
+
+[node name="Look" type="Node" parent="PlayerInput/ContextDéplacement" unique_id=2063829229]
+script = ExtResource("4_iqurc")
+JoyStickPrefabType = 1
+JoyAxisX = 2
+JoyAxisY = 3
+metadata/_custom_type_script = "uid://cx7otsc7b7vib"
+
+[node name="Look-Mouse" type="Node" parent="PlayerInput/ContextDéplacement" unique_id=593908438]
+script = ExtResource("5_3mtqr")
+MotionSensitivity = 0.1
+metadata/_custom_type_script = "uid://bvf8hs5uchnk4"
+
+[node name="DiveUp" type="Node" parent="PlayerInput/ContextDéplacement" unique_id=1626672701]
+script = ExtResource("6_mgdyh")
+Key = 69
+JoyButton = 10
+metadata/_custom_type_script = "uid://c7fgkciydapxd"
+
+[node name="DiveDown" type="Node" parent="PlayerInput/ContextDéplacement" unique_id=235517277]
+script = ExtResource("6_mgdyh")
+Key = 65
+JoyButton = 9
+metadata/_custom_type_script = "uid://c7fgkciydapxd"
+
+[node name="Intéragir" type="Node" parent="PlayerInput/ContextDéplacement" unique_id=1343669989]
+script = ExtResource("6_mgdyh")
+Key = 70
+JoyButton = 2
+metadata/_custom_type_script = "uid://c7fgkciydapxd"
+
+[node name="Dialogue" type="Node" parent="PlayerInput" unique_id=1819880415]
+script = ExtResource("3_f51u4")
+metadata/_custom_type_script = "uid://cirlcejnukij5"
+
+[node name="ArrêterIntéragir" type="Node" parent="PlayerInput/Dialogue" unique_id=1738389579]
+script = ExtResource("6_mgdyh")
+Key = 70
+JoyButton = 2
+metadata/_custom_type_script = "uid://c7fgkciydapxd"
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=2066476970]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.03709364, 2.4447134, 2.3639426)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1301558229]
+shape = SubResource("CapsuleShape3D_5s5th")
+
+[node name="CharacterBodySwimming3D" type="Node" parent="CharacterBody3D" unique_id=1539979069]
+script = ExtResource("7_13n7o")
+metadata/_custom_type_script = "uid://d23gkatbyhr6v"
+
+[node name="Feu-follet" parent="CharacterBody3D" unique_id=259893968 instance=ExtResource("8_c447o")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="Area3D" type="Area3D" parent="CharacterBody3D" unique_id=505341617]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D/Area3D" unique_id=349950826]
+shape = SubResource("BoxShape3D_dtfy1")
+debug_color = Color(0.89855236, 0.00018520713, 0.7701994, 0.41960785)
+
+[connection signal="CircleEmitted" from="PlayerInput/ContextDéplacement/Move" to="CharacterBody3D/CharacterBodySwimming3D" method="MoveCharacter"]
+[connection signal="ButtonHeld" from="PlayerInput/ContextDéplacement/DiveUp" to="CharacterBody3D/CharacterBodySwimming3D" method="SwimUp"]
+[connection signal="ButtonReleased" from="PlayerInput/ContextDéplacement/DiveUp" to="CharacterBody3D/CharacterBodySwimming3D" method="StopVertical"]
+[connection signal="ButtonHeld" from="PlayerInput/ContextDéplacement/DiveDown" to="CharacterBody3D/CharacterBodySwimming3D" method="SwimDown"]
+[connection signal="ButtonReleased" from="PlayerInput/ContextDéplacement/DiveDown" to="CharacterBody3D/CharacterBodySwimming3D" method="StopVertical"]
+[connection signal="ButtonPressed" from="PlayerInput/ContextDéplacement/Intéragir" to="." method="SwitchToDialogueMode"]
+[connection signal="ButtonPressed" from="PlayerInput/Dialogue/ArrêterIntéragir" to="." method="SwitchToMoveMode"]
+[connection signal="area_entered" from="CharacterBody3D/Area3D" to="." method="OnEnteredAreaTriggered"]
+[connection signal="area_exited" from="CharacterBody3D/Area3D" to="." method="OnExitedAreaTriggered"]
+
+[editable path="CharacterBody3D/Feu-follet"]
