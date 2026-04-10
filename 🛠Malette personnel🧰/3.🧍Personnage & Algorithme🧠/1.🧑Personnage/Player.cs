@@ -1,3 +1,4 @@
+using GameplayToolkit.InputAndControls;
 using Godot;
 using System;
 namespace GameplayToolkit.CharacterAndAlgorithm
@@ -7,6 +8,11 @@ namespace GameplayToolkit.CharacterAndAlgorithm
 #endif
 	public partial class Player : Character
 	{
-		[Export] public InputAndControls.PlayerInput PlayerInput { get; set; }
+		[Export] public PlayerInput PlayerInput { get; set; }
+		[Export] public bool DialogueMode;
+		public void SwitchContext()
+		{
+			PlayerInput.GetChild<InputContext>(1).ContextActivated = DialogueMode;
+		}
 	}
 }
