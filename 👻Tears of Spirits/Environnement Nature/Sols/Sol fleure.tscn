@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ds85d2wbhvw5i"]
+
+[ext_resource type="PackedScene" uid="uid://c1km2ntlio4j4" path="res://👻Tears of Spirits/Environnement Nature/Plants/underwater-plant-pack/source/algue.fbx" id="2_tts2u"]
+
+[node name="SolPlanté1" type="Node3D" unique_id=319953725]
+
+[node name="algue" parent="." unique_id=1328976221 instance=ExtResource("2_tts2u")]
+transform = Transform3D(0.017364822, 0, 0.098480776, 0, 0.1, 0, -0.098480776, 0, 0.017364822, 0.17234626, 1.2139649, -0.35664082)
+
+[node name="algue3" parent="." unique_id=458488184 instance=ExtResource("2_tts2u")]
+transform = Transform3D(0.0593653, 0, -0.060833886, 0, 0.085, 0, 0.060833886, 0, 0.0593653, 1.2744218, 1.2139649, 0.17312717)
+
+[node name="algue4" parent="." unique_id=1063030355 instance=ExtResource("2_tts2u")]
+transform = Transform3D(0.05, 0, 0, 0, 0.049931478, -0.002616798, 0, 0.002616798, 0.049931478, 1.2744218, 1.2139649, 1.5365798)
+
+[node name="algue2" parent="." unique_id=1879033663 instance=ExtResource("2_tts2u")]
+transform = Transform3D(0.033561934, -0.0077483826, -0.055123124, 0.0146218175, 0.063334055, 0, 0.053710323, -0.012400004, 0.03444475, -0.9330579, 1.1691895, 0.31717008)

@@ -19,9 +19,14 @@
 [ext_resource type="PackedScene" uid="uid://do6ryf8yi4wun" path="res://👻Tears of Spirits/Environnement Nature/Sols/Sol planté 2.tscn" id="14_pa2oy"]
 [ext_resource type="PackedScene" uid="uid://bu2rg5oime42t" path="res://👻Tears of Spirits/Environnement Nature/Sols/Sol planté 3.tscn" id="16_lcx5q"]
 [ext_resource type="PackedScene" uid="uid://c8inkfn80oq2t" path="res://👻Tears of Spirits/Environnement Nature/Plants/underwater-plant-pack/source/plant_pack.fbx" id="18_fcyvs"]
+[ext_resource type="PackedScene" uid="uid://c1km2ntlio4j4" path="res://👻Tears of Spirits/Environnement Nature/Plants/underwater-plant-pack/source/algue.fbx" id="19_dtfy1"]
 [ext_resource type="PackedScene" uid="uid://dycjyp7qkfr8c" path="res://👻Tears of Spirits/Environnement Nature/Plants/lowpoly-marine-plant/source/plant_2_2.fbx" id="19_f44ck"]
 [ext_resource type="PackedScene" uid="uid://dkos0i5r53mac" path="res://👻Tears of Spirits/Environnement Nature/retest/parchment/source/pergaminho.fbx" id="20_0ihx3"]
 [ext_resource type="PackedScene" uid="uid://t4es8ugoaxmy" path="res://👻Tears of Spirits/Environnement Nature/Plants/test/maya2sketchfab.fbx" id="20_n6do2"]
+[ext_resource type="PackedScene" uid="uid://ds85d2wbhvw5i" path="res://👻Tears of Spirits/Environnement Nature/Sols/Sol fleure.tscn" id="22_dah21"]
+[ext_resource type="PackedScene" uid="uid://0ye4yfctmbia" path="res://👻Tears of Spirits/Environnement Nature/Plants/aloe-plant-set/source/pick rouge .fbx" id="24_14gmk"]
+[ext_resource type="PackedScene" uid="uid://74g60rrhb53k" path="res://👻Tears of Spirits/Environnement Nature/Plants/aloe-plant-set/source/chous.fbx" id="25_dah21"]
+[ext_resource type="PackedScene" uid="uid://caquykjsg86e4" path="res://👻Tears of Spirits/Environnement Nature/Plants/aloe-plant-set/source/pick.fbx" id="27_ydinj"]
 
 [sub_resource type="Gradient" id="Gradient_5s5th"]
 offsets = PackedFloat32Array(0, 0.30494505)
@@ -49,7 +54,7 @@ colors = PackedColorArray(0.3254902, 0.2901961, 0.5568628, 1, 0.6156863, 0.93725
 noise_type = 3
 seed = 1064
 frequency = 0.015
-offset = Vector3(10539.47, 10539.47, 0)
+offset = Vector3(14286.163, 14286.163, 0)
 domain_warp_enabled = true
 metadata/_preview_in_3d_space_ = true
 
@@ -220,7 +225,7 @@ lower_fade = 0.7917047
 distance_fade_enabled = true
 script = ExtResource("2_4qj2a")
 fastNoise = SubResource("FastNoiseLite_xtg75")
-offsetValue = 10539.47
+offsetValue = 14286.163
 
 [node name="👩‍🦱Personnage" type="Node" parent="." unique_id=1559999449]
 
@@ -289,8 +294,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 11.616691, 0)
 curve = SubResource("Curve3D_cfgvc")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D" unique_id=1250404288]
-transform = Transform3D(0.3087997, 0.9212508, -0.23590046, -0.028962031, 0.25702283, 0.9658165, 0.9505292, -0.2914567, 0.10606513, -1.6759562, -15.520007, 3.318892)
-progress = 0.7137827
+transform = Transform3D(0.28243545, 0.9581272, 0.043930538, -0.27792153, 0.037922654, 0.9596973, 0.9179834, -0.28330532, 0.2770344, -1.3161842, -18.135778, 2.862402)
+progress = 3.4036694
 script = ExtResource("9_4qj2a")
 
 [node name="Whales" parent="👩‍🦱Personnage/Path3D/PathFollow3D" unique_id=2000594633 node_paths=PackedStringArray("playerAnimation") instance=ExtResource("10_qjf4t")]
@@ -302,71 +307,71 @@ playerAnimation = NodePath("AnimationPlayer")
 transform = Transform3D(30.912558, -2.7024623e-06, 2.7024616e-06, -2.7024616e-06, -30.912558, -8.232512e-06, 2.7024623e-06, 8.232512e-06, -30.912558, -5.681661e-18, -0.025587926, 0.4145774)
 
 [node name="Skeleton3D" parent="👩‍🦱Personnage/Path3D/PathFollow3D/Whales/Armature" index="0" unique_id=805744046]
-bones/0/position = Vector3(2.3247465e-07, -0.0018971139, 0.0016690105)
-bones/0/rotation = Quaternion(0.7715757, 0.20510949, 0.12567444, 0.58890337)
+bones/0/position = Vector3(1.6231701e-07, -0.001324591, 0.0016685227)
+bones/0/rotation = Quaternion(0.7749969, 0.19496156, 0.124498844, 0.58810705)
 bones/1/position = Vector3(7.050224e-17, 0.010694251, -1.4514334e-10)
-bones/1/rotation = Quaternion(-0.05580435, -0.0028610507, -0.051369727, 0.9971153)
+bones/1/rotation = Quaternion(-0.055730715, -0.00053656654, -0.009608785, 0.9983995)
 bones/1/scale = Vector3(1, 0.9999999, 0.99999994)
 bones/2/position = Vector3(1.5584517e-16, 0.012359467, -8.3690116e-10)
-bones/2/rotation = Quaternion(-0.10456421, -9.902318e-09, -6.150864e-08, 0.9945182)
+bones/2/rotation = Quaternion(-0.22096415, -2.589331e-09, -6.2246805e-08, 0.975282)
 bones/3/position = Vector3(1.9822576e-16, 0.005092105, -5.729769e-10)
 bones/3/rotation = Quaternion(-0.12386085, 7.83187e-16, -2.9530725e-08, 0.9922996)
 bones/3/scale = Vector3(1, 1.0000001, 0.99999994)
 bones/5/position = Vector3(-2.8064953e-10, 0.0019173289, 0.0011771302)
 bones/5/rotation = Quaternion(0.73577106, 2.0983783e-14, 1.754214e-07, 0.67723036)
 bones/5/scale = Vector3(1, 0.99999994, 1)
-bones/7/rotation = Quaternion(0.08954279, -0.12064381, -0.5675836, 0.8094912)
-bones/7/scale = Vector3(1.1027263, 1.1027261, 1.1027262)
-bones/9/rotation = Quaternion(0.08913695, -0.12110339, -0.5697432, 0.80794877)
+bones/7/rotation = Quaternion(0.08972071, -0.12120051, -0.56804043, 0.8090677)
+bones/7/scale = Vector3(1.102568, 1.1025679, 1.1025679)
+bones/9/rotation = Quaternion(0.089305, -0.12097953, -0.5686211, 0.80873895)
 bones/9/scale = Vector3(0.99999994, 1, 0.9999998)
-bones/11/rotation = Quaternion(0.032968264, -0.08813735, -0.53991216, 0.8364447)
-bones/13/rotation = Quaternion(0.057367116, -0.10266912, -0.5538004, 0.8243017)
+bones/11/rotation = Quaternion(0.032889683, -0.088015795, -0.53973454, 0.8365753)
+bones/13/rotation = Quaternion(0.05743026, -0.10265704, -0.5533769, 0.8245831)
 bones/13/scale = Vector3(0.99999994, 1.0000002, 0.9999999)
-bones/15/rotation = Quaternion(0.08279403, 0.10653591, 0.56689984, 0.8126623)
-bones/15/scale = Vector3(1.1019803, 1.1019802, 1.1019806)
-bones/17/rotation = Quaternion(0.091395736, 0.1249781, 0.5691432, 0.8075292)
+bones/15/rotation = Quaternion(0.08973502, 0.12118952, 0.5679435, 0.809136)
+bones/15/scale = Vector3(1.1016848, 1.1016848, 1.101685)
+bones/17/rotation = Quaternion(0.089275666, 0.12100093, 0.56881654, 0.8086015)
 bones/17/scale = Vector3(0.99999976, 0.9999999, 1)
-bones/19/rotation = Quaternion(0.03211648, 0.0871597, 0.5400649, 0.8364818)
+bones/19/rotation = Quaternion(0.032581933, 0.08766353, 0.539796, 0.8365847)
 bones/19/scale = Vector3(0.9999998, 0.99999994, 0.9999999)
-bones/21/rotation = Quaternion(0.057727277, 0.103255615, 0.5537459, 0.82423985)
+bones/21/rotation = Quaternion(0.057575434, 0.102902375, 0.5533892, 0.8245342)
 bones/21/scale = Vector3(1, 1, 0.9999999)
 bones/23/position = Vector3(0.0031343533, 0.003562456, -0.00018796136)
-bones/23/rotation = Quaternion(0.12166759, 0.023979105, -0.74241245, 0.658366)
+bones/23/rotation = Quaternion(0.119315155, 0.013123964, -0.73099226, 0.67174554)
 bones/23/scale = Vector3(0.99999994, 0.9999999, 0.99999994)
 bones/25/position = Vector3(-0.0031343533, 0.003562456, -0.00018796265)
-bones/25/rotation = Quaternion(0.118099466, -0.022593847, 0.74836314, 0.6522996)
+bones/25/rotation = Quaternion(0.12593222, -0.010611424, 0.72121346, 0.6810872)
 bones/25/scale = Vector3(0.99999994, 0.9999999, 0.9999998)
 bones/27/position = Vector3(0.0035087483, 0.001345432, -0.00021279696)
-bones/27/rotation = Quaternion(0.17573835, -0.00942744, -0.7804972, 0.59987617)
+bones/27/rotation = Quaternion(0.16372912, -0.037519567, -0.7735812, 0.6110297)
 bones/27/scale = Vector3(1.0000001, 0.99999994, 1)
 bones/29/position = Vector3(-0.0035087483, 0.001345432, -0.00021279864)
-bones/29/rotation = Quaternion(0.16878898, 0.014578642, 0.7876853, 0.59232575)
+bones/29/rotation = Quaternion(0.18038689, 0.013973063, 0.7596697, 0.6246338)
 bones/29/scale = Vector3(1.0000001, 1, 1)
-bones/31/position = Vector3(1.1545216e-09, 0.008539449, -0.0052543534)
-bones/31/rotation = Quaternion(-0.36548975, -1.2162903e-07, 2.9244535e-07, 0.93081546)
+bones/31/position = Vector3(1.1545216e-09, 0.008665376, -0.0051300363)
+bones/31/rotation = Quaternion(-0.09225541, -2.4918052e-08, 2.1185802e-07, 0.99573547)
 bones/31/scale = Vector3(1, 1.0000001, 1.0000001)
 bones/32/position = Vector3(3.8415877e-18, 0.0050618057, 1.426144e-10)
 bones/32/rotation = Quaternion(0.0700009, -7.1229e-15, 1.668952e-08, 0.997547)
-bones/32/scale = Vector3(1.0298167, 1.0298169, 1.0298169)
-bones/33/position = Vector3(4.880558e-06, 0.0019684297, 0.0020506924)
+bones/32/scale = Vector3(1.0741982, 1.0741985, 1.0741985)
+bones/33/position = Vector3(5.6513245e-06, 0.00212233, 0.0019230186)
 bones/33/rotation = Quaternion(-0.07494323, 6.9584625e-15, -1.786785e-08, 0.9971878)
-bones/33/scale = Vector3(0.84036636, 0.8182768, 0.8182769)
+bones/33/scale = Vector3(0.38731182, 0.30253035, 0.30253023)
 bones/35/position = Vector3(3.8415877e-18, 0.0050618057, 1.426144e-10)
-bones/35/rotation = Quaternion(0.22739515, 0.06187531, 0.5859354, 0.77533394)
-bones/35/scale = Vector3(1.0017294, 1.0017294, 1.0017296)
+bones/35/rotation = Quaternion(0.2381685, 0.076136515, 0.58293957, 0.77308506)
+bones/35/scale = Vector3(1.0026588, 1.0026588, 1.0026591)
 bones/37/position = Vector3(1.3031785e-18, 0.0050618057, 1.426144e-10)
-bones/37/rotation = Quaternion(0.2273953, -0.061875533, -0.5859354, 0.7753339)
-bones/37/scale = Vector3(1.0017294, 1.0017294, 1.0017295)
-bones/39/rotation = Quaternion(0.023315016, -0.17198233, -0.42607954, 0.88788223)
+bones/37/rotation = Quaternion(0.23807824, -0.076123886, -0.58293927, 0.7731144)
+bones/37/scale = Vector3(1.0026588, 1.0026588, 1.002659)
+bones/39/rotation = Quaternion(0.044113994, -0.2115708, -0.41606018, 0.88328123)
 bones/39/scale = Vector3(0.99999994, 0.9999999, 1.0000001)
 bones/40/position = Vector3(6.5535466e-11, 0.005324133, -5.0326104e-10)
-bones/40/rotation = Quaternion(-0.02573346, 0.0064801835, -0.26987305, 0.96253026)
+bones/40/rotation = Quaternion(-0.020991182, 0.0051054573, -0.27202547, 0.9620476)
 bones/40/scale = Vector3(0.99999994, 1, 0.99999994)
 bones/41/position = Vector3(1.7826943e-09, 0.0073027313, 6.888202e-12)
-bones/41/rotation = Quaternion(-0.014189896, 0.01614391, -0.06946818, 0.9973526)
+bones/41/rotation = Quaternion(-0.009554929, 0.015813613, -0.07169417, 0.9972556)
 bones/41/scale = Vector3(1, 0.99999994, 1)
 bones/42/position = Vector3(-8.254174e-10, 0.007309674, -5.6543745e-11)
-bones/42/rotation = Quaternion(0.05853037, 0.009696876, -0.12812826, 0.9899815)
+bones/42/rotation = Quaternion(0.06285794, 0.009231764, -0.12954864, 0.98953575)
 bones/42/scale = Vector3(1, 1.0000001, 0.99999994)
 bones/43/position = Vector3(-1.2146949e-09, 0.007849864, -1.3046418e-10)
 bones/43/rotation = Quaternion(0.093431994, -0.012530566, -0.17816761, 0.97947425)
@@ -374,44 +379,44 @@ bones/43/scale = Vector3(1, 0.9999999, 1.0000001)
 bones/45/position = Vector3(7.050224e-17, 0.010694251, -1.4514334e-10)
 bones/45/rotation = Quaternion(-0.36469188, 6.0840215e-14, -8.694931e-08, 0.9311282)
 bones/46/position = Vector3(1.572589e-16, 0.0058467677, -9.381893e-10)
-bones/46/scale = Vector3(1.4091355, 1.4091356, 1.4091357)
+bones/46/scale = Vector3(1.5016346, 1.5016345, 1.5016347)
 bones/48/position = Vector3(-7.97152e-11, -0.0016335297, 0.00033434975)
-bones/48/rotation = Quaternion(0.9951898, -0.08175902, 0.013239789, 0.05232225)
+bones/48/rotation = Quaternion(0.9903369, -0.13244702, 0.021038199, -0.035328683)
 bones/48/scale = Vector3(1, 0.99999994, 1.0000024)
 bones/49/position = Vector3(1.3355286e-17, 0.00963452, -1.9323239e-10)
-bones/49/rotation = Quaternion(-0.0069964426, -5.015937e-09, -0.0047809477, 0.9999641)
+bones/49/rotation = Quaternion(-0.00095229177, -2.73827e-07, 0.002224546, 0.99999714)
 bones/49/scale = Vector3(1, 1.0000001, 0.99999994)
 bones/50/position = Vector3(3.9936387e-24, 0.006744163, 7.712666e-11)
-bones/50/rotation = Quaternion(-0.011982739, 1.3764161e-08, -0.007734045, 0.9998983)
+bones/50/rotation = Quaternion(-0.0018504502, -5.0116586e-07, 0.0020642981, 0.9999962)
 bones/50/scale = Vector3(1, 1, 1)
 bones/51/position = Vector3(-2.631341e-26, 0.0066700475, -3.7296555e-17)
-bones/51/rotation = Quaternion(-0.01719668, -5.691608e-09, -0.010520988, 0.99979675)
+bones/51/rotation = Quaternion(-0.003521325, -3.5436724e-07, 0.0009286617, 0.99999344)
 bones/51/scale = Vector3(1, 1, 1)
 bones/52/position = Vector3(-3.2342247e-25, 0.0066700527, -5.7462715e-17)
-bones/52/rotation = Quaternion(-0.02182901, -1.41265115e-08, -0.012710348, 0.999681)
+bones/52/rotation = Quaternion(-0.006200372, -6.509069e-07, -0.001332904, 0.99998)
 bones/52/scale = Vector3(1, 1.0000001, 0.9999999)
 bones/53/position = Vector3(3.6160077e-25, 0.0066700475, -4.8355417e-17)
-bones/53/rotation = Quaternion(-0.026815174, -1.9914714e-09, -0.015077908, 0.99952674)
+bones/53/rotation = Quaternion(-0.009910797, -1.8586313e-07, -0.004776246, 0.9999395)
 bones/53/scale = Vector3(1, 0.9999998, 1.0000001)
 bones/54/position = Vector3(-1.7436169e-24, 0.0066700475, -5.7462715e-17)
-bones/54/rotation = Quaternion(-0.03164405, 5.9084853e-09, -0.01723226, 0.99935067)
+bones/54/rotation = Quaternion(-0.014582606, -2.3481904e-07, -0.0092743095, 0.99985075)
 bones/54/scale = Vector3(1, 0.9999994, 0.99999964)
 bones/55/position = Vector3(8.922767e-25, 0.0066700475, 4.6403853e-17)
-bones/55/rotation = Quaternion(-0.03600044, -2.8789538e-08, -0.018972382, 0.99917173)
+bones/55/rotation = Quaternion(-0.020057283, -3.1656944e-07, -0.014468872, 0.9996941)
 bones/55/scale = Vector3(1, 1, 1)
 bones/56/position = Vector3(2.072535e-25, 0.0066700475, 1.8507331e-16)
 bones/56/rotation = Quaternion(-7.772693e-15, 1.2139877e-29, 8.166115e-31, 1)
 bones/56/scale = Vector3(1, 1, 1)
-bones/58/rotation = Quaternion(0.023317453, 0.17198704, 0.426079, 0.8878815)
+bones/58/rotation = Quaternion(0.044113886, 0.21157059, 0.41606033, 0.8832813)
 bones/58/scale = Vector3(0.99999994, 0.9999999, 0.99999994)
 bones/59/position = Vector3(-7.587789e-10, 0.0053241327, -8.176917e-11)
-bones/59/rotation = Quaternion(-0.025483921, -0.0064380975, 0.26978174, 0.96256274)
+bones/59/rotation = Quaternion(-0.015343124, -0.0035795786, 0.26954207, 0.96285975)
 bones/59/scale = Vector3(1, 0.99999994, 1.0000001)
 bones/60/position = Vector3(1.5345488e-09, 0.007302732, -1.05574494e-10)
-bones/60/rotation = Quaternion(-0.014429927, -0.016166087, 0.06904212, 0.9973784)
+bones/60/rotation = Quaternion(-0.0024051103, -0.015330616, 0.068490535, 0.9975311)
 bones/60/scale = Vector3(0.9999999, 1, 1)
 bones/61/position = Vector3(-2.1168045e-09, 0.0073096743, 2.1857285e-10)
-bones/61/rotation = Quaternion(0.058220956, -0.009677153, 0.12755044, 0.9900745)
+bones/61/rotation = Quaternion(0.06991259, -0.008134478, 0.12679885, 0.9894283)
 bones/61/scale = Vector3(0.9999999, 0.99999994, 1.0000002)
 bones/62/position = Vector3(1.2681874e-09, 0.007849863, 1.1383255e-10)
 bones/62/rotation = Quaternion(0.093431994, 0.01253056, 0.17816763, 0.97947425)
@@ -426,8 +431,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.613922, 0.76776695, -1.0029
 curve = SubResource("Curve3D_lcx5q")
 
 [node name="PathFollower" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D2" unique_id=443230082]
-transform = Transform3D(-0.44539875, 0.49030444, 0.7489522, 0.70735896, 0.7054418, -0.04117927, -0.54862416, 0.51149696, -0.66112816, 4.8620944, -5.9169607, 3.0574)
-progress = 12.188111
+transform = Transform3D(-0.28888685, 0.4890639, 0.82284296, 0.69886786, 0.6950826, -0.16778444, -0.6541096, 0.52664995, -0.5426731, 2.8044162, -5.647465, 4.6291037)
+progress = 14.794518
 script = ExtResource("9_4qj2a")
 MoveSpeed = 0.1
 metadata/_custom_type_script = "uid://brh4rr312sqdt"
@@ -438,8 +443,8 @@ metadata/_custom_type_script = "uid://brh4rr312sqdt"
 curve = SubResource("Curve3D_fcyvs")
 
 [node name="PathFollower" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D3" unique_id=1364896475]
-transform = Transform3D(-0.478302, 0.74743205, 0.46072146, 0.87151855, 0.46790338, 0.14567317, -0.10670899, 0.47126472, -0.87534446, 4.7084904, 0.42391607, -1.3481158)
-progress = 22.75314
+transform = Transform3D(-0.46660417, 0.76491344, 0.44370434, 0.8678694, 0.49235678, 0.06385934, -0.16964088, 0.41493297, -0.8937274, 4.2895226, 0.32812187, -0.52532566)
+progress = 23.681496
 script = ExtResource("9_4qj2a")
 metadata/_custom_type_script = "uid://brh4rr312sqdt"
 
@@ -449,8 +454,8 @@ metadata/_custom_type_script = "uid://brh4rr312sqdt"
 curve = SubResource("Curve3D_v2atj")
 
 [node name="PathFollower" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D4" unique_id=1123346794]
-transform = Transform3D(-0.5520857, -0.2565755, -0.79314995, -0.16237977, 0.96617573, -0.19953461, 0.8176543, 0.018633462, -0.57516617, 3.1357243, 2.0182893, 10.562547)
-progress = 7.2624097
+transform = Transform3D(-0.51250917, -0.25706878, -0.81912464, -0.15294681, 0.9660538, -0.20748846, 0.8447871, 0.018945295, -0.53450584, 3.3066914, 2.061568, 10.681151)
+progress = 7.4749074
 script = ExtResource("9_4qj2a")
 metadata/_custom_type_script = "uid://brh4rr312sqdt"
 
@@ -461,8 +466,8 @@ transform = Transform3D(1.0000142, 0, 0, 0, 1.0000062, 0, 0, 0, 1.0000118, 0, 0,
 curve = SubResource("Curve3D_f44ck")
 
 [node name="PathFollower" type="PathFollow3D" parent="👩‍🦱Personnage/Path3D5" unique_id=296307091]
-transform = Transform3D(0.9544949, 0.082559735, 0.28604457, -0.04343463, 0.9889518, -0.14051285, -0.294536, 0.12171037, 0.94769806, 9.249113, 0.2696974, -3.178031)
-progress = 7.1776414
+transform = Transform3D(0.93934554, 0.08036382, 0.3329693, -0.03598282, 0.989699, -0.13736448, -0.34063482, 0.11706742, 0.93271726, 9.199075, 0.29220864, -3.3303237)
+progress = 7.339403
 script = ExtResource("9_4qj2a")
 metadata/_custom_type_script = "uid://brh4rr312sqdt"
 
@@ -486,10 +491,7 @@ transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1
 shape = SubResource("ConcavePolygonShape3D_nlbxw")
 
 [node name="SolPlanté1" parent="🌍Environnement/Dôme" unique_id=2088099418 instance=ExtResource("12_xtg75")]
-transform = Transform3D(0.083333336, 0, 0, 0, 0.083333336, 0, 0, 0, 0.083333336, -0.96840113, -0.14340296, -0.26529074)
-
-[node name="SolPlanté2" parent="🌍Environnement/Dôme" unique_id=847911478 instance=ExtResource("12_xtg75")]
-transform = Transform3D(0.051190432, 0, 0.06575701, 0, 0.083333336, 0, -0.06575701, 0, 0.051190432, -0.045440536, -0.24230312, -0.84215856)
+transform = Transform3D(0.083333336, 0, 0, 0, 0.083333336, 0, 0, 0, 0.083333336, -0.9720985, -0.13917105, -0.26539567)
 
 [node name="SolPlanté3" parent="🌍Environnement/Dôme" unique_id=512766718 instance=ExtResource("12_xtg75")]
 transform = Transform3D(0.083333336, 0, 0, 0, 0.083333336, 0, 0, 0, 0.083333336, 0.2686355, 0.013189833, 0.8291892)
@@ -504,13 +506,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17710304, 1.1443453, -2.969
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.9570055, -0.38712966, 3.549945)
 
 [node name="SolPlanté5" parent="🌍Environnement/Dôme" unique_id=1422513137 instance=ExtResource("16_lcx5q")]
-transform = Transform3D(0.04599475, 0, -0.06949049, 0, 0.083333336, 0, 0.06949049, 0, 0.04599475, -0.64555836, -0.20534615, 0.3194339)
+transform = Transform3D(0.04599475, 0, -0.06949049, 0, 0.083333336, 0, 0.06949049, 0, 0.04599475, -0.64596564, -0.20534615, 0.31848556)
 
 [node name="SolPlanté6" parent="🌍Environnement/Dôme" unique_id=955615334 instance=ExtResource("16_lcx5q")]
 transform = Transform3D(0.083333336, 0, 0, 0, 0.083333336, 0, 0, 0, 0.083333336, -0.39220876, 0.29522884, 0.6131961)
 
 [node name="SolPlanté7" parent="🌍Environnement/Dôme" unique_id=1196919585 instance=ExtResource("14_pa2oy")]
-transform = Transform3D(0.083333336, 0, 0, 0, 0.083333336, 0, 0, 0, 0.083333336, -0.4510643, -0.202537, -0.5930139)
+transform = Transform3D(0.083333336, 0, 0, 0, 0.083333336, 0, 0, 0, 0.083333336, -0.44683218, -0.19008741, -0.5972458)
 
 [node name="SolPlanté8" parent="🌍Environnement/Dôme" unique_id=1073243782 instance=ExtResource("14_pa2oy")]
 transform = Transform3D(0.083333336, 0, 0, 0, 0.083333336, 0, 0, 0, 0.083333336, 0.042981785, -0.6338301, -0.051922224)
@@ -520,6 +522,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.122593015, 0.10771327, 0.85
 
 [node name="plant_pack" parent="🌍Environnement/Dôme/StaticBody3D" unique_id=1823276652 instance=ExtResource("18_fcyvs")]
 transform = Transform3D(0.005, 0, 0, 0, 0.005, 0, 0, 0, 0.005, 0, -0.0071416125, 0)
+
+[node name="plant_pack7" parent="🌍Environnement/Dôme/StaticBody3D" unique_id=1944215018 instance=ExtResource("18_fcyvs")]
+transform = Transform3D(0.005, 0, 0, 0, 0.005, 0, 0, 0, 0.005, -0.98499954, -0.16493689, -1.2667041)
+
+[node name="algue" parent="🌍Environnement/Dôme/StaticBody3D/plant_pack7" unique_id=1328976221 instance=ExtResource("19_dtfy1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28.228638, -2.4041138, 19.69344)
 
 [node name="plant_pack2" parent="🌍Environnement/Dôme/StaticBody3D" unique_id=2087097381 instance=ExtResource("18_fcyvs")]
 transform = Transform3D(0.005, 0, 0, 0, 0.005, 0, 0, 0, 0.005, 0.3476983, -0.0071416125, -0.11781305)
@@ -536,6 +544,66 @@ transform = Transform3D(0.005, 0, 0, 0, 0.005, 0, 0, 0, 0.005, 0.56478786, -0.14
 [node name="plant_pack3" parent="🌍Environnement/Dôme/StaticBody3D" unique_id=208018151 instance=ExtResource("18_fcyvs")]
 transform = Transform3D(0.005, 0, 0, 0, 0.005, 0, 0, 0, 0.005, 0.20188284, 0.023616925, 0.04738635)
 
+[node name="maya2sketchfab4" parent="🌍Environnement/Dôme/StaticBody3D" unique_id=118163244 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.63, 0, 0, 0, -0.63, 9.512736e-08, 0, -9.512736e-08, -0.63, 0.3940455, -0.34717935, -1.1261113)
+
+[node name="maya2sketchfab7" parent="🌍Environnement/Dôme/StaticBody3D" unique_id=864614456 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.63, 0, 0, 0, -0.63, 9.512737e-08, 0, -9.512737e-08, -0.63, 0.6181539, -0.34717935, -1.0285199)
+
+[node name="maya2sketchfab8" parent="🌍Environnement/Dôme/StaticBody3D" unique_id=754670728 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.63, 0, 0, 0, -0.63, 9.512737e-08, 0, -9.512737e-08, -0.63, 0.66824484, -0.34717935, -1.0232867)
+
+[node name="maya2sketchfab9" parent="🌍Environnement/Dôme/StaticBody3D" unique_id=251422035 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.63, 0, 0, 0, -0.63, 9.512737e-08, 0, -9.512737e-08, -0.63, -0.36310574, -0.39283413, -1.333917)
+
+[node name="maya2sketchfab16" parent="🌍Environnement/Dôme/StaticBody3D" unique_id=1411305814 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.63, 0, 0, 0, -0.63, 9.512737e-08, 0, -9.512737e-08, -0.63, -0.9134793, -0.41009402, -1.137804)
+
+[node name="maya2sketchfab17" parent="🌍Environnement/Dôme/StaticBody3D" unique_id=1152498022 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.63, 0, 0, 0, -0.63, 9.512737e-08, 0, -9.512737e-08, -0.63, -0.8881978, -0.41009402, -1.2070477)
+
+[node name="maya2sketchfab18" parent="🌍Environnement/Dôme/StaticBody3D" unique_id=229601372 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.7072982, 5.4097713e-09, -0.06188057, 0, -0.71, -6.207017e-08, -0.06188057, 6.183397e-08, -0.7072982, -0.91091263, -0.41009402, -1.1859801)
+
+[node name="maya2sketchfab19" parent="🌍Environnement/Dôme/StaticBody3D" unique_id=81397434 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.2004624, -1.752498e-08, -0.68111295, -6.207017e-08, -0.71, 0, -0.68111295, 5.954478e-08, -0.2004624, -0.70611167, 0.078708604, -0.39888245)
+
+[node name="maya2sketchfab22" parent="🌍Environnement/Dôme/StaticBody3D" unique_id=1207385974 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.2004624, -1.752498e-08, -0.68111295, -6.207017e-08, -0.71, 0, -0.68111295, 5.954478e-08, -0.2004624, -0.66975045, 0.05193615, -0.3442269)
+
+[node name="maya2sketchfab23" parent="🌍Environnement/Dôme/StaticBody3D" unique_id=1006748510 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.2004624, -1.752498e-08, -0.68111295, -6.207017e-08, -0.71, 0, -0.68111295, 5.954478e-08, -0.2004624, -0.5606077, 0.09330244, -0.43913788)
+
+[node name="maya2sketchfab20" parent="🌍Environnement/Dôme/StaticBody3D" unique_id=1401327970 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.32751605, -4.9453558e-08, -1.1128042, -1.7515512e-07, -1.1600001, 1.1861231e-14, -1.1128042, 1.6802875e-07, -0.32751605, -0.5525223, 0.15148075, -0.25885206)
+
+[node name="maya2sketchfab21" parent="🌍Environnement/Dôme/StaticBody3D" unique_id=740214981 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-0.13131575, -1.14799885e-08, -1.1525433, 1.0141042e-07, -1.1600001, 0, -1.1525433, -1.0075856e-07, 0.13131575, -0.6032163, 0.16273876, -0.2341538)
+
+[node name="maya2sketchfab11" parent="🌍Environnement/Dôme/StaticBody3D" unique_id=1128907116 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.63, 0, 0, 0, -0.63, 9.512737e-08, 0, -9.512737e-08, -0.63, -0.48054084, -0.43008435, -1.3725599)
+
+[node name="maya2sketchfab12" parent="🌍Environnement/Dôme/StaticBody3D" unique_id=380040803 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.63, 0, 0, 0, -0.63, 9.512737e-08, 0, -9.512737e-08, -0.63, -0.3577164, -0.43008435, -1.4574282)
+
+[node name="maya2sketchfab13" parent="🌍Environnement/Dôme/StaticBody3D" unique_id=1183367455 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.63, 0, 0, 0, -0.63, 9.512737e-08, 0, -9.512737e-08, -0.63, -0.63851607, -0.46693397, -1.5014931)
+
+[node name="maya2sketchfab10" parent="🌍Environnement/Dôme/StaticBody3D" unique_id=1161076251 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.97, 0, 0, 0, -0.97, 1.4646594e-07, 0, -1.4646594e-07, -0.97, -0.448842, -0.43669868, -1.51475)
+
+[node name="maya2sketchfab5" parent="🌍Environnement/Dôme/StaticBody3D" unique_id=2059242009 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.63, 0, 0, 0, -0.63, 9.512737e-08, 0, -9.512737e-08, -0.63, 0.35861233, -0.34717935, -1.1605244)
+
+[node name="maya2sketchfab6" parent="🌍Environnement/Dôme/StaticBody3D" unique_id=750884148 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.63, 0, 0, 0, -0.63, 9.512737e-08, 0, -9.512737e-08, -0.63, 0.37898323, -0.34717935, -1.2115145)
+
+[node name="maya2sketchfab14" parent="🌍Environnement/Dôme/StaticBody3D" unique_id=1717441756 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.63, 0, 0, 0, -0.63, 9.512737e-08, 0, -9.512737e-08, -0.63, 0.5531744, -0.3672912, -1.3738112)
+
+[node name="maya2sketchfab15" parent="🌍Environnement/Dôme/StaticBody3D" unique_id=1845857651 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.63, 0, 0, 0, -0.63, 9.512737e-08, 0, -9.512737e-08, -0.63, 0.52668047, -0.3672912, -1.3590912)
+
 [node name="StaticBody3D2" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=514584712]
 
 [node name="plant_2_2" parent="🌍Environnement/Dôme/StaticBody3D2" unique_id=962159245 instance=ExtResource("19_f44ck")]
@@ -545,13 +613,16 @@ transform = Transform3D(0.10000001, 0, 0, 0, 0.10000001, 0, 0, 0, 0.10000001, -0
 transform = Transform3D(0.10000001, 0, 0, 0, 0.10000001, 0, 0, 0, 0.10000001, -0.91147727, -0.038861364, -0.35518622)
 
 [node name="plant_2_4" parent="🌍Environnement/Dôme/StaticBody3D2" unique_id=1606271018 instance=ExtResource("19_f44ck")]
-transform = Transform3D(0.10000001, 0, 0, 0, 0.10000001, 0, 0, 0, 0.10000001, 0.06703648, -0.50546503, -0.11962109)
+transform = Transform3D(0.026723837, 0, 0.09636305, 0, 0.10000001, 0, -0.09636305, 0, 0.026723837, 0.06703648, -0.50546503, -0.11962109)
 
 [node name="plant_2_5" parent="🌍Environnement/Dôme/StaticBody3D2" unique_id=1647815888 instance=ExtResource("19_f44ck")]
-transform = Transform3D(0.10000001, 0, 0, 0, 0.10000001, 0, 0, 0, 0.10000001, 0.2605235, -0.50546503, -0.11962109)
+transform = Transform3D(-0.0615172, 0, -0.03340111, 0, 0.07, 0, 0.03340111, 0, -0.0615172, 0.2605235, -0.50546503, -0.11962109)
 
 [node name="plant_2_6" parent="🌍Environnement/Dôme/StaticBody3D2" unique_id=1886329368 instance=ExtResource("19_f44ck")]
-transform = Transform3D(0.10000001, 0, 0, 0, 0.10000001, 0, 0, 0, 0.10000001, 0.04978057, -0.50546503, 0.0760497)
+transform = Transform3D(0.030114241, 0, 0.057603233, 0, 0.065, 0, -0.057603233, 0, 0.030114241, 0.04978057, -0.50546503, 0.0760497)
+
+[node name="SolPlanté1" parent="🌍Environnement/Dôme/StaticBody3D2" unique_id=319953725 instance=ExtResource("22_dah21")]
+transform = Transform3D(0.10043829, 0.035567053, -0.017639209, -0.03605115, 0.10180529, 4.3895165e-10, 0.016627451, 0.005888087, 0.106549814, 0.19828883, -0.68615407, 0.016113196)
 
 [node name="StaticBody3D79" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1439698673]
 
@@ -565,11 +636,223 @@ transform = Transform3D(0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02, 0.20743656, 0.055112
 transform = Transform3D(0.014089713, 0, 0.014194367, 0.0023593593, 0.019721782, -0.0023419643, -0.01399691, 0.003324361, 0.013893711, 0.40431404, 0.064049795, 0.765774)
 
 [node name="pergaminho4" parent="🌍Environnement/Dôme/StaticBody3D79" unique_id=1496462661 instance=ExtResource("20_0ihx3")]
-transform = Transform3D(0.014089714, 0, 0.014194367, 0.0023593593, 0.019721782, -0.0023419643, -0.01399691, 0.003324361, 0.013893711, 0.41416728, 0.050646335, 0.7292522)
+transform = Transform3D(0.014089714, 0, 0.014194367, 0.0023593593, 0.019721782, -0.0023419643, -0.01399691, 0.003324361, 0.013893711, 0.41416728, 0.05500637, 0.7292522)
 
-[node name="StaticBody3D3" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=278104719]
+[node name="StaticBody3D80" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=488265969]
 
-[node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D3" unique_id=118163244 instance=ExtResource("20_n6do2")]
+[node name="maya2sketchfab4" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=984415508 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.005235906, -4.577374e-10, 1.4999909, -1.3113417e-07, -1.5, 0, 1.4999909, -1.3113336e-07, -0.005235906, 0.16677104, -1.1401224, -0.036228996)
+
+[node name="maya2sketchfab5" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=850823074 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.735192, -6.427253e-08, 1.3074756, -1.3113417e-07, -1.5, 3.4533906e-15, 1.3074756, -1.14303134e-07, -0.735192, 0.12914816, -1.1401224, -0.11796144)
+
+[node name="maya2sketchfab6" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=326372609 instance=ExtResource("20_n6do2")]
+transform = Transform3D(1.1881788, -1.03873894e-07, 0.91554946, -1.3113416e-07, -1.4999999, -1.989799e-15, 0.91554946, -8.003988e-08, -1.1881788, 0.07959708, -1.1401224, -0.14618948)
+
+[node name="maya2sketchfab7" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=883646188 instance=ExtResource("20_n6do2")]
+transform = Transform3D(1.4999886, -1.3113315e-07, -0.0058905683, -1.3113416e-07, -1.4999999, 7.1463016e-16, -0.0058905683, 5.1496823e-10, -1.4999886, -0.053661745, -1.1401224, -0.1691347)
+
+[node name="maya2sketchfab14" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1475101392 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-1.497999, 1.3095922e-07, -0.077458106, -1.3113421e-07, -1.5000004, 0, -0.077458106, 6.77161e-09, 1.497999, 0.023501985, -1.1401224, 0.1640197)
+
+[node name="maya2sketchfab15" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=681402169 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-1.3460145, 1.1767232e-07, 0.6620003, -1.3113417e-07, -1.5, -1.1671439e-16, 0.6620003, -5.7873926e-08, 1.3460145, 0.1071841, -1.1401224, 0.13095948)
+
+[node name="maya2sketchfab16" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1522928355 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-0.97965527, 8.564418e-08, 1.1359032, -1.3113416e-07, -1.4999999, -1.8448037e-15, 1.1359032, -9.9303826e-08, 0.97965527, 0.13810071, -1.1401224, 0.08303979)
+
+[node name="maya2sketchfab17" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1887206376 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-0.0768044, 6.7144397e-09, 1.4980329, -1.3113416e-07, -1.4999999, -1.9247557e-15, 1.4980329, -1.3096215e-07, 0.0768044, 0.16835682, -1.1401224, -0.048751563)
+
+[node name="maya2sketchfab8" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1721292633 instance=ExtResource("20_n6do2")]
+transform = Transform3D(1.2802719, -1.1192494e-07, -0.78160405, -1.3113417e-07, -1.4999999, -5.8455234e-15, -0.78160405, 6.832998e-08, -1.2802719, -0.13132255, -1.1401224, -0.118831694)
+
+[node name="maya2sketchfab9" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1213772467 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.8982212, -7.852496e-08, -1.2013324, -1.3113419e-07, -1.5000004, -8.6796245e-15, -1.2013324, 1.0502381e-07, -0.8982212, -0.14540395, -1.1401224, -0.07038923)
+
+[node name="maya2sketchfab10" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=511273668 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.19931886, -1.7425007e-08, -1.4866982, -1.3113416e-07, -1.4999999, -4.7470687e-15, -1.4866982, 1.2997128e-07, -0.19931886, -0.16452174, -1.1401224, 0.017532216)
+
+[node name="maya2sketchfab11" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=788523449 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-0.39830896, 3.482127e-08, -1.4461502, -1.3113416e-07, -1.4999999, 1.0371199e-14, -1.4461502, 1.2642647e-07, 0.39830896, -0.14192285, -1.1401224, 0.06989081)
+
+[node name="maya2sketchfab12" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=750776556 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-1.2017245, 1.0505805e-07, -0.8976969, -1.3113416e-07, -1.4999999, 5.08186e-15, -0.8976969, 7.847915e-08, 1.2017245, -0.049280606, -1.1401224, 0.16838858)
+
+[node name="maya2sketchfab13" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=282188415 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-1.4928901, 1.3051257e-07, -0.14587933, -1.3113419e-07, -1.4999999, -1.9654666e-14, -0.14587933, 1.27531905e-08, 1.4928901, 0.043016903, -1.1401224, 0.17492811)
+
+[node name="maya2sketchfab18" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1657302031 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.41725457, -3.647755e-08, 1.440798, -1.3113417e-07, -1.5, 0, 1.440798, -1.2595855e-07, -0.41725457, 0.14887199, -1.1401224, -0.07705829)
+
+[node name="maya2sketchfab19" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1279357463 instance=ExtResource("20_n6do2")]
+transform = Transform3D(1.066199, -9.321007e-08, 1.055092, -1.3113416e-07, -1.4999999, -5.835718e-17, 1.055092, -9.223906e-08, -1.066199, 0.09023639, -1.1401224, -0.14530447)
+
+[node name="maya2sketchfab20" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=2012375726 instance=ExtResource("20_n6do2")]
+transform = Transform3D(1.3940372, -1.2187061e-07, 0.55376863, -1.3113416e-07, -1.4999999, 3.5731534e-16, 0.55376863, -4.8411998e-08, -1.3940372, 0.034835678, -1.1401224, -0.15882826)
+
+[node name="maya2sketchfab21" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1470231792 instance=ExtResource("20_n6do2")]
+transform = Transform3D(1.4406157, -1.2594263e-07, -0.41788334, -1.3113416e-07, -1.4999999, 7.6313153e-16, -0.41788334, 3.6532516e-08, -1.4406157, -0.09959798, -1.1401224, -0.14426848)
+
+[node name="maya2sketchfab22" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=264843606 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-1.4616083, 1.2777788e-07, 0.33719712, -1.3113424e-07, -1.5000005, -1.1773273e-15, 0.33719712, -2.9478702e-08, 1.4616083, 0.066150606, -1.1401224, 0.15485275)
+
+[node name="maya2sketchfab23" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=9754397 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-1.1122614, 9.723699e-08, 1.0064167, -1.3113419e-07, -1.5000004, -1.8128934e-16, 1.0064167, -8.7983764e-08, 1.1122614, 0.13752526, -1.1401224, 0.10006833)
+
+[node name="maya2sketchfab24" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=625423855 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-0.62977237, 5.5056432e-08, 1.361392, -1.3113416e-07, -1.4999999, 6.331691e-15, 1.361392, -1.19016676e-07, 0.62977237, 0.15408245, -1.1401224, 0.045497335)
+
+[node name="maya2sketchfab25" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=852826379 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.33783492, -2.9534473e-08, 1.4614613, -1.3113417e-07, -1.4999999, -2.3596146e-15, 1.4614613, -1.2776496e-07, -0.33783492, 0.14695533, -1.1401224, -0.08953451)
+
+[node name="maya2sketchfab26" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=26520409 instance=ExtResource("20_n6do2")]
+transform = Transform3D(1.016181, -8.883739e-08, -1.103348, -1.3113414e-07, -1.4999999, -1.3031302e-14, -1.103348, 9.6457725e-08, -1.016181, -0.16044459, -1.1401224, -0.07455991)
+
+[node name="maya2sketchfab27" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=686300452 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.53349274, -4.6639382e-08, -1.4019226, -1.311342e-07, -1.5000005, -1.1668597e-14, -1.4019226, 1.2255994e-07, -0.53349274, -0.1606711, -1.1401224, -0.024112841)
+
+[node name="maya2sketchfab28" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1273923794 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-0.2169227, 1.8963986e-08, -1.4842317, -1.3113416e-07, -1.4999999, -4.2123236e-15, -1.4842317, 1.2975566e-07, 0.2169227, -0.15489064, -1.1401224, 0.06567723)
+
+[node name="maya2sketchfab29" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1944963707 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-0.78039694, 6.822446e-08, -1.281008, -1.3113416e-07, -1.4999999, 1.3892055e-14, -1.281008, 1.1198926e-07, 0.78039694, -0.11877295, -1.1401224, 0.10980934)
+
+[node name="maya2sketchfab30" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1965705928 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-1.4021553, 1.2258026e-07, -0.5328809, -1.3113416e-07, -1.4999999, 2.188623e-16, -0.5328809, 4.658593e-08, 1.4021553, -0.002629017, -1.1401224, 0.17905515)
+
+[node name="maya2sketchfab31" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1100212592 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-1.4754994, 1.2899221e-07, 0.2700063, -1.3113419e-07, -1.4999999, -1.8094086e-14, 0.2700063, -2.3604676e-08, 1.4754994, 0.08791193, -1.1401224, 0.15997817)
+
+[node name="maya2sketchfab32" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1404239108 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.5007054, -7.560443e-08, 1.7289575, -2.7179243e-07, -1.8, -4.2632566e-15, 1.7289575, -2.6106534e-07, -0.5007054, 0.14887199, -1.178132, -0.0770583)
+
+[node name="maya2sketchfab33" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=556947915 instance=ExtResource("20_n6do2")]
+transform = Transform3D(1.2794389, -1.931899e-07, 1.2661107, -2.7179243e-07, -1.8, -7.002863e-17, 1.2661107, -1.9117738e-07, -1.2794389, 0.09023639, -1.178132, -0.14530447)
+
+[node name="maya2sketchfab34" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=224568246 instance=ExtResource("20_n6do2")]
+transform = Transform3D(1.6728448, -2.5259254e-07, 0.66452235, -2.7179243e-07, -1.8, 4.6920352e-15, 0.66452235, -1.003401e-07, -1.6728448, 0.034835678, -1.178132, -0.15882826)
+
+[node name="maya2sketchfab35" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1164083470 instance=ExtResource("20_n6do2")]
+transform = Transform3D(1.7287388, -2.610323e-07, -0.50145996, -2.7179243e-07, -1.8, 1.2568752e-14, -0.50145996, 7.5718326e-08, -1.7287388, -0.09959798, -1.178132, -0.14426848)
+
+[node name="maya2sketchfab36" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1905687259 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-1.7539296, 2.6483605e-07, 0.4046365, -2.7179243e-07, -1.8, 2.3029969e-14, 0.4046365, -6.109839e-08, 1.7539296, 0.066150606, -1.178132, 0.15485275)
+
+[node name="maya2sketchfab37" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=564909286 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-1.3347137, 2.0153615e-07, 1.2077, -2.7179243e-07, -1.8, -1.10176066e-14, 1.2077, -1.8235764e-07, 1.3347137, 0.13752526, -1.178132, 0.10006833)
+
+[node name="maya2sketchfab38" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=499521367 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-0.7557265, 1.1411153e-07, 1.6336699, -2.7179243e-07, -1.8, -1.7981503e-14, 1.6336699, -2.466773e-07, 0.7557265, 0.15408245, -1.178132, 0.04549734)
+
+[node name="maya2sketchfab39" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=81332538 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.40540165, -6.121396e-08, 1.753753, -2.7179243e-07, -1.8, -2.2016185e-14, 1.753753, -2.6480933e-07, -0.40540165, 0.14695534, -1.178132, -0.08953451)
+
+[node name="maya2sketchfab40" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1210113976 instance=ExtResource("20_n6do2")]
+transform = Transform3D(1.2194171, -1.841269e-07, -1.3240173, -2.7179243e-07, -1.8, 5.2574532e-14, -1.3240173, 1.9992102e-07, -1.2194171, -0.16044459, -1.178132, -0.07455991)
+
+[node name="maya2sketchfab41" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1663565343 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.6401911, -9.666615e-08, -1.6823066, -2.7179243e-07, -1.8, -2.2528823e-14, -1.6823066, 2.5402124e-07, -0.6401911, -0.1606711, -1.178132, -0.024112841)
+
+[node name="maya2sketchfab42" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=248806378 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-0.26030728, 3.9305306e-08, -1.7810783, -2.7179243e-07, -1.8, 7.717095e-16, -1.7810783, 2.6893537e-07, 0.26030728, -0.15489064, -1.178132, 0.06567724)
+
+[node name="maya2sketchfab43" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=521172303 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-0.9364762, 1.4140397e-07, -1.5372093, -2.7179243e-07, -1.8, -3.825593e-16, -1.5372093, 2.3211217e-07, 0.9364762, -0.11877295, -1.178132, 0.10980934)
+
+[node name="maya2sketchfab44" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1231050868 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-1.6825857, 2.5406342e-07, -0.63945687, -2.7179243e-07, -1.8, 2.5842167e-14, -0.63945687, 9.655533e-08, 1.6825857, -0.002629017, -1.178132, 0.17905515)
+
+[node name="maya2sketchfab45" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=571746028 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-1.7705984, 2.6735296e-07, 0.32400745, -2.7179243e-07, -1.8, 2.4046132e-14, 0.32400745, -4.892375e-08, 1.7705984, 0.08791193, -1.178132, 0.15997818)
+
+[node name="maya2sketchfab46" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=2096923639 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.60223734, -9.093534e-08, 2.0795517, -3.269059e-07, -2.165, -1.3674001e-14, 2.0795517, -3.140036e-07, -0.60223734, 0.14887199, -1.056024, -0.0770583)
+
+[node name="maya2sketchfab47" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=303173298 instance=ExtResource("20_n6do2")]
+transform = Transform3D(1.5388807, -2.3236453e-07, 1.5228498, -3.269059e-07, -2.165, -1.717673e-14, 1.5228498, -2.2994388e-07, -1.5388807, 0.09023639, -1.056024, -0.14530447)
+
+[node name="maya2sketchfab48" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=845704038 instance=ExtResource("20_n6do2")]
+transform = Transform3D(2.0120606, -3.038127e-07, 0.7992727, -3.269059e-07, -2.165, 1.4189726e-14, 0.7992727, -1.2068685e-07, -2.0120606, 0.034835678, -1.056024, -0.15882826)
+
+[node name="maya2sketchfab49" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1586958173 instance=ExtResource("20_n6do2")]
+transform = Transform3D(2.079289, -3.1396388e-07, -0.6031448, -3.269059e-07, -2.165, 2.6797385e-14, -0.6031448, 9.107231e-08, -2.079289, -0.09959798, -1.056024, -0.14426848)
+
+[node name="maya2sketchfab50" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1219657005 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-2.1095874, 3.1853887e-07, 0.48668784, -3.269059e-07, -2.165, 3.6246186e-14, 0.48668784, -7.348778e-08, 2.1095874, 0.066150606, -1.056024, 0.15485275)
+
+[node name="maya2sketchfab51" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1973059203 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-1.6053638, 2.424032e-07, 1.4525948, -3.269059e-07, -2.165, -1.3251732e-14, 1.4525948, -2.1933572e-07, 1.6053638, 0.13752526, -1.056024, 0.10006833)
+
+[node name="maya2sketchfab52" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1517141414 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-0.9089711, 1.3725081e-07, 1.9649419, -3.269059e-07, -2.165, -2.3906563e-14, 1.9649419, -2.9669798e-07, 0.9089711, 0.15408245, -1.056024, 0.04549734)
+
+[node name="maya2sketchfab53" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=176762486 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.48760808, -7.362679e-08, 2.109375, -3.269059e-07, -2.165, -2.334686e-14, 2.109375, -3.185068e-07, -0.48760808, 0.14695534, -1.056024, -0.08953451)
+
+[node name="maya2sketchfab54" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1926625032 instance=ExtResource("20_n6do2")]
+transform = Transform3D(1.4666879, -2.2146372e-07, -1.5924985, -3.269059e-07, -2.165, 4.614298e-14, -1.5924985, 2.404606e-07, -1.4666879, -0.16044459, -1.056024, -0.07455991)
+
+[node name="maya2sketchfab55" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1844947199 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.7700076, -1.1626791e-07, -2.023441, -3.269059e-07, -2.165, -1.855092e-14, -2.023441, 3.055311e-07, -0.7700076, -0.1606711, -1.056024, -0.024112841)
+
+[node name="maya2sketchfab56" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1607571167 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-0.3130918, 4.727555e-08, -2.1422415, -3.269059e-07, -2.165, 9.28195e-16, -2.1422415, 3.2346946e-07, 0.3130918, -0.15489064, -1.056024, 0.06567724)
+
+[node name="maya2sketchfab57" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1330175727 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-1.1263728, 1.7007754e-07, -1.8489212, -3.269059e-07, -2.165, 2.745743e-14, -1.8489212, 2.7917935e-07, 1.1263728, -0.11877295, -1.056024, 0.10980934)
+
+[node name="maya2sketchfab58" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1869032802 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-2.0237768, 3.055818e-07, -0.7691245, -3.269059e-07, -2.165, 1.3989884e-14, -0.7691245, 1.1613459e-07, 2.0237768, -0.002629017, -1.056024, 0.17905515)
+
+[node name="maya2sketchfab59" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=460417761 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-2.1296365, 3.2156618e-07, 0.389709, -3.269059e-07, -2.165, 2.8922157e-14, 0.389709, -5.88444e-08, 2.1296365, 0.08791193, -1.056024, 0.15997818)
+
+[node name="maya2sketchfab60" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1163666475 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.08741371, -1.3199141e-08, 2.1632347, -3.2690593e-07, -2.1650004, -1.7497268e-14, 2.1632347, -3.2663942e-07, -0.08741371, 0.16506253, -0.949909, -0.04190449)
+
+[node name="maya2sketchfab61" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=307115630 instance=ExtResource("20_n6do2")]
+transform = Transform3D(1.1300167, -1.7062784e-07, 1.8466964, -3.2690593e-07, -2.1650004, -3.435346e-14, 1.8466964, -2.788434e-07, -1.1300167, 0.12445032, -0.949909, -0.12219348)
+
+[node name="maya2sketchfab62" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1004783292 instance=ExtResource("20_n6do2")]
+transform = Transform3D(1.7625164, -2.6613253e-07, 1.2572834, -3.269059e-07, -2.165, 2.446185e-14, 1.2572834, -1.8984451e-07, -1.7625164, 0.07389169, -0.949909, -0.14857447)
+
+[node name="maya2sketchfab63" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=414483 instance=ExtResource("20_n6do2")]
+transform = Transform3D(2.1631966, -3.266336e-07, -0.08835769, -3.269059e-07, -2.1650004, 1.2618029e-14, -0.08835769, 1.3341629e-08, -2.1631966, -0.06012284, -0.949909, -0.16658846)
+
+[node name="maya2sketchfab64" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1883534856 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-2.164764, 3.2687032e-07, -0.03196585, -3.269059e-07, -2.165, 4.7895512e-14, -0.03196585, 4.8267266e-09, 2.164764, 0.029277742, -0.949909, 0.16349283)
+
+[node name="maya2sketchfab65" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=850988776 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-1.9061798, 2.8782506e-07, 1.0265007, -3.269059e-07, -2.165, -4.0265205e-14, 1.0265007, -1.5499728e-07, 1.9061798, 0.11168339, -0.949909, 0.12736826)
+
+[node name="maya2sketchfab66" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1213486298 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-1.3525293, 2.0422624e-07, 1.6905292, -3.269059e-07, -2.165, -2.9197456e-14, 1.6905292, -2.5526288e-07, 1.3525293, 0.14081131, -0.949909, 0.07834073)
+
+[node name="maya2sketchfab67" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1417745881 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-0.031021517, 4.684111e-09, 2.1647778, -3.269059e-07, -2.165, -2.2090155e-14, 2.1647778, -3.2687237e-07, 0.031021517, 0.16618532, -0.949909, -0.05447703)
+
+[node name="maya2sketchfab68" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=505187324 instance=ExtResource("20_n6do2")]
+transform = Transform3D(1.8049877, -2.7254555e-07, -1.1955104, -3.269059e-07, -2.165, 6.330352e-14, -1.1955104, 1.8051708e-07, -1.8049877, -0.13587523, -0.949909, -0.11345492)
+
+[node name="maya2sketchfab69" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1264565600 instance=ExtResource("20_n6do2")]
+transform = Transform3D(1.2315893, -1.8596478e-07, -1.7805656, -3.269059e-07, -2.165, -2.0221916e-14, -1.7805656, 2.688579e-07, -1.2315893, -0.14816013, -0.949909, -0.06452599)
+
+[node name="maya2sketchfab70" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1177415242 instance=ExtResource("20_n6do2")]
+transform = Transform3D(0.20833373, -3.1457525e-08, -2.154953, -3.2690593e-07, -2.165, 4.822592e-15, -2.154953, 3.2538887e-07, -0.20833373, -0.16402164, -0.949909, 0.024040848)
+
+[node name="maya2sketchfab71" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1643056856 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-0.6514965, 9.837322e-08, -2.0646496, -3.269059e-07, -2.165, 2.864011e-14, -2.0646496, 3.117534e-07, 0.6514965, -0.13950673, -0.949909, 0.075530164)
+
+[node name="maya2sketchfab72" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=1721037 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-1.7811025, 2.6893906e-07, -1.2308121, -3.269059e-07, -2.1650004, 2.5679849e-14, -1.2308121, 1.8584748e-07, 1.7811025, -0.04329416, -0.949909, 0.17054352)
+
+[node name="maya2sketchfab73" parent="🌍Environnement/Dôme/StaticBody3D80" unique_id=155748325 instance=ExtResource("20_n6do2")]
+transform = Transform3D(-2.161038, 3.263076e-07, -0.13092534, -3.269059e-07, -2.165, 2.3888294e-14, -0.13092534, 1.9769194e-08, 2.161038, 0.04918176, -0.949909, 0.17367399)
+
+[node name="StaticBody3D3" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1950765882]
+
+[node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D3" unique_id=1194604928 instance=ExtResource("20_n6do2")]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.1223893, -0.040524535)
 
 [node name="maya2sketchfab2" parent="🌍Environnement/Dôme/StaticBody3D3" unique_id=1739594723 instance=ExtResource("20_n6do2")]
@@ -578,7 +861,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D3" unique_id=990635040 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D4" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=450164675]
+[node name="StaticBody3D4" type="Node3D" parent="🌍Environnement/Dôme" unique_id=531783827]
 transform = Transform3D(0.98613834, 0, -0.16592544, 0, 1, 0, 0.16592544, 0, 0.98613834, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D4" unique_id=659962924 instance=ExtResource("20_n6do2")]
@@ -590,7 +873,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D4" unique_id=1327128106 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D5" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=166192767]
+[node name="StaticBody3D5" type="Node3D" parent="🌍Environnement/Dôme" unique_id=197210570]
 transform = Transform3D(0.93666, 0, -0.35024008, 0, 1, 0, 0.35024008, 0, 0.93666, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D5" unique_id=977602917 instance=ExtResource("20_n6do2")]
@@ -602,7 +885,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D5" unique_id=2074081232 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D6" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1369740344]
+[node name="StaticBody3D6" type="Node3D" parent="🌍Environnement/Dôme" unique_id=452940922]
 transform = Transform3D(0.86556256, 0, -0.50080085, 0, 1, 0, 0.50080085, 0, 0.86556256, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D6" unique_id=1155701168 instance=ExtResource("20_n6do2")]
@@ -614,7 +897,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D6" unique_id=1391371940 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D7" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=198013286]
+[node name="StaticBody3D7" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1859598867]
 transform = Transform3D(0.77526426, 0, -0.631637, 0, 1, 0, 0.631637, 0, 0.77526426, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D7" unique_id=1023353988 instance=ExtResource("20_n6do2")]
@@ -626,7 +909,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D7" unique_id=369095884 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D8" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1878517742]
+[node name="StaticBody3D8" type="Node3D" parent="🌍Environnement/Dôme" unique_id=936875455]
 transform = Transform3D(0.65971327, 0, -0.7515175, 0, 1, 0, 0.7515175, 0, 0.65971327, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D8" unique_id=1269546403 instance=ExtResource("20_n6do2")]
@@ -638,7 +921,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D8" unique_id=2049081268 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D9" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=513679172]
+[node name="StaticBody3D9" type="Node3D" parent="🌍Environnement/Dôme" unique_id=925631874]
 transform = Transform3D(0.50493455, 0, -0.86315775, 0, 1, 0, 0.86315775, 0, 0.50493455, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D9" unique_id=1560645410 instance=ExtResource("20_n6do2")]
@@ -650,7 +933,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D9" unique_id=326712022 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D10" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1503723035]
+[node name="StaticBody3D10" type="Node3D" parent="🌍Environnement/Dôme" unique_id=922443621]
 transform = Transform3D(0.35471553, 0, -0.93497443, 0, 1, 0, 0.93497443, 0, 0.35471553, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D10" unique_id=330339707 instance=ExtResource("20_n6do2")]
@@ -662,7 +945,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D10" unique_id=598654257 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D11" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1085607587]
+[node name="StaticBody3D11" type="Node3D" parent="🌍Environnement/Dôme" unique_id=714109025]
 transform = Transform3D(0.21342254, 0, -0.97696006, 0, 1, 0, 0.97696006, 0, 0.21342254, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D11" unique_id=1098562952 instance=ExtResource("20_n6do2")]
@@ -674,7 +957,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D11" unique_id=479141220 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D12" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1571463078]
+[node name="StaticBody3D12" type="Node3D" parent="🌍Environnement/Dôme" unique_id=953086615]
 transform = Transform3D(0.04836161, 0, -0.99882996, 0, 1, 0, 0.99882996, 0, 0.04836161, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D12" unique_id=493933683 instance=ExtResource("20_n6do2")]
@@ -686,7 +969,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D12" unique_id=1138901992 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D13" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1004869812]
+[node name="StaticBody3D13" type="Node3D" parent="🌍Environnement/Dôme" unique_id=278664596]
 transform = Transform3D(-0.14226621, 0, -0.9898285, 0, 1, 0, 0.9898285, 0, -0.14226621, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D13" unique_id=1996239272 instance=ExtResource("20_n6do2")]
@@ -698,7 +981,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D13" unique_id=343926777 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D14" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1989735730]
+[node name="StaticBody3D14" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1900983324]
 transform = Transform3D(-0.30453187, 0, -0.95250225, 0, 1, 0, 0.95250225, 0, -0.30453187, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D14" unique_id=1994227256 instance=ExtResource("20_n6do2")]
@@ -710,7 +993,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D14" unique_id=308782419 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D15" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1750244515]
+[node name="StaticBody3D15" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1024515576]
 transform = Transform3D(-0.4516252, 0, -0.8922078, 0, 1, 0, 0.8922078, 0, -0.4516252, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D15" unique_id=1342054846 instance=ExtResource("20_n6do2")]
@@ -722,7 +1005,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D15" unique_id=144949441 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D16" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=255838189]
+[node name="StaticBody3D16" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1340269274]
 transform = Transform3D(-0.5934049, 0, -0.8049042, 0, 1, 0, 0.8049042, 0, -0.5934049, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D16" unique_id=317611620 instance=ExtResource("20_n6do2")]
@@ -734,7 +1017,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D16" unique_id=944575893 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D17" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1475869325]
+[node name="StaticBody3D17" type="Node3D" parent="🌍Environnement/Dôme" unique_id=411823504]
 transform = Transform3D(-0.73550624, 0, -0.67751825, 0, 1, 0, 0.67751825, 0, -0.73550624, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D17" unique_id=964513205 instance=ExtResource("20_n6do2")]
@@ -746,7 +1029,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D17" unique_id=476214602 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D18" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1356332917]
+[node name="StaticBody3D18" type="Node3D" parent="🌍Environnement/Dôme" unique_id=317975853]
 transform = Transform3D(-0.83772826, 0, -0.5460874, 0, 1, 0, 0.5460874, 0, -0.83772826, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D18" unique_id=607572950 instance=ExtResource("20_n6do2")]
@@ -758,7 +1041,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D18" unique_id=634776474 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D19" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=361587419]
+[node name="StaticBody3D19" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1899654800]
 transform = Transform3D(-0.8942636, 0, -0.4475406, 0, 1, 0, 0.4475406, 0, -0.8942636, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D19" unique_id=1983418350 instance=ExtResource("20_n6do2")]
@@ -770,7 +1053,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D19" unique_id=1635642447 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D20" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=9661051]
+[node name="StaticBody3D20" type="Node3D" parent="🌍Environnement/Dôme" unique_id=658115123]
 transform = Transform3D(-0.9561261, 0, -0.29295585, 0, 1, 0, 0.29295585, 0, -0.9561261, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D20" unique_id=633415952 instance=ExtResource("20_n6do2")]
@@ -782,7 +1065,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D20" unique_id=206543632 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D21" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=356676517]
+[node name="StaticBody3D21" type="Node3D" parent="🌍Environnement/Dôme" unique_id=244632638]
 transform = Transform3D(-0.99436754, 0, -0.10598644, 0, 1, 0, 0.10598644, 0, -0.99436754, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D21" unique_id=1287864645 instance=ExtResource("20_n6do2")]
@@ -794,7 +1077,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D21" unique_id=1985214449 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D22" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1357723626]
+[node name="StaticBody3D22" type="Node3D" parent="🌍Environnement/Dôme" unique_id=763774682]
 transform = Transform3D(-0.9981699, 0, 0.06047356, 0, 1, 0, -0.06047356, 0, -0.9981699, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D22" unique_id=657605282 instance=ExtResource("20_n6do2")]
@@ -806,7 +1089,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D22" unique_id=1725158106 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D23" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1357874473]
+[node name="StaticBody3D23" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1478722869]
 transform = Transform3D(-0.97597384, 0, 0.21788768, 0, 1, 0, -0.21788768, 0, -0.97597384, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D23" unique_id=2047980062 instance=ExtResource("20_n6do2")]
@@ -818,7 +1101,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D23" unique_id=150264086 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D24" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=227649132]
+[node name="StaticBody3D24" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1128469483]
 transform = Transform3D(-0.9262921, 0, 0.37680626, 0, 1, 0, -0.37680626, 0, -0.9262921, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D24" unique_id=498569064 instance=ExtResource("20_n6do2")]
@@ -830,7 +1113,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D24" unique_id=1545094605 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D25" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=428105462]
+[node name="StaticBody3D25" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1470171049]
 transform = Transform3D(-0.8378427, 0, 0.5459119, 0, 1, 0, -0.5459119, 0, -0.8378427, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D25" unique_id=181079106 instance=ExtResource("20_n6do2")]
@@ -842,7 +1125,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D25" unique_id=1902634463 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D26" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=2143136102]
+[node name="StaticBody3D26" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1717401082]
 transform = Transform3D(-0.7356481, 0, 0.677364, 0, 1, 0, -0.677364, 0, -0.7356481, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D26" unique_id=1950416473 instance=ExtResource("20_n6do2")]
@@ -854,7 +1137,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D26" unique_id=110240303 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D27" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1198889031]
+[node name="StaticBody3D27" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1808495334]
 transform = Transform3D(-0.6280853, 0, 0.77814454, 0, 1, 0, -0.77814454, 0, -0.6280853, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D27" unique_id=1403022866 instance=ExtResource("20_n6do2")]
@@ -866,7 +1149,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D27" unique_id=1441735301 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D28" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1043268408]
+[node name="StaticBody3D28" type="Node3D" parent="🌍Environnement/Dôme" unique_id=2088868945]
 transform = Transform3D(-0.49026498, 0, 0.87157345, 0, 1, 0, -0.87157345, 0, -0.49026498, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D28" unique_id=285319344 instance=ExtResource("20_n6do2")]
@@ -878,7 +1161,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D28" unique_id=859061784 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D29" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=738838952]
+[node name="StaticBody3D29" type="Node3D" parent="🌍Environnement/Dôme" unique_id=261062150]
 transform = Transform3D(-0.3157649, 0, 0.9488375, 0, 1, 0, -0.9488375, 0, -0.3157649, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D29" unique_id=92478350 instance=ExtResource("20_n6do2")]
@@ -890,7 +1173,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D29" unique_id=1576980327 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D30" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=2030887199]
+[node name="StaticBody3D30" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1832807094]
 transform = Transform3D(-0.15395169, 0, 0.9880785, 0, 1, 0, -0.9880785, 0, -0.15395169, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D30" unique_id=1521516641 instance=ExtResource("20_n6do2")]
@@ -902,7 +1185,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D30" unique_id=1678213236 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D31" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=252936650]
+[node name="StaticBody3D31" type="Node3D" parent="🌍Environnement/Dôme" unique_id=395272453]
 transform = Transform3D(0.004572789, 0, 0.9999896, 0, 1, 0, -0.9999896, 0, 0.004572789, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D31" unique_id=2036725915 instance=ExtResource("20_n6do2")]
@@ -914,7 +1197,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D31" unique_id=1114355710 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D32" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=957880713]
+[node name="StaticBody3D32" type="Node3D" parent="🌍Environnement/Dôme" unique_id=342446193]
 transform = Transform3D(0.17043304, 0, 0.9853693, 0, 1, 0, -0.9853693, 0, 0.17043304, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D32" unique_id=1794388365 instance=ExtResource("20_n6do2")]
@@ -926,7 +1209,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D32" unique_id=1742031378 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D33" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1316006174]
+[node name="StaticBody3D33" type="Node3D" parent="🌍Environnement/Dôme" unique_id=776442708]
 transform = Transform3D(0.35451955, 0, 0.9350487, 0, 1, 0, -0.9350487, 0, 0.35451955, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D33" unique_id=1513541670 instance=ExtResource("20_n6do2")]
@@ -938,7 +1221,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D33" unique_id=2024905907 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D34" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1840415196]
+[node name="StaticBody3D34" type="Node3D" parent="🌍Environnement/Dôme" unique_id=77204810]
 transform = Transform3D(0.5047537, 0, 0.8632635, 0, 1, 0, -0.8632635, 0, 0.5047537, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D34" unique_id=459543916 instance=ExtResource("20_n6do2")]
@@ -950,7 +1233,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D34" unique_id=743816432 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D35" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1927003026]
+[node name="StaticBody3D35" type="Node3D" parent="🌍Environnement/Dôme" unique_id=786267679]
 transform = Transform3D(0.62856066, 0, 0.7777607, 0, 1, 0, -0.7777607, 0, 0.62856066, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D35" unique_id=2100918274 instance=ExtResource("20_n6do2")]
@@ -962,7 +1245,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D35" unique_id=1418062269 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D36" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1701722780]
+[node name="StaticBody3D36" type="Node3D" parent="🌍Environnement/Dôme" unique_id=308687637]
 transform = Transform3D(0.74889797, 0, 0.6626855, 0, 1, 0, -0.6626855, 0, 0.74889797, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D36" unique_id=1346363754 instance=ExtResource("20_n6do2")]
@@ -974,7 +1257,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D36" unique_id=878316838 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D37" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=883522025]
+[node name="StaticBody3D37" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1598873433]
 transform = Transform3D(0.8444497, 0, 0.53563523, 0, 1, 0, -0.53563523, 0, 0.8444497, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D37" unique_id=1995327599 instance=ExtResource("20_n6do2")]
@@ -986,7 +1269,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D37" unique_id=1309694488 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D38" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=2120698918]
+[node name="StaticBody3D38" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1282203685]
 transform = Transform3D(0.92161953, 0, 0.38809478, 0, 1, 0, -0.38809478, 0, 0.92161953, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D38" unique_id=602173669 instance=ExtResource("20_n6do2")]
@@ -998,7 +1281,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D38" unique_id=604673405 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D39" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1850537558]
+[node name="StaticBody3D39" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1378935717]
 transform = Transform3D(0.978563, 0, 0.20594805, 0, 1, 0, -0.20594805, 0, 0.978563, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D39" unique_id=1382318992 instance=ExtResource("20_n6do2")]
@@ -1010,7 +1293,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D39" unique_id=1987901317 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D40" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=711036668]
+[node name="StaticBody3D40" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1425540696]
 transform = Transform3D(0.9991705, 0, 0.040724676, 0, 1, 0, -0.040724676, 0, 0.9991705, 0, 0, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D40" unique_id=1237272186 instance=ExtResource("20_n6do2")]
@@ -1022,7 +1305,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D40" unique_id=1482744130 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D41" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1348541425]
+[node name="StaticBody3D41" type="Node3D" parent="🌍Environnement/Dôme" unique_id=62329674]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D41" unique_id=1006818543 instance=ExtResource("20_n6do2")]
@@ -1034,7 +1317,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D41" unique_id=691349745 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D42" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1785678820]
+[node name="StaticBody3D42" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1551258993]
 transform = Transform3D(0.98613834, 0, -0.16592544, 0, 1, 0, 0.16592544, 0, 0.98613834, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D42" unique_id=1842626248 instance=ExtResource("20_n6do2")]
@@ -1046,7 +1329,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D42" unique_id=804428667 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D43" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=54509196]
+[node name="StaticBody3D43" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1273826916]
 transform = Transform3D(0.93666, 0, -0.35024008, 0, 1, 0, 0.35024008, 0, 0.93666, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D43" unique_id=950892701 instance=ExtResource("20_n6do2")]
@@ -1058,7 +1341,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D43" unique_id=624510420 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D44" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=11837287]
+[node name="StaticBody3D44" type="Node3D" parent="🌍Environnement/Dôme" unique_id=580152157]
 transform = Transform3D(0.8655626, 0, -0.50080085, 0, 1, 0, 0.50080085, 0, 0.8655626, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D44" unique_id=1750069878 instance=ExtResource("20_n6do2")]
@@ -1070,7 +1353,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D44" unique_id=1141814425 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D45" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1730351311]
+[node name="StaticBody3D45" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1101732146]
 transform = Transform3D(0.77526426, 0, -0.631637, 0, 1, 0, 0.631637, 0, 0.77526426, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D45" unique_id=221798893 instance=ExtResource("20_n6do2")]
@@ -1082,7 +1365,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D45" unique_id=427003655 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D46" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=365179037]
+[node name="StaticBody3D46" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1610009757]
 transform = Transform3D(0.65971327, 0, -0.7515175, 0, 1, 0, 0.7515175, 0, 0.65971327, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D46" unique_id=325801288 instance=ExtResource("20_n6do2")]
@@ -1094,7 +1377,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D46" unique_id=1469828625 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D47" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1085867701]
+[node name="StaticBody3D47" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1984447060]
 transform = Transform3D(0.50493455, 0, -0.86315775, 0, 1, 0, 0.86315775, 0, 0.50493455, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D47" unique_id=1926387372 instance=ExtResource("20_n6do2")]
@@ -1106,7 +1389,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D47" unique_id=2062106866 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D48" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1093625979]
+[node name="StaticBody3D48" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1876340013]
 transform = Transform3D(0.35471553, 0, -0.93497443, 0, 1, 0, 0.93497443, 0, 0.35471553, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D48" unique_id=827034372 instance=ExtResource("20_n6do2")]
@@ -1118,7 +1401,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D48" unique_id=1857408551 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D49" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=106603734]
+[node name="StaticBody3D49" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1030439640]
 transform = Transform3D(0.21342254, 0, -0.97696006, 0, 1, 0, 0.97696006, 0, 0.21342254, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D49" unique_id=1910457759 instance=ExtResource("20_n6do2")]
@@ -1130,7 +1413,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D49" unique_id=714995308 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D50" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=2146079644]
+[node name="StaticBody3D50" type="Node3D" parent="🌍Environnement/Dôme" unique_id=208916663]
 transform = Transform3D(0.04836161, 0, -0.99883, 0, 1, 0, 0.99883, 0, 0.04836161, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D50" unique_id=1259908187 instance=ExtResource("20_n6do2")]
@@ -1142,7 +1425,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D50" unique_id=1679019829 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D51" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1920783580]
+[node name="StaticBody3D51" type="Node3D" parent="🌍Environnement/Dôme" unique_id=18944582]
 transform = Transform3D(-0.14226621, 0, -0.9898285, 0, 1, 0, 0.9898285, 0, -0.14226621, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D51" unique_id=425988277 instance=ExtResource("20_n6do2")]
@@ -1154,7 +1437,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D51" unique_id=1287314911 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D52" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=20934317]
+[node name="StaticBody3D52" type="Node3D" parent="🌍Environnement/Dôme" unique_id=421587365]
 transform = Transform3D(-0.30453187, 0, -0.95250225, 0, 1, 0, 0.95250225, 0, -0.30453187, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D52" unique_id=1598768081 instance=ExtResource("20_n6do2")]
@@ -1166,7 +1449,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D52" unique_id=173206130 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D53" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1145132496]
+[node name="StaticBody3D53" type="Node3D" parent="🌍Environnement/Dôme" unique_id=796958823]
 transform = Transform3D(-0.4516252, 0, -0.8922078, 0, 1, 0, 0.8922078, 0, -0.4516252, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D53" unique_id=1174399050 instance=ExtResource("20_n6do2")]
@@ -1178,7 +1461,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D53" unique_id=897450261 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D54" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1404847830]
+[node name="StaticBody3D54" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1761349012]
 transform = Transform3D(-0.5934049, 0, -0.8049042, 0, 1, 0, 0.8049042, 0, -0.5934049, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D54" unique_id=1029216431 instance=ExtResource("20_n6do2")]
@@ -1190,7 +1473,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D54" unique_id=8108139 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D55" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1539991896]
+[node name="StaticBody3D55" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1724874571]
 transform = Transform3D(-0.73550624, 0, -0.67751825, 0, 1, 0, 0.67751825, 0, -0.73550624, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D55" unique_id=621765705 instance=ExtResource("20_n6do2")]
@@ -1202,7 +1485,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D55" unique_id=674486647 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D56" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1739488395]
+[node name="StaticBody3D56" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1788594530]
 transform = Transform3D(-0.83772826, 0, -0.5460874, 0, 1, 0, 0.5460874, 0, -0.83772826, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D56" unique_id=1100753514 instance=ExtResource("20_n6do2")]
@@ -1214,7 +1497,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D56" unique_id=748613931 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D57" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1215531309]
+[node name="StaticBody3D57" type="Node3D" parent="🌍Environnement/Dôme" unique_id=2080689398]
 transform = Transform3D(-0.8942636, 0, -0.4475406, 0, 1, 0, 0.4475406, 0, -0.8942636, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D57" unique_id=1640464812 instance=ExtResource("20_n6do2")]
@@ -1226,7 +1509,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D57" unique_id=82943317 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D58" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=38848405]
+[node name="StaticBody3D58" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1838529895]
 transform = Transform3D(-0.9561261, 0, -0.29295585, 0, 1, 0, 0.29295585, 0, -0.9561261, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D58" unique_id=330494212 instance=ExtResource("20_n6do2")]
@@ -1238,7 +1521,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D58" unique_id=178521287 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D59" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=609702638]
+[node name="StaticBody3D59" type="Node3D" parent="🌍Environnement/Dôme" unique_id=984148223]
 transform = Transform3D(-0.99436754, 0, -0.10598644, 0, 1, 0, 0.10598644, 0, -0.99436754, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D59" unique_id=1249189915 instance=ExtResource("20_n6do2")]
@@ -1250,7 +1533,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D59" unique_id=628248461 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D60" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1967845571]
+[node name="StaticBody3D60" type="Node3D" parent="🌍Environnement/Dôme" unique_id=810732047]
 transform = Transform3D(-0.9981699, 0, 0.06047356, 0, 1, 0, -0.06047356, 0, -0.9981699, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D60" unique_id=996193983 instance=ExtResource("20_n6do2")]
@@ -1262,7 +1545,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D60" unique_id=849389381 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D61" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=748953330]
+[node name="StaticBody3D61" type="Node3D" parent="🌍Environnement/Dôme" unique_id=422735921]
 transform = Transform3D(-0.97597384, 0, 0.21788768, 0, 1, 0, -0.21788768, 0, -0.97597384, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D61" unique_id=494276717 instance=ExtResource("20_n6do2")]
@@ -1274,7 +1557,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D61" unique_id=85245968 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D62" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=856428894]
+[node name="StaticBody3D62" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1968689126]
 transform = Transform3D(-0.9262921, 0, 0.37680626, 0, 1, 0, -0.37680626, 0, -0.9262921, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D62" unique_id=485982651 instance=ExtResource("20_n6do2")]
@@ -1286,7 +1569,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D62" unique_id=1522080023 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D63" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=761550595]
+[node name="StaticBody3D63" type="Node3D" parent="🌍Environnement/Dôme" unique_id=2101628726]
 transform = Transform3D(-0.8378427, 0, 0.5459119, 0, 1, 0, -0.5459119, 0, -0.8378427, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D63" unique_id=747728781 instance=ExtResource("20_n6do2")]
@@ -1298,7 +1581,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D63" unique_id=1473366825 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D64" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=870906369]
+[node name="StaticBody3D64" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1945140764]
 transform = Transform3D(-0.7356481, 0, 0.67736405, 0, 1, 0, -0.67736405, 0, -0.7356481, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D64" unique_id=1640615074 instance=ExtResource("20_n6do2")]
@@ -1310,7 +1593,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D64" unique_id=230321125 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D65" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=762433445]
+[node name="StaticBody3D65" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1365838365]
 transform = Transform3D(-0.6280853, 0, 0.77814454, 0, 1, 0, -0.77814454, 0, -0.6280853, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D65" unique_id=1491784295 instance=ExtResource("20_n6do2")]
@@ -1322,7 +1605,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D65" unique_id=1863593527 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D66" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1608828857]
+[node name="StaticBody3D66" type="Node3D" parent="🌍Environnement/Dôme" unique_id=609136026]
 transform = Transform3D(-0.49026498, 0, 0.87157345, 0, 1, 0, -0.87157345, 0, -0.49026498, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D66" unique_id=2062733781 instance=ExtResource("20_n6do2")]
@@ -1334,7 +1617,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D66" unique_id=470154857 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D67" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=873409907]
+[node name="StaticBody3D67" type="Node3D" parent="🌍Environnement/Dôme" unique_id=118788023]
 transform = Transform3D(-0.3157649, 0, 0.9488375, 0, 1, 0, -0.9488375, 0, -0.3157649, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D67" unique_id=1763877480 instance=ExtResource("20_n6do2")]
@@ -1346,7 +1629,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D67" unique_id=813841597 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D68" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=626425326]
+[node name="StaticBody3D68" type="Node3D" parent="🌍Environnement/Dôme" unique_id=217431722]
 transform = Transform3D(-0.15395169, 0, 0.9880785, 0, 1, 0, -0.9880785, 0, -0.15395169, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D68" unique_id=2066194220 instance=ExtResource("20_n6do2")]
@@ -1358,7 +1641,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D68" unique_id=2012418455 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D69" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=544776317]
+[node name="StaticBody3D69" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1809744563]
 transform = Transform3D(0.004572789, 0, 0.9999897, 0, 1, 0, -0.9999897, 0, 0.004572789, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D69" unique_id=1164368897 instance=ExtResource("20_n6do2")]
@@ -1370,7 +1653,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D69" unique_id=442038418 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D70" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=788798384]
+[node name="StaticBody3D70" type="Node3D" parent="🌍Environnement/Dôme" unique_id=362114307]
 transform = Transform3D(0.17043304, 0, 0.9853694, 0, 1, 0, -0.9853694, 0, 0.17043304, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D70" unique_id=1591776037 instance=ExtResource("20_n6do2")]
@@ -1382,7 +1665,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D70" unique_id=2025649391 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D71" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=575362457]
+[node name="StaticBody3D71" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1465755350]
 transform = Transform3D(0.35451955, 0, 0.93504876, 0, 1, 0, -0.93504876, 0, 0.35451955, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D71" unique_id=1819945159 instance=ExtResource("20_n6do2")]
@@ -1394,7 +1677,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D71" unique_id=721259893 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D72" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=561047541]
+[node name="StaticBody3D72" type="Node3D" parent="🌍Environnement/Dôme" unique_id=715709020]
 transform = Transform3D(0.5047537, 0, 0.8632635, 0, 1, 0, -0.8632635, 0, 0.5047537, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D72" unique_id=922779555 instance=ExtResource("20_n6do2")]
@@ -1404,9 +1687,9 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.1223893, -0.04052
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.046188664)
 
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D72" unique_id=1948621358 instance=ExtResource("20_n6do2")]
-transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
+transform = Transform3D(-0.5, -7.54979e-08, 0, 7.54979e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D73" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=134361061]
+[node name="StaticBody3D73" type="Node3D" parent="🌍Environnement/Dôme" unique_id=310714709]
 transform = Transform3D(0.62856066, 0, 0.7777607, 0, 1, 0, -0.7777607, 0, 0.62856066, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D73" unique_id=1516218148 instance=ExtResource("20_n6do2")]
@@ -1418,7 +1701,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D73" unique_id=2007421327 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D74" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=144023664]
+[node name="StaticBody3D74" type="Node3D" parent="🌍Environnement/Dôme" unique_id=828253324]
 transform = Transform3D(0.74889797, 0, 0.6626855, 0, 1, 0, -0.6626855, 0, 0.74889797, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D74" unique_id=1441558124 instance=ExtResource("20_n6do2")]
@@ -1430,7 +1713,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D74" unique_id=417268071 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D75" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=946672283]
+[node name="StaticBody3D75" type="Node3D" parent="🌍Environnement/Dôme" unique_id=158573106]
 transform = Transform3D(0.8444497, 0, 0.53563523, 0, 1, 0, -0.53563523, 0, 0.8444497, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D75" unique_id=1768680985 instance=ExtResource("20_n6do2")]
@@ -1442,7 +1725,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D75" unique_id=2146283428 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D76" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1758121476]
+[node name="StaticBody3D76" type="Node3D" parent="🌍Environnement/Dôme" unique_id=989970488]
 transform = Transform3D(0.9216196, 0, 0.38809478, 0, 1, 0, -0.38809478, 0, 0.9216196, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D76" unique_id=691418976 instance=ExtResource("20_n6do2")]
@@ -1454,7 +1737,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D76" unique_id=996283354 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D77" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1952707646]
+[node name="StaticBody3D77" type="Node3D" parent="🌍Environnement/Dôme" unique_id=813785957]
 transform = Transform3D(0.978563, 0, 0.20594805, 0, 1, 0, -0.20594805, 0, 0.978563, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D77" unique_id=993452274 instance=ExtResource("20_n6do2")]
@@ -1466,7 +1749,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D77" unique_id=728853362 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
-[node name="StaticBody3D78" type="StaticBody3D" parent="🌍Environnement/Dôme" unique_id=1234274299]
+[node name="StaticBody3D78" type="Node3D" parent="🌍Environnement/Dôme" unique_id=1865823690]
 transform = Transform3D(0.9991705, 0, 0.040724676, 0, 1, 0, -0.040724676, 0, 0.9991705, 0, 0.067242384, 0)
 
 [node name="maya2sketchfab" parent="🌍Environnement/Dôme/StaticBody3D78" unique_id=1288817533 instance=ExtResource("20_n6do2")]
@@ -1478,6 +1761,63 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, -1.2059481, -0.04618
 [node name="maya2sketchfab3" parent="🌍Environnement/Dôme/StaticBody3D78" unique_id=9079601 instance=ExtResource("20_n6do2")]
 transform = Transform3D(-0.5, -4.371139e-08, 0, 4.371139e-08, -0.5, 0, 0, 0, 0.5, 0.006568273, -1.201587, -0.046188664)
 
+[node name="pick rouge " parent="🌍Environnement/Dôme" unique_id=1853135109 instance=ExtResource("24_14gmk")]
+transform = Transform3D(0.022489015, 0.004821227, 0, -0.004821227, 0.022489015, 0, 0, 0, 0.023, -0.6972596, -0.054287396, -0.07622138)
+
+[node name="pick rouge 10" parent="🌍Environnement/Dôme" unique_id=1882601488 instance=ExtResource("24_14gmk")]
+transform = Transform3D(0.023, 0, 0, 0, 0.023, 0, 0, 0, 0.023, -0.48047695, -0.08830749, 0.4129766)
+
+[node name="pick rouge 12" parent="🌍Environnement/Dôme" unique_id=1801733339 instance=ExtResource("24_14gmk")]
+transform = Transform3D(0.023, 0, 0, 0, 0.023, 0, 0, 0, 0.023, -0.22813037, 0.4130603, 0.55288374)
+
+[node name="pick rouge 13" parent="🌍Environnement/Dôme" unique_id=1429377206 instance=ExtResource("24_14gmk")]
+transform = Transform3D(0.023, 0, 0, 0, 0.023, 0, 0, 0, 0.023, -0.0636919, 0.3610953, 0.68102086)
+
+[node name="pick rouge 14" parent="🌍Environnement/Dôme" unique_id=261994876 instance=ExtResource("24_14gmk")]
+transform = Transform3D(0.043000005, 0, 0, 0, 0.043000005, 0, 0, 0, 0.043000005, -0.19127393, 0.39548093, 0.82378405)
+
+[node name="pick rouge 11" parent="🌍Environnement/Dôme" unique_id=444328382 instance=ExtResource("24_14gmk")]
+transform = Transform3D(0.022454808, 0.0049781115, 0, -0.004455083, 0.020095581, 0.010262551, 0.0022212223, -0.0100192875, 0.020583492, -0.5601584, -0.113136336, 0.20864815)
+
+[node name="pick rouge 2" parent="🌍Environnement/Dôme" unique_id=1818700415 instance=ExtResource("24_14gmk")]
+transform = Transform3D(0.019610725, 0.012017468, 0, -0.012017468, 0.019610725, 0, 0, 0, 0.023, -0.6280353, -0.07438069, -0.1685822)
+
+[node name="pick rouge 3" parent="🌍Environnement/Dôme" unique_id=1314313669 instance=ExtResource("24_14gmk")]
+transform = Transform3D(0.022614863, 0.0041914172, 0, -0.0039182445, 0.021140954, 0.008167461, 0.0014884014, -0.008030696, 0.02150099, -0.78545284, -0.054287396, -0.4127478)
+
+[node name="pick rouge 4" parent="🌍Environnement/Dôme" unique_id=1490122081 instance=ExtResource("24_14gmk")]
+transform = Transform3D(0.016713552, 0.009036984, -0.012961099, -0.010939357, 0.02023192, 0, 0.011401213, 0.0061646136, 0.019000258, -0.16620207, -0.13560535, -0.31958672)
+
+[node name="pick rouge 5" parent="🌍Environnement/Dôme" unique_id=1620806726 instance=ExtResource("24_14gmk")]
+transform = Transform3D(0.023, 0, 0, 0, 0.020565547, -0.010298459, 0, 0.010298459, 0.020565547, 0.8328508, -0.038557038, -0.013295969)
+
+[node name="pick rouge 6" parent="🌍Environnement/Dôme" unique_id=284101240 instance=ExtResource("24_14gmk")]
+transform = Transform3D(0.023, 0, 0, 0, 0.023, 0, 0, 0, 0.023, 0.72324675, 0.01579254, -0.18051255)
+
+[node name="pick rouge 7" parent="🌍Environnement/Dôme" unique_id=1373175328 instance=ExtResource("24_14gmk")]
+transform = Transform3D(0.043000005, 0, 0, 0, 0.043000005, 0, 0, 0, 0.043000005, 0.04888863, -0.51694405, 0.10618027)
+
+[node name="pick rouge 8" parent="🌍Environnement/Dôme" unique_id=1233982796 instance=ExtResource("24_14gmk")]
+transform = Transform3D(0.043000005, 0, 0, 0, 0.043000005, 0, 0, 0, 0.043000005, 0.19064634, -0.51694405, -0.19765311)
+
+[node name="pick rouge 9" parent="🌍Environnement/Dôme" unique_id=390880 instance=ExtResource("24_14gmk")]
+transform = Transform3D(0.043000005, 0, 0, 0, 0.043000005, 0, 0, 0, 0.043000005, 0.28481925, -0.51694405, 0.16262999)
+
+[node name="SolPlanté2" parent="🌍Environnement/Dôme" unique_id=1201687767 instance=ExtResource("22_dah21")]
+transform = Transform3D(0.083333336, 0, 0, 0, 0.083333336, 0, 0, 0, 0.083333336, -0.2268973, -0.16539386, -0.57567847)
+
+[node name="SolPlanté9" parent="🌍Environnement/Dôme" unique_id=622600434 instance=ExtResource("22_dah21")]
+transform = Transform3D(0.083333336, 0, 0, 0, 0.083333336, 0, 0, 0, 0.083333336, -0.34295195, -0.14504996, -0.48484552)
+
+[node name="SolPlanté10" parent="🌍Environnement/Dôme" unique_id=1017035592 instance=ExtResource("22_dah21")]
+transform = Transform3D(0.098, 0, 0, 0, 0.098, 0, 0, 0, 0.098, -0.3445441, -0.17862236, -0.73893666)
+
+[node name="SolPlanté11" parent="🌍Environnement/Dôme" unique_id=2091920713 instance=ExtResource("22_dah21")]
+transform = Transform3D(0.06383704, 0, 0.053565647, 0, 0.083333336, 0, -0.053565647, 0, 0.06383704, -0.63225985, -0.17911915, -0.56601405)
+
+[node name="SolPlanté12" parent="🌍Environnement/Dôme" unique_id=1879494770 instance=ExtResource("22_dah21")]
+transform = Transform3D(-0.05473141, 0, -0.12121664, 0, 0.133, 0, 0.12121664, 0, -0.05473141, -0.14960116, -0.33100814, -0.51480997)
+
 [node name="WorldEnvironment" type="WorldEnvironment" parent="🌍Environnement" unique_id=1327850024]
 environment = SubResource("Environment_stja8")
 
@@ -1488,6 +1828,42 @@ stream = ExtResource("1_7gaad")
 pitch_scale = 0.93
 autoplay = true
 parameters/looping = true
+
+[node name="SolPlanté1" parent="." unique_id=898425858 instance=ExtResource("22_dah21")]
+transform = Transform3D(1.0329713, 0, 0.93009156, 0, 1.39, 0, -0.93009156, 0, 1.0329713, -6.186764, -2.6729283, -7.50734)
+
+[node name="SolPlanté2" parent="." unique_id=1125875177 instance=ExtResource("22_dah21")]
+transform = Transform3D(-1.1156538, 0, -0.25756902, 0, 1.145, 0, 0.25756902, 0, -1.1156538, -3.400662, -2.3847876, -4.3910275)
+
+[node name="chous" parent="." unique_id=775909431 instance=ExtResource("25_dah21")]
+transform = Transform3D(0.24106792, 0.08433365, 0.12648761, -0.0640125, 0.2713904, -0.058946364, -0.13789009, 0.021450149, 0.24849795, -8.723484, -0.5056652, -2.380906)
+
+[node name="chous7" parent="." unique_id=535346861 instance=ExtResource("25_dah21")]
+transform = Transform3D(0.09592679, 0.07826347, 0.25670588, -0.06415514, 0.2713954, -0.0587682, -0.26059008, -0.038005453, 0.10896522, -1.905184, 4.5739956, 5.942422)
+
+[node name="chous5" parent="." unique_id=1212675058 instance=ExtResource("25_dah21")]
+transform = Transform3D(0.285, 0, 0, 0, 0.2340275, -0.16265337, 0, 0.16265337, 0.2340275, -9.840294, -0.56457853, -0.5669839)
+
+[node name="chous6" parent="." unique_id=1671669282 instance=ExtResource("25_dah21")]
+transform = Transform3D(0.23902111, 0.15522213, 0, -0.15522213, 0.23902111, 0, 0, 0, 0.285, -7.1258945, -1.3880723, -1.2893639)
+
+[node name="chous3" parent="." unique_id=1721014386 instance=ExtResource("25_dah21")]
+transform = Transform3D(0.285, 0, 0, 0, 0.27769548, 0.06411105, 0, -0.06411105, 0.27769548, 9.289488, -0.20234327, -4.6779385)
+
+[node name="chous4" parent="." unique_id=452825152 instance=ExtResource("25_dah21")]
+transform = Transform3D(0.23793164, -0.15688701, 0, 0.152866, 0.23183346, 0.06411105, -0.035291895, -0.05352297, 0.27769548, 6.6424212, -0.25629503, -3.0493007)
+
+[node name="chous2" parent="." unique_id=525270167 instance=ExtResource("25_dah21")]
+transform = Transform3D(0.285, 0, 0, 0, 0.2561563, -0.124935776, 0, 0.124935776, 0.2561563, -6.0858173, -1.4152545, -4.5772705)
+
+[node name="pick" parent="." unique_id=363366929 instance=ExtResource("27_ydinj")]
+transform = Transform3D(0.595, 0, 0, 0, -0.595, 5.2016553e-08, 0, -5.2016553e-08, -0.595, -7.6747065, -5.244634, 4.884469)
+
+[node name="pick2" parent="." unique_id=1556553852 instance=ExtResource("27_ydinj")]
+transform = Transform3D(0.595, 0, 0, 0, -0.595, 5.2016553e-08, 0, -5.2016553e-08, -0.595, -8.2028055, -5.244634, 6.195464)
+
+[node name="pick3" parent="." unique_id=1983033802 instance=ExtResource("27_ydinj")]
+transform = Transform3D(0.595, 0, 0, 0, -0.595, 5.2016553e-08, 0, -5.2016553e-08, -0.595, -8.519867, -4.868597, 2.9476953)
 
 [connection signal="CircleEmitted" from="👩‍🦱Personnage/Joueur/PlayerInput/Move" to="👩‍🦱Personnage/Joueur/CharacterBody3D/CharacterBodySwimming3D" method="MoveCharacter"]
 [connection signal="CircleEmitted" from="👩‍🦱Personnage/Joueur/PlayerInput/Look" to="🎥Caméras/OrbitalCamera/SpringArm3D/OrbitalCamera" method="LookAround"]
