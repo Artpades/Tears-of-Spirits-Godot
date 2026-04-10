@@ -13,6 +13,8 @@ config_version=5
 config/name="Tears of Spirits"
 run/main_scene="uid://bqhwwchrtm8fb"
 config/features=PackedStringArray("4.6", "C#", "Forward Plus")
+boot_splash/bg_color=Color(0.2819788, 0.06761765, 0.50763446, 1)
+boot_splash/image="uid://cr5svxmv07nb2"
 config/icon="res://icon.svg"
 
 [display]
