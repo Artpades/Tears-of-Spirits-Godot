@@ -5,7 +5,7 @@
 
 [sub_resource type="Resource" id="Resource_ffs2b"]
 script = ExtResource("1_xm7vh")
-TextLine = "(Le personnage a constaté vaux action et votre volonté de rédemption, il a été aux plus proche de vos effort et vous accepte sans vraiment le laisser transparaître (vous donne accès aux connaissant de l’environnement)"
+TextLine = "(Le personnage a constaté vos action et votre volonté de rédemption. Il vous pardonne. (Peut vous donner des un voyage rapide)"
 metadata/_custom_type_script = "uid://cg5oo1salixsg"
 
 [resource]
