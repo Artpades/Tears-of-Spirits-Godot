@@ -28,7 +28,7 @@ namespace GameplayToolkit.MovementAndPhysics
 			set => _currentSpeed = Mathf.Clamp(value, 0, maxSpeed);
 		}
 
-		protected Vector2 _inputDir;
+		public Vector2 _inputDir;
 
 		// ─── Entrées ────────────────────────────────────────────────────
 		public void MoveCharacter(Vector2 direction) => _inputDir = direction;

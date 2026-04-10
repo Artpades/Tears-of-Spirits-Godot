@@ -72,11 +72,10 @@ size = Vector3(3, 3, 3)
 font_names = PackedStringArray("Fantasy")
 subpixel_positioning = 0
 
-[node name="FeuFollet2" type="Node3D" unique_id=1985830099 node_paths=PackedStringArray("label3D", "area3D")]
+[node name="FeuFollet2" type="Node3D" unique_id=1985830099 node_paths=PackedStringArray("label3D")]
 script = ExtResource("1_xdivj")
 label3D = NodePath("Label Intéragir")
 Dialogue = ExtResource("2_h8qq8")
-area3D = NodePath("Area3D")
 outlineColor1 = Color(0.59994674, 0.00094557676, 0.71555156, 1)
 outlineColor2 = Color(3.1284987e-06, 0.5492991, 0.46801603, 1)
 metadata/_custom_type_script = "uid://bnkhh7nrbtcl2"
@@ -102,11 +101,11 @@ debug_color = Color(0.8901961, 0, 0.79607844, 1)
 [node name="Label Intéragir" type="Label3D" parent="." unique_id=449190555]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
 visible = false
-pixel_size = 0.025
+pixel_size = 0.05
 billboard = 1
 modulate = Color(0.9363305, 0.9864903, 1, 1)
 outline_modulate = Color(0.00035023488, 0.54898185, 0.46815926, 1)
-text = "?!"
+text = "..."
 font = SubResource("SystemFont_xdivj")
 
 [connection signal="body_entered" from="Area3D" to="." method="OnEnteredArea"]

@@ -9,8 +9,6 @@ public partial class FeuFollet : Node3D
 {
 	[Export] private Label3D label3D;
 	[Export] public Dialogue Dialogue;
-	[Export] public Area3D area3D;
-
 	[Export] private Color outlineColor1 = new(1, 1, 0); // Jaune par défaut
 	[Export] private Color outlineColor2 = new(1, 0.5f, 0); // Orange par défaut
 	[Export] private float tweenDuration = 1.0f; // Durée en secondes
@@ -21,8 +19,6 @@ public partial class FeuFollet : Node3D
 		if (body is CharacterBody3D)
 		{
 			label3D.Show();
-			TypeSearcher.GetFirstNodeOfType<DialogueSystem>().CurrentDialogue = Dialogue;
-			TypeSearcher.GetFirstNodeOfType<DialogueSystem>().StartDialogue();
 		}
 	}
 
@@ -31,7 +27,6 @@ public partial class FeuFollet : Node3D
 		if (body is CharacterBody3D)
 		{
 			label3D.Hide();
-			TypeSearcher.GetFirstNodeOfType<DialogueSystem>().EndDialogue();
 
 		}
 	}

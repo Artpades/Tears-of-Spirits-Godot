@@ -17,7 +17,7 @@ namespace GameplayToolkit.InputAndControls
 				if (_contextActivated != value)
 				{
 					_contextActivated = value;
-
+					
 					ProcessMode = _contextActivated ? ProcessModeEnum.Inherit : ProcessModeEnum.Disabled;
 
 					if (DebugTools.LogInputManagers)
